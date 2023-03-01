@@ -1,0 +1,86 @@
+usuarioPrefeitura|Financ|
+senhaPrefeitura|carplus1419#|
+ambiente|0|
+grupo|PNEUPLUS|
+empresa_codigo|006|
+empresa_descricao|CARPLUS SERVICE CENTER LTDA ME|
+filial_codigo|001|
+filial_descricao|CARPLUS SERVICE CENTER LTDA - ME|
+controle|00010470|
+numero|000010424|
+serie|0|
+situacao||
+valor_total|0000000000080,00|
+valor_desconto|0000000000000,00|
+valor_ir|0000000000000,00|
+valor_inss|0000000000000,00|
+valor_contribuicao_social|0000000000000,00|
+valor_rps|0000000000000,00|
+valor_pis|0000000000000,00|
+valor_cofins|0000000000000,00|
+observacao|Vendedor: V00069 - NILSON VIEIRA        Pedido:   T 024335/00                   Fatura: 01-21/02/2020-           80,00|
+prestador_cpfcnpj|10703580000137|
+prestador_tipoPessoaPrestador|J|
+prestador_tipoRps|1|
+prestador_cidade|004106902|
+prestador_codTom|75353|
+prestador_inscricaomunicipal|5620580|
+prestador_cnae|4520001|
+prestador_optantesimples|1|
+prestador_incentivadorcultural|2|
+tomador_tipo|F|
+tomador_identificador||
+tomador_estado|PR|
+tomador_pais|BRASIL|
+tomador_cpfcnpj|00032237138915|
+tomador_ie||
+tomador_inscricaomunicipal||
+tomador_nome_razao_social|SERGIO TRANCOSO DE BRITO(C21730)|
+tomador_sobrenome_nome_fantasia||
+tomador_logradouro|AV MANOEL RIBAS|
+tomador_email|sergiobritto.sb10@gmail.com|
+tomador_numero_residencia|00002150|
+tomador_complemento||
+tomador_ponto_referencia||
+tomador_bairro|MERCES|
+tomador_cidade|004106902|
+tomador_codTom|7535|
+tomador_cep|80810000|
+tomador_ddd_fone_comercial|000|
+tomador_fone_comercial|000000000000000000|
+tomador_ddd_fone_residencial|041|
+tomador_fone_residencial|000000000030263747|
+tomador_ddd_fax|000|
+tomador_fone_fax|000000000000000000|
+lista_tributa_municipio_prestador|S|
+lista_codigo_local_prestacao_servico|004106902|
+lista_codigo_tom_prestacao_servico|7535|
+lista_unidade_codigo|000000000|
+lista_unidade_quantidade|000000000000001|
+lista_unidade_valor_unitario|0000000000040,00|
+lista_codigo_item_lista_servico|000001401|
+lista_descritivo|ALINHAMENTO DT COMPUTADORIZADO|
+lista_aliquota_item_lista_servico|0000000000005.00|
+lista_situacao_tributaria|001|
+lista_valor_tributavel|0000000000080,00|
+lista_valor_deducao|0000000000000,00|
+lista_valor_issrf|0000000000000,00|
+lista_valor_iss|0000000000004,00|
+lista_desconto_cond|0000000000000,00|
+lista_desconto_incond|0000000000000,00|
+lista_tributa_municipio_prestador|S|
+lista_codigo_local_prestacao_servico|004106902|
+lista_codigo_tom_prestacao_servico|7535|
+lista_unidade_codigo|000000000|
+lista_unidade_quantidade|000000000000004|
+lista_unidade_valor_unitario|0000000000010,00|
+lista_codigo_item_lista_servico|000001401|
+lista_descritivo|BALANCEAMENTO DE RODA 13/14|
+lista_aliquota_item_lista_servico|0000000000005.00|
+lista_situacao_tributaria|001|
+lista_valor_tributavel|0000000000080,00|
+lista_valor_deducao|0000000000000,00|
+lista_valor_issrf|0000000000000,00|
+lista_valor_iss|0000000000004,00|
+lista_desconto_cond|0000000000000,00|
+lista_desconto_incond|0000000000000,00|

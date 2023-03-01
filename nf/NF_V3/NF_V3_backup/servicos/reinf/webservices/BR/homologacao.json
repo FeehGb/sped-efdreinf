@@ -1,0 +1,54 @@
+{
+  "1.04.00": {
+    "envioLote":{
+      "url":"https://preprodefdreinf.receita.fazenda.gov.br/WsREINF/RecepcaoLoteReinf.svc",
+      "namespace": "http://www.reinf.esocial.gov.br/schemas/envioLoteEventos/v1_04_00",
+      "servico": "envioLoteEventos",
+      "metodo": "ReceberLoteEventos",
+      "versao": "1.04.00",
+      "tag_cabecalho": "",
+      "tag_corpo": "ALTERAR_DADOS_XML",
+      "schema": {
+        "evtServTom"       : "evtTomadorServicos-v1_04_00.xsd"           ,
+        "evtTabProcesso"   : "evtTabProcesso-v1_04_00.xsd"               ,
+        "evtAssocDespRep"  : "evtRecursoRepassadoAssociacao-v1_04_00.xsd",
+        "evtAssocDespRec"  : "evtRecursoRecebidoAssociacao-v1_04_00.xsd" ,
+        "evtReabreEvPer"   : "evtReabreEvPer-v1_04_00.xsd"               ,
+        "evtServPrest"     : "evtPrestadorServicos-v1_04_00.xsd"         ,
+        "evtComProd"       : "evtInfoProdRural-v1_04_00.xsd"             ,
+        "evtCPRB"          : "evtInfoCPRB-v1_04_00.xsd"                  ,
+        "evtInfoContri"    : "evtInfoContribuinte-v1_04_00.xsd"          ,
+        "evtFechaEvPer"    : "evtFechamento-v1_04_00.xsd"                ,
+        "evtExclusao"      : "evtExclusao-v1_04_00.xsd"                  ,
+        "evtEspDesportivo" : "evtEspDesportivo-v1_04_00.xsd"              
+      },
+      "namespaces":{
+        "evtInfoContri"    : "http://www.reinf.esocial.gov.br/schemas/evtInfoContribuinte/v1_04_00",
+        "evtTabProcesso"   : "http://www.reinf.esocial.gov.br/schemas/evtTabProcesso/v1_04_00",
+        "evtServTom"       : "http://www.reinf.esocial.gov.br/schemas/evtTomadorServicos/v1_04_00",
+        "evtServPrest"     : "http://www.reinf.esocial.gov.br/schemas/evtPrestadorServicos/v1_04_00",
+        "evtAssocDespRec"  : "http://www.reinf.esocial.gov.br/schemas/evtRecursoRecebidoAssociacao/v1_04_00",
+        "evtAssocDespRep"  : "http://www.reinf.esocial.gov.br/schemas/evtRecursoRepassadoAssociacao/v1_04_00",
+        "evtComProd"       : "http://www.reinf.esocial.gov.br/schemas/evtInfoProdRural/v1_04_00",
+        "evtCPRB"          : "http://www.reinf.esocial.gov.br/schemas/evtInfoCPRB/v1_04_00",
+        "evtReabreEvPer"   : "http://www.reinf.esocial.gov.br/schemas/evtReabreEvPer/v1_04_00",
+        "evtFechaEvPer"    : "http://www.reinf.esocial.gov.br/schemas/evtFechamento/v1_04_00",
+        "evtEspDesportivo" : "http://www.reinf.esocial.gov.br/schemas/evtEspDesportivo/v1_04_00",
+        "evtExclusao"      : "http://www.reinf.esocial.gov.br/schemas/evtExclusao/v1_04_00",
+        "evtPgtosDivs"     : "ERRO NO NAMESPACE. VERIFICAR"
+      }
+    },
+    
+    
+    "consulta": {
+      "url": "https://preprodefdreinf.receita.fazenda.gov.br/WsReinfConsultas/ConsultasReinf.svc",
+      "namespace": "http://www.reinf.esocial.gov.br/schemas/ConsultasReinf/v1_04_00",
+      "servico": "ConsultasReinf",
+      "metodo": "ConsultaInformacoesConsolidadas",
+      "versao": "1.04.00",
+      "schema": "",
+      "tag_cabecalho": "",
+      "tag_corpo": "<sped:ConsultaInformacoesConsolidadas><sped:tipoInscricaoContribuinte>ALTERAR_TP_INSC</sped:tipoInscricaoContribuinte><sped:numeroInscricaoContribuinte>ALTERAR_NR_INSC</sped:numeroInscricaoContribuinte><sped:numeroProtocoloFechamento>ALTERAR_NR_RECIBO</sped:numeroProtocoloFechamento></sped:ConsultaInformacoesConsolidadas>"
+    }
+  }
+}

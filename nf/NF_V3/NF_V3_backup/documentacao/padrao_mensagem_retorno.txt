@@ -1,0 +1,10 @@
+[ Padrões de mensagens de retorno ] (ainda nao implementado com cobol)
+Os programas cobol precisam ler um arquivo txt para buscar as informações de retorno, mas também é necessário abrir manualmente o arquivo,para resolução de problemas. Por este motivo, foi alterado a forma de gerar os arquivos de retorno, segundo as regras abaixo:
+  - O arquivo será gravado em formato txt, possuindo o sufixo "-retorno" após nomenclatura usada no serviço. 
+  	EX: <chave>-consulta-retorno.txt
+  - Não deve haver quebra de linhas dentro do arquivo, com exceção de arquivos com múltiplos retornos.
+  - O separador de campos é o caracter "|"" (pipe)
+  - Cada campo é composto por chave e valor,separados por "::"
+  	Nenhum campo deve ficar sem chave, mesmo quando o retorno do valor é vazio.
+  	EX chave/valor:            cStat::123|xMotivo::Motivo webservice: descricao
+  	EX chave com valor vazio:  chave1::123|chave vazia::|chave3::123

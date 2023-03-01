@@ -1,0 +1,249 @@
+<?php
+/**
+ * @name      	CEncerrar
+ * @version   	alfa
+ * @copyright	2013 &copy; Softdib
+ * @author    	Guilherme Silva
+ * @description Classe elaborada para efetuar o Encerrar
+ * @TODO 		Fazer tudo
+*/
+
+/**
+ * @import 
+ */
+
+ require_once(__ROOT__."/libs/MDFeNFePHP.class.php");
+// require_once("/var/www/html/nf/nfe/novo/control/CIntegracaoERP.php");
+ require_once(__ROOT__."/model/MMDFe.php");
+ require_once(__ROOT__."/model/MEvento.php");
+ require_once(__ROOT__."/model/MCritica.php");
+ require_once(__ROOT__."/model/MContribuinte.php");
+ require_once(__ROOT__."/model/MLote.php");
+ require_once(__ROOT__."/model/MLog.php");
+ require_once("CBackup.php");
+/**
+ * @class CCancelar
+ */ 
+class CEncerrar{
+
+/*
+ * Atributos da Classe
+ */
+	public $cnpj;
+	public $ambiente;
+	public $numero;
+	public $serie;
+	public $chave;
+	public $protocolo;
+	public $justificativa;
+	public $contingencia;
+	public $cMun;
+	
+	public $statusLote;
+	public $motivoLote;
+	
+	public $usuario;
+	public $modelo="55";
+ 	
+	public $mensagemErro = "";
+
+	private $grupo;
+	
+// Construtor inserido par gerar setar o grupo que instancia a classe
+	function __construct($pGrupo="") {
+    	$this->grupo = $pGrupo;
+	}
+
+/**
+ * @class CWebService
+ * @autor Guilherme Silva
+ * @TODO  Fazer tudo e testar tudo
+ */
+ 
+	public function mEncerrarMDFe(){
+		$MEvento 		= new MEvento($this->grupo);
+		$MLote 			= new MLote($this->grupo);
+		$MContribuinte	= new MContribuinte($this->grupo);
+		$MMDFe			= new MMDFe($this->grupo);
+		$MCritica 		= new MCritica($this->grupo);
+		$MLog 			= new MLog($this->grupo);
+
+		// Seleciona as informações do Contribuinte
+		$MContribuinte->cnpj 		= $this->cnpj;
+		$MContribuinte->ambiente 	= $this->ambiente;
+		$returnContribuinte 		= $MContribuinte->selectCNPJAmbiente();
+
+		if(!$returnContribuinte){
+			$this->mensagemErro = $MContribuinte->mensagemErro;
+			return false;
+		}
+
+		// Seleciona as informações da Nota Fiscal
+		$MMDFe->cnpj		= $this->cnpj;
+		$MMDFe->numero		= $this->numero;
+		$MMDFe->serie		= $this->serie;
+		$MMDFe->ambiente	= $this->ambiente;
+		
+		$returnMDFe = $MMDFe->selectAllMestre();
+
+		if(!$returnMDFe){
+			$this->mensagemErro = $MNotaFiscal->mensagemErro;
+			return false;
+		}
+
+		// Verifica se a Nota Fiscal ja foi Cancelada (com status de cancelamento)
+		if($returnMDFe[0]['status'] == "06"){
+			$this->mensagemErro = "CCancelar -> Esta nota nao pode ser cancelada pois jah encontra-se com status de cancelamento";
+			return false;
+		}
+		
+		// Verifica se a Nota Fiscal está com status de autorizada
+		if($returnMDFe[0]['status'] == "03" && $returnMDFe[0]['numero_protocolo'] != NULL){
+			// continue;
+		}else{
+			// Permite ir para o cancelamento notas fiscais que estão com status 02 (Aguardando Sefaz) e ativada Contigencia 03 (SCAN)
+			if($returnMDFe[0]['status'] == "02" && $returnContribuinte[0]['contigencia'] == "03"){
+				continue;
+			}else{
+				$this->mensagemErro = "CCancelar -> Esta nota nao esta habilitada para Cancelamento";
+				return false;
+			}
+		}
+		
+		$MDFeNFePHP = new MDFeNFePHP($returnContribuinte[0]);
+		if(!$MDFeNFePHP){
+			$this->mensagemErro = $MDFeNFePHP->errMsg;
+			return false;
+		}
+		$returnTools = $MDFeNFePHP->manifDest($returnMDFe[0]['chave'],'110112',$this->ambiente,$this->cMun,'2',&$aRetorno, $returnMDFe[0]['numero_protocolo']);
+		if(!$returnTools){
+			$MCritica = new MCritica($this->grupo);
+			$MCritica->cnpj					= $this->cnpj;
+			$MCritica->numero				= $this->ambiente;
+			$MCritica->serie				= $this->numero;
+			$MCritica->ambiente				= $this->serie;
+			$MCritica->codigo_referencia	= $aRetorno['cStat'];
+			$MCritica->descricao		    = $this->mensagemErro = $MDFeNFePHP->errMsg;
+			$MCritica->insert();
+			return false;
+		}
+
+		// MONTA EVENTO NA BASE DE DADOS PARA Encerramento
+		$MEvento->cnpj				= $this->cnpj;
+		$MEvento->numero			= $this->numero;
+		$MEvento->serie				= $this->serie;
+		$MEvento->ambiente			= $this->ambiente;
+		$MEvento->tipo_evento		= "4";
+		$MEvento->numero_sequencia	= "";
+		$MEvento->xml_env			= $aRetorno['xml_env'];
+		$MEvento->xml_ret			= $aRetorno['xml_ret'];
+		$MEvento->xml				= $aRetorno['xml'];
+		$MEvento->descricao			= $aRetorno['xMotivo'];
+		$MEvento->protocolo			= $aRetorno['nProt'];
+		$MEvento->data_hora			= $aRetorno['dhReceb'];
+		$MEvento->status			= $aRetorno['cStat'];
+		$MEvento->email_enviado		= "N";
+		
+		$retornoEvento = $MEvento->insert();
+		
+		if(!$retornoEvento){
+			$MCritica = new MCritica($this->grupo);
+			$MCritica->cnpj					= $this->cnpj;
+			$MCritica->numero				= $this->ambiente;
+			$MCritica->serie				= $this->numero;
+			$MCritica->ambiente				= $this->serie;
+			$MCritica->codigo_referencia	= $aRetorno['cStat'];
+			$MCritica->descricao		    = $this->mensagemErro = $MEvento->mensagemRetorno;
+			$MCritica->insert();
+			return false;
+		}
+
+		// Atualizar Nota Fiscal para 6 - Status cancelada
+		$MMDFe->cnpj 		= $this->cnpj;
+		$MMDFe->numero 		= $this->numero;
+		$MMDFe->serie		= $this->serie;
+		$MMDFe->ambiente	= $this->ambiente;
+		$MMDFe->status		= "09";
+		$MMDFe->update();
+		
+		// Integrar a resposta com o ERP
+		// Gerar arquivo de Integração com COBOL
+		$CIntegracaoERP = new CIntegracaoERP($this->grupo);
+		$arrayIntegracao['cnpj_emitente'] 		= $this->cnpj;
+		$arrayIntegracao['uf_ibge_emitente'] 	= $MDFeNFePHP->cUF;
+		$arrayIntegracao['ano_mes'] 			= date('ym');
+		$arrayIntegracao['modelo_nota'] 		= $this->modelo;
+		$arrayIntegracao['serie_nota'] 			= $this->serie;
+		$arrayIntegracao['numero_nota'] 		= $this->numero;
+		$arrayIntegracao['status'] 				= "2";
+		$arrayIntegracao['descricao_status'] 	= $aRetorno['xMotivo'];
+		$arrayIntegracao['data_hora'] 			= $aRetorno['dhReceb'];
+//		$arrayIntegracao['protocolo'] 			= $aRetorno['nProt'];
+		$CIntegracaoERP->contribuinteBase 		= $returnContribuinte[0]['diretorio_base'];
+
+		$retorno = $CIntegracaoERP->mRetornoEncerramento($returnContribuinte[0]['diretorio_integracao'],$aRetorno['dhReceb'],$arrayIntegracao);
+
+		if(!$retorno){
+			$this->mensagemErro = $CIntegracaoERP->mensagemErro;
+			$MLog->descricao = $this->mensagemErro;
+			$MLog->insert();
+			return false;
+		}		
+
+/*		// Gravar arquivo backup de nota autorizada
+		$CBackup = new CBackup($this->grupo);
+		$retBkp = $CBackup->mGuardarXml($ToolsNFePHP->arrayRetorno['xml'],$this->chave, $this->cnpjEmitente, 'canc');
+		if(!$retBkp){
+			echo $retBkp->mensagemErro;
+		}
+*/
+
+		// Instanciar Classe de LOG
+		$MLog->cnpj	= $this->cnpj;
+		$MLog->numero		= $this->numero;
+		$MLog->serir		= $this->serie;
+		$MLog->ambiente		= $this->ambiente;
+//		$MLog->data_hora	= $this-> $data_hora;
+		$MLog->evento		= "ENCERRAMENTO";
+		$MLog->usuario		= $this->usuario; // Obter o lk-usuario;
+		$MLog->descricao 	= "Encerramento efetuado com Sucesso CNPJ: ".$this->cnpj.", AMBIENTE: ".$this->ambiente.", SERIE: ".$this->serie.", NF: ".$this->numero.", JUSTIFICATIVA: ".$this->justificativa." ";
+		$MLog->insert();
+
+		// Verificar se envia mail automaticamente
+
+		$this->mensagemErro = "Encerramento Efetuado com Sucesso!";
+		return true;
+	}
+	
+	
+	public function mListarNaoEncerradas(){
+		$MContribuinte	= new MContribuinte($this->grupo);
+
+		$MDFeNFePHP = new MDFeNFePHP($returnContribuinte[0]);
+		if(!$MDFeNFePHP){
+			$this->mensagemErro = $MDFeNFePHP->errMsg;
+			return false;
+		}
+
+		$retorno = $MDFeNFePHP->mdfeConsNaoEnc($this->cnpj, $this->cMun, $this->ambiente);
+		
+		file_put_contents("/var/www/html/nf/mdfe/temp/".$this->cnpj.date('H-i-s').".txt",$retorno);
+		
+
+		return true;
+	}
+	
+	public function mBuscarMunicipios($pUf){
+		$MEvento	= new MEvento($this->grupo);
+		$pSql = "SELECT codigo_ibge, cidade FROM nfse_config.tom_cidade where uf_estado='".$pUf."' order by cidade";
+		$retorno = $MEvento->selectMestre($pSql);
+		if(!$retorno){
+			$this->mensagemErro = $MEvento->mensagemErro;
+			return false;
+		}else{
+			return $retorno;
+		}
+	}
+
+}
+?>

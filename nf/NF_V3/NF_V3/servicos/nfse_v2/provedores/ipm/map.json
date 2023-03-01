@@ -1,0 +1,132 @@
+{
+    
+    
+        "municipio"  :["Araucaria","Pinhais"]
+    ,   "uf"         :"PR"
+    ,   "producao"   :"http://sync.nfs-e.net/datacenter/include/nfw/importa_nfw/nfw_import_upload.php?eletron=1"
+    ,   "homologacao":"http://sync.nfs-e.net/datacenter/include/nfw/importa_nfw/nfw_import_upload.php?eletron=1"
+    ,   "version"    :"1.00"
+    ,   "msgns"      :""
+    ,   "soapns"     :""
+    
+    ,"response": {
+            "response_wrapped"   :{"tag":"retorno","within":false}
+        ,   "template":[
+                {"from":"retorno/numero_nfse"                                              , "to":"res_numero_lote"           , "required": false  }
+            ,   {"from":"retorno/data_nfse/$ && ` `&& retorno/hora_nfse/$"                 , "to":"res_data_recebimento"      , "required": false , "custom_value":"translate_time","action":"recepcionar" }
+            ,   {"from":"retorno/cod_verificador_autenticidade"                            , "to":"res_protocolo"             , "required": false  }
+            ,   {"from":"retorno/cod_verificador_autenticidade || retorno/mensagem/codigo/*/$ || retorno/mensagem/codigo" , "to":"res_mensagem_retorno"      , "required": false  }
+            ,   {"from":"retorno/numero_nfse"                                              , "to":"res_consulta_numero"       , "required": false  }
+            ,   {"from":"retorno/cod_verificador_autenticidade"                            , "to":"res_consulta_verificacao"  , "required": false  }
+            ,   {"from":"retorno/data_nfse/$ && ` `&& retorno/hora_nfse/$"                 , "to":"res_consulta_data_emisao"  , "required": false , "custom_value":"translate_time" ,"action":"recepcionar"}
+            ,   {"from":"retorno/data_nfse/$ && ` `&& retorno/hora_nfse/$"                 , "to":"res_data_cancelamento"     , "required": false , "custom_value":"translate_time", "action":"cancelar"}
+                
+        
+        ]
+        
+    },
+    "send":{
+        "type":"file"
+        ,"sign"      : {
+            "tags":["nfse"]
+            ,"options":{
+                    "always_add_key_value": true
+                ,   "id_attribute":"id","reference_uri":"nota"
+                }
+            , "XMLSigner" : {
+                    "signature_algorithm":"rsa-sha1"
+                ,   "c14n_algorithm":"http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                ,   "digest_algorithm":"sha1"
+            }
+        }
+    },
+    
+    "recepcionar" :{
+        "send": {
+            "xml"       :{
+                
+                "root": { "tag": "nfse", "attrs":{ "id":"nota" }}
+                ,"template": [
+                    
+                    
+                    {"default":"1"                                    ,"to":"{path}" , "custom_path_to": "homologacao_IPM", "required": false}
+                    ,{"from":"nfse/nf/controle"                       ,"to":"rps/nro_recibo_provisorio"   }
+                    ,{"default":"1"                                   ,"to":"rps/serie_recibo_provisorio" }
+                    ,{"from":"nfse/nf/data_emissao"                   ,"to":"rps/data_emissao_recibo_provisorio", "custom": "data_emissao" }
+                    ,{"from":"nfse/nf/hora_emissao"                   ,"to":"rps/hora_emissao_recibo_provisorio" }
+                    
+                    ,{"from":"nfse/nf/valor_total"                     ,"to":"nf/valor_total" }
+                    ,{"from":"nfse/nf/valor_desconto"                  ,"to":"nf/valor_desconto" }
+                    ,{"from":"nfse/nf/valor_ir"                        ,"to":"nf/valor_ir" }
+                    ,{"from":"nfse/nf/valor_inss"                      ,"to":"nf/valor_inss" }
+                    ,{"from":"nfse/nf/valor_contribuicao_social"       ,"to":"nf/valor_contribuicao_social" }
+                    ,{"from":"nfse/nf/valor_rps"                       ,"to":"nf/valor_rps" }
+                    ,{"from":"nfse/nf/valor_pis"                       ,"to":"nf/valor_pis" }
+                    ,{"from":"nfse/nf/valor_cofins"                    ,"to":"nf/valor_cofins" }
+                    ,{"from":"nfse/nf/observacao"                      ,"to":"nf/observacao" }
+                        
+                    ,{"from":"nfse/prestador/cpfcnpj"                  ,"to":"prestador/cpfcnpj" }
+                    ,{"from":"nfse/prestador/cidade"                   ,"to":"prestador/cidade" }
+                        
+                    ,{"from":"nfse/tomador/tipo"                       ,"to":"tomador/tipo" }
+                    ,{"from":"nfse/tomador/cpfcnpj"                    ,"to":"tomador/cpfcnpj" }
+                    ,{"from":"nfse/tomador/ie"                         ,"to":"tomador/ie" , "required":false}
+                    ,{"from":"nfse/tomador/nome_razao_social"          ,"to":"tomador/nome_razao_social" }
+                    ,{"from":"nfse/tomador/sobrenome_nome_fantasia"    ,"to":"tomador/sobrenome_nome_fantasia" , "required":false}
+                    ,{"from":"nfse/tomador/logradouro"                 ,"to":"tomador/logradouro" }
+                    ,{"from":"nfse/tomador/email"                      ,"to":"tomador/email" }
+                    ,{"from":"nfse/tomador/numero_residencia"          ,"to":"tomador/numero_residencia" }
+                    ,{"from":"nfse/tomador/complemento"                ,"to":"tomador/complemento" , "required":false}
+                    ,{"from":"nfse/tomador/ponto_referencia"           ,"to":"tomador/ponto_referencia", "required":false }
+                    ,{"from":"nfse/tomador/bairro"                     ,"to":"tomador/bairro" }
+                    ,{"from":"nfse/tomador/cidade"                     ,"to":"tomador/cidade" }
+                    ,{"from":"nfse/tomador/cep"                        ,"to":"tomador/cep" }
+                    ,{"from":"nfse/tomador/ddd_fone_comercial"         ,"to":"tomador/ddd_fone_comercial" }
+                    ,{"from":"nfse/tomador/fone_comercial"             ,"to":"tomador/fone_comercial" }
+                    ,{"from":"nfse/tomador/ddd_fone_residencial"       ,"to":"tomador/ddd_fone_residencial" }
+                    ,{"from":"nfse/tomador/fone_residencial"           ,"to":"tomador/fone_residencial" }
+                    ,{"from":"nfse/tomador/ddd_fax"                    ,"to":"tomador/ddd_fax" }
+                    ,{"from":"nfse/tomador/fone_fax"                   ,"to":"tomador/fone_fax" }
+                        
+                    ,{"from":"nfse/itens/lista"                        ,"to":"itens", "root": { "tag": "lista"}, "list":[
+                            
+                                {"from":"codigo_local_prestacao_servico" ,"to":"codigo_local_prestacao_servico", "custom":"toInt" }
+                            ,   {"from":"codigo_item_lista_servico" ,"to":"codigo_item_lista_servico" }
+                            ,   {"from":"descritivo" ,"to":"descritivo" }
+                            ,   {"from":"aliquota_item_lista_servico" ,"to":"aliquota_item_lista_servico" }
+                            ,   {"from":"situacao_tributaria" ,"to":"situacao_tributaria" }
+                            ,   {"from":"valor_tributavel" ,"to":"valor_tributavel" }
+                            ,   {"from":"valor_deducao" ,"to":"valor_deducao" }
+                            ,   {"from":"valor_issrf" ,"to":"valor_issrf" }
+                            ,   {"from":"tributa_municipio_prestador" ,"to":"tributa_municipio_prestador" }
+                            ,   {"from":"unidade_codigo" ,"to":"unidade_codigo" }
+                            ,   {"from":"unidade_quantidade" ,"to":"unidade_quantidade" }
+                            ,   {"from":"unidade_valor_unitario" ,"to":"unidade_valor_unitario" }
+                            
+                            
+                        ] 
+                    
+                    }
+                        
+                        
+                        
+                        
+                
+                ]
+            }
+        }
+        
+        
+        ,"response" :{
+            "result_tag":"retorno"
+        }
+        
+    },
+    "consultar":{
+    },
+    "cancelar":{
+        "response" :{
+            "result_tag":"retorno"
+        }
+    }
+}

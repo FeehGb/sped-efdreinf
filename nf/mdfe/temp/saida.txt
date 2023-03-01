@@ -1,0 +1,12 @@
+HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=0
+Content-Type: application/soap+xml; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Thu, 21 Jul 2016 14:24:13 GMT
+Content-Length: 1036
+
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Header><mdfeCabecMsg xmlns="http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcaoEvento"><cUF>41</cUF><versaoDados>1.00</versaoDados></mdfeCabecMsg></soap:Header><soap:Body><mdfeRecepcaoEventoResult xmlns="http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcaoEvento"><retEventoMDFe xmlns="http://www.portalfiscal.inf.br/mdfe" versao="1.00"><infEvento Id="ID941160000031596"><tpAmb>2</tpAmb><verAplic>RS20160520154043</verAplic><cOrgao>41</cOrgao><cStat>135</cStat><xMotivo>Evento registrado e vinculado ao MDF-e</xMotivo><chMDFe>41160709041943000137580000000017301593984250</chMDFe><tpEvento>110111</tpEvento><xEvento>Cancelamento</xEvento><nSeqEvento>1</nSeqEvento><dhRegEvento>2016-07-21T11:24:14</dhRegEvento><nProt>941160000031596</nProt></infEvento></retEventoMDFe></mdfeRecepcaoEventoResult></soap:Body></soap:Envelope>

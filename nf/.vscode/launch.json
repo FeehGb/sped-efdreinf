@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: XML2TXT",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/NF_V3/NF_V3/funcoes/xml2txt.py",
+            "console": "integratedTerminal",
+            "args":[
+                "--entrada","/home/felipe/.lixo/NFE-00001.xml",
+                "--saida","/home/felipe/.lixo/saida.txt",
+                "--type",""
+            ],
+            "args":[
+                "--entrada","/win2/fontes/roberto/43191083630053000202570010001533491100188198-procCTe.xml",
+                "--saida","/home/felipe/.lixo/saida.txt",
+                "--type",""
+            ],
+            "0":[
+                "--entrada","/home/felipe/.lixo/MDFE-000021332.xml",
+                "--saida","/home/felipe/.lixo/saida.txt",
+                "--type",""
+            ]
+            
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "argsExpansion": "none",
+            "arg__s": [
+                "/var/tmp/lixo.txt",
+                "/var/tmp/lixo.xml",
+                "/var/www/html/nf/NF_V3/NF_V3/templates/nfe2xml.json",
+                "4.00",
+                "NOTAFISCAL|A|@",
+                "Y|Z|I80"
+            ],
+            "args": [
+                "28839121000140",
+                "BR",
+                "/user/transf/28839121000140-000000000001963-1638796707.xml",
+                "/user/transf/dcte-lixo.txt",
+                "{\"versao\":\"3.00\",\"dir_retorno\":\"\/user\/transf\/\",\"dir_procCTe\":\"\/user\/transf\/\",\"dir_procEventoCTe\":\"\/user\/transf\/\"}",
+            ]
+        },
+        {
+            "name": "PHP: Arquivo Atual",
+            "type": "php",
+            "request": "launch",
+            "program": "${workspaceFolder}/NF_V3/NF_V3/interfaces/mdfe-envio.php",
+            "args": [
+                "/user/mdfe/07918416000647/CaixaEntrada/Processar/MDFE-000000001-000-20200909-113438.TXT"
+            ],
+            "sjp": [
+                "4125506",
+                "consultar",
+                "cpfcnpj=10703580000641&inscricaomunicipal=83990&ambiente=2&controle=359&protocolo=000000000071900170",
+                "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt",
+                "debug"
+            ],
+            "args__": [
+                "4125506",
+                "recepcionar",
+                "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/sjp.xml",
+                "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt",
+                "debug"
+            ],
+            "args__": [
+                "4107652",
+                "recepcionar",
+                "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/frg2.xml",
+                "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt",
+                "debug"
+            ],
+            "args__": [
+                "4107652",
+                "cancelar",
+                "cpfcnpj=10703580000722&inscricaomunicipal=176480235320&numero=2&codigomunicipio=4107652&ambiente=2&controle=3",
+                "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt",
+                "debug"
+            ],
+            "args_": [
+                "4107652",
+                "consultar",
+                "cpfcnpj=10703580000722&inscricaomunicipal=176480235320&ambiente=2&controle=000000001&protocolo=956137503529528",
+                "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt",
+                "debug"
+            ]
+        }
+    ]
+}

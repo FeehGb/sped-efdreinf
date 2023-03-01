@@ -1,0 +1,174 @@
+    {
+        
+        
+        "municipio"  :["Fazenda Rio Grande"]
+    ,   "uf"         :"PR"
+    ,   "producao"   :"http://e-gov.betha.com.br/e-nota-contribuinte-ws/nfseWS?wsdl"
+    ,   "homologacao":"http://e-gov.betha.com.br/e-nota-contribuinte-test-ws/nfseWS?wsdl"
+    ,   "version"    :"2.02"
+    ,   "soapns"     :""
+
+    ,   "send":{
+            "sign":{
+                
+                "XMLSigner" : {
+                        "signature_algorithm":"rsa-sha1"
+                    ,   "c14n_algorithm":"http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                    ,   "digest_algorithm":"sha1"
+                }
+            }
+        }
+    ,   "response": {
+                "response_wrapped"   :"return"
+            ,   "custom_replacements":[["ns1:",""],["ns2:",""]]
+            
+            ,   "template":[
+                    {"from":"{service_response}/NumeroLote"                                        ,"custom_path_from":"response_from" 
+                    , "to":"res_numero_lote"                , "required": false                        }
+                ,   {"from":"{service_response}/DataRecebimento"                                   ,"custom_path_from":"response_from" 
+                    , "to":"res_data_recebimento"         , "required": false                          }
+                ,   {"from":"{service_response}/Protocolo"                                         ,"custom_path_from":"response_from" 
+                        , "to":"res_protocolo"            , "required": false                              }
+                
+                ,   {"from":"{service_response}/ListaMensagemRetorno/MensagemRetorno"    
+                    , "custom_path_from":"response_from"       , "to":"res_mensagem_retorno"   , "custom": "mensagem_retorno", "required": false}
+                    
+                    
+                ,   {"from":"{service_response}/ListaNfse/CompNfse/Nfse/InfNfse/Numero"    
+                        , "custom_path_from":"response_from"       , "to":"res_consulta_numero" ,   "required": false}
+                        
+                ,   {"from":"{service_response}/ListaNfse/CompNfse/Nfse/InfNfse/CodigoVerificacao"    
+                        , "custom_path_from":"response_from"       , "to":"res_consulta_verificacao"   , "required": false}
+                        
+                ,   {"from":"{service_response}/ListaNfse/CompNfse/Nfse/InfNfse/DataEmissao"    
+                        , "custom_path_from":"response_from"       , "to":"res_consulta_data_emisao"  , "required": false}
+                        
+                        
+                ,   {"from":"{service_response}/RetCancelamento/NfseCancelamento/Confirmacao/DataHora"    
+                    , "custom_path_from":"response_from"       , "to":"res_data_cancelamento"  , "required": false}
+                
+            
+            ]
+            
+        }
+
+    ,   "recepcionar" :{
+            "send": {
+                "SOAPAction" :"RecepcionarLoteRpsSincrono"
+                ,"sign"      :{
+                    "tags":["LoteRps","InfDeclaracaoPrestacaoServico"]
+                ,   "options": {"reference_uri":["lote1"]}
+                
+                }
+                ,"xml"       :{
+                    
+                    "root": { "tag": "EnviarLoteRpsSincronoEnvio", "attrs":{
+                        "xmlns":"http://www.betha.com.br/e-nota-contribuinte-ws"
+                        }}
+                    ,"template": [
+                        {"from":"nfse/nf/controle"                              ,"to":"LoteRps@Id=lote1@versao=2.02/NumeroLote", "custom":"gerar_numero_lote","globalThis":"controle_rps"}
+                    ,   {"from":"nfse/prestador/cpfcnpj"                        ,"to":"LoteRps/CpfCnpj/Cnpj"                    }
+                    ,   {"from":"nfse/prestador/inscricaomunicipal"             ,"to":"LoteRps/InscricaoMunicipal"              }
+                    ,   {"default":"1"                                          ,"to":"LoteRps/QuantidadeRps"                   }
+                    
+                    
+                    ,   {"from":"nfse"                                          ,"to":"LoteRps/ListaRps","root": { "tag": "Rps"}, "list":[
+                        
+                            {"from":"nf/controle"                               ,"to":"InfDeclaracaoPrestacaoServico@Id={reference}/Rps/IdentificacaoRps/Numero", "custom_path_to": "identificador_rps"}
+                        ,   {"from":"nf/serie"                                  ,"to":"InfDeclaracaoPrestacaoServico/Rps/IdentificacaoRps/Serie"}
+                        ,   {"default":"1"                                      ,"to":"InfDeclaracaoPrestacaoServico/Rps/IdentificacaoRps/Tipo"}
+                        ,   {"default":""                                       ,"to":"InfDeclaracaoPrestacaoServico/Rps/DataEmissao"            , "by_type": "date_now","mask":"%Y-%m-%d"  }
+                        ,   {"default":"1"                                      ,"to":"InfDeclaracaoPrestacaoServico/Rps/Status"               }
+                        ,   {"from":"nf/data_emissao"                           ,"to":"InfDeclaracaoPrestacaoServico/Competencia", "rever":true}
+                        ,   {"from":"nf/valor_total"                            ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/ValorServicos"}
+                        ,   {"from":"nf/valor_pis"                              ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/ValorPis", "required":false}
+                        ,   {"default":""                                       ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/ValorDeducoes", "required":false}
+                        ,   {"from":"nf/valor_cofins"                           ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/ValorCofins", "required":false}
+                        ,   {"from":"nf/valor_inss"                             ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/ValorInss", "required":false}
+                        ,   {"from":"nf/valor_ir"                               ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/ValorIr", "required":false}
+                        ,   {"from":"nf/valor_contribuicao_social"              ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/ValorCsll", "required":false}
+                        ,   {"default":"0"                                      ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/OutrasRetencoes", "required":false}
+                        ,   {"from":"total/valor_iss"                           ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/ValorIss", "required":false}
+                        ,   {"from":"total/aliquota_item_lista_servico"         ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/Aliquota", "required":false}
+                        ,   {"from":"total/desconto_incond"                     ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/DescontoIncondicionado", "required":false}
+                        ,   {"from":"total/desconto_cond"                       ,"to":"InfDeclaracaoPrestacaoServico/Servico/Valores/DescontoCondicionado", "required":false}
+                        ,   {"from":"total/iss_retido"                          ,"to":"InfDeclaracaoPrestacaoServico/Servico/IssRetido"                                                                                  }
+                        ,   {"from":"total/codigo_item_lista_servico"           ,"to":"InfDeclaracaoPrestacaoServico/Servico/ItemListaServico"}
+                        ,   {"from":"prestador/cnae"                            ,"to":"InfDeclaracaoPrestacaoServico/Servico/CodigoTributacaoMunicipio"}
+                        ,   {"from":"itens/lista/descritivo/$ && `{lineBreak}` && nf/observacao/$ || itens/lista/[0:]`{lineBreak}`/descritivo/$ && `{lineBreak}`  && nf/observacao/$"     ,  "custom_value": "break_line", "pattern":"\\s\n"                         
+                                                                                ,"to":"InfDeclaracaoPrestacaoServico/Servico/Discriminacao"}
+                        ,   {"from":"total/codigo_local_prestacao_servico"      ,"to":"InfDeclaracaoPrestacaoServico/Servico/CodigoMunicipio"}
+                        ,   {"default":""                                       ,"to":"InfDeclaracaoPrestacaoServico/Servico/CodigoPais" , "required":false}
+                        ,   {"default":"1"                                      ,"to":"InfDeclaracaoPrestacaoServico/Servico/ExigibilidadeISS"}
+                        ,   {"from":"prestador/cidade"                          ,"to":"InfDeclaracaoPrestacaoServico/Servico/MunicipioIncidencia" , "required":false}
+                        ,   {"from":"prestador/cpfcnpj"                         ,"to":"InfDeclaracaoPrestacaoServico/Prestador/CpfCnpj/Cnpj"}
+                        ,   {"from":"prestador/inscricaomunicipal"              ,"to":"InfDeclaracaoPrestacaoServico/Prestador/InscricaoMunicipal"}
+                        
+                        ,   {"from":"tomador/cpfcnpj"                           ,"to":"InfDeclaracaoPrestacaoServico/Tomador/IdentificacaoTomador/CpfCnpj/{tipo}" ,"custom_path_to": "tipo_pessoa_tomador_path", "custom": "cpfcnpj"}
+                        ,   {"from":"tomador/nome_razao_social"                 ,"to":"InfDeclaracaoPrestacaoServico/Tomador/RazaoSocial"}
+                        ,   {"from":"tomador/logradouro"                        ,"to":"InfDeclaracaoPrestacaoServico/Tomador/Endereco/Endereco"}
+                        ,   {"from":"tomador/numero_residencia"                 ,"to":"InfDeclaracaoPrestacaoServico/Tomador/Endereco/Numero"}
+                        ,   {"from":"tomador/bairro"                            ,"to":"InfDeclaracaoPrestacaoServico/Tomador/Endereco/Bairro"}
+                        ,   {"from":"tomador/cidade"                            ,"to":"InfDeclaracaoPrestacaoServico/Tomador/Endereco/CodigoMunicipio"}
+                        ,   {"from":"tomador/estado"                            ,"to":"InfDeclaracaoPrestacaoServico/Tomador/Endereco/Uf"}
+                        ,   {"from":"tomador/cep"                               ,"to":"InfDeclaracaoPrestacaoServico/Tomador/Endereco/Cep"}
+                        ,   {"from":"tomador/ddd_fone_residencial/$ && tomador/fone_residencial/$"  , "trim": true
+                                                                                ,"to":"InfDeclaracaoPrestacaoServico/Tomador/Contato/Telefone", "required":false}
+                        ,   {"from":"tomador/email"                             ,"to":"InfDeclaracaoPrestacaoServico/Tomador/Contato/Email" ,"required":false  }
+                        
+                        ,   {"default":""                                       ,"to":"InfDeclaracaoPrestacaoServico/Intermediario/IdentificacaoIntermediario/CpfCnpj/Cnpj","required":false   }
+                        ,   {"default":""                                       ,"to":"InfDeclaracaoPrestacaoServico/Intermediario/IdentificacaoIntermediario/InscricaoMunicipal", "required":false   }
+                        ,   {"default":""                                       ,"to":"InfDeclaracaoPrestacaoServico/Intermediario/RazaoSocial", "required":false   }
+                        
+                        ,   {"default":""                                       ,"to":"InfDeclaracaoPrestacaoServico/ConstrucaoCivil/CodigoObra", "required":false   }
+                        ,   {"default":""                                       ,"to":"InfDeclaracaoPrestacaoServico/ConstrucaoCivil/Art", "required":false   }
+                        
+                        ,   {"default":"1"                                      ,"to":"InfDeclaracaoPrestacaoServico/RegimeEspecialTributacao"}
+                        ,   {"from":"prestador/optantesimples"                  ,"to":"InfDeclaracaoPrestacaoServico/OptanteSimplesNacional"}
+                        ,   {"default":"2"                                      ,"to":"InfDeclaracaoPrestacaoServico/IncentivoFiscal", "rever":true}
+                        
+                        ]}
+                    
+                    ]
+                }
+            }
+            
+        ,   "response" :{
+                "result_tag":"EnviarLoteRpsSincronoResposta"
+                ,   "template":[
+                    {"from":"{service_response}/ListaNfse/CompNfse/Nfse/InfNfse/OutrasInformacoes || {service_response}/ListaMensagemRetorno/MensagemRetorno"    
+                        , "custom_path_from":"response_from"       , "to":"res_mensagem_retorno", "required": true, "custom": "consulta_retorno"}
+                ]
+            }
+        
+    },
+    "consultar":{
+        "send":{
+            "SOAPAction":"ConsultarLoteRps"
+            ,"sign"   : false
+            
+        }
+        ,"response":{
+                "result_tag":"ConsultarLoteRpsResposta"
+            ,   "template":[
+                {"from":"{service_response}/ListaNfse/CompNfse/Nfse/InfNfse/OutrasInformacoes || {service_response}/ListaMensagemRetorno/MensagemRetorno"    
+                    , "custom_path_from":"response_from"       , "to":"res_mensagem_retorno", "required": true, "custom": "consulta_retorno"}
+            ]
+        }
+    },
+    "cancelar":{
+        "send": {
+                "SOAPAction":"CancelarNfse"
+            ,   "sign"      :{
+                    "tags":["InfPedidoCancelamento"]
+                ,   "options": {"reference_uri":["1"]}
+            
+            }
+        }
+        ,   "response":{
+                "result_tag":"CancelarNfseResposta"
+        }
+        
+        
+    }
+}

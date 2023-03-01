@@ -1,0 +1,14 @@
+{
+	"1.01":{
+		"consulta":{
+			"url" : "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx",
+			"namespace" : "http://www.portalfiscal.inf.br/nfe/wsdl/NFeDistribuicaoDFe/nfeDistDFeInteresse",
+			"servico" : "NFeDistribuicaoDFe",
+			"metodo": "nfeDistDFeInteresse",
+			"versao" : "1.00",
+			"schema" : "distDFeInt_v1.01.xsd",
+			"tag_cabecalho" : "",
+			"tag_corpo" : "<nfeDistDFeInteresse xmlns='http://www.portalfiscal.inf.br/nfe/wsdl/NFeDistribuicaoDFe'><nfeDadosMsg><distDFeInt versao='1.01' xmlns='http://www.portalfiscal.inf.br/nfe'><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><cUFAutor>ALTERAR_CUF_AUTOR</cUFAutor><ALTERAR_TIPO_CLIENTE>ALTERAR_NUMERO_CLIENTE</ALTERAR_TIPO_CLIENTE>ALTERAR_TAG_BUSCA</distDFeInt></nfeDadosMsg></nfeDistDFeInteresse>"
+		}
+	}
+}

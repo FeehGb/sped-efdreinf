@@ -1,0 +1,142 @@
+<?php
+/**
+ * @name      	CBackup
+ * @version   	alfa
+ * @copyright	2015 &copy; Softdib
+ * @author    	Guilherme Pinto
+ * @description Classe que efetua a guarda do XML em arquivo de backup
+*/
+
+/**
+ * @class CBackup
+ */ 
+class CBackup{
+
+/*
+ * Atributos da Classe
+ */
+	public $mensagemErro = "";
+	
+/**
+ * @method mSubmeterLote
+ * @autor Guilherme Pinto
+ */
+	public function mGuardarXml($xml_proc_file, $pXml, $pXml_envio, $pChave, $pCnpj, $pTipo){
+
+		$array_xml_ret = explode("retEvento", $pXml);
+		$array_xml_proc = explode("retEvento", $xml_proc_file);
+
+
+		//print_r($array_xml_ret); echo "\n\n";
+		//print_r($array_xml_proc); echo "\n\n";
+
+		$xml_final = $array_xml_ret[0]."retEvento".$array_xml_proc[1]."retEvento".$array_xml_ret[2];
+		// É que de noite voce só tem a sexta para que possamos nos encontrar, e de dia eu não posso, haha Dai vamos ter que esperar sexta que vem.
+
+		$xmlDNFe = new DOMDocument('1.0', 'utf-8');
+        $xmlDNFe->formatOutput = false;
+        $xmlDNFe->preserveWhiteSpace = false;
+        $xmlDNFe->loadXML($pXml, LIBXML_NOBLANKS | LIBXML_NOEMPTYTAG);
+
+        if (($pTipo == 'cc') ||
+            ($pTipo == 'canc') ||
+            ($pTipo == 'inut') ||
+            ($pTipo == 'inutc') ||
+            ($pTipo == 'cancc'))
+        {
+			$localDia = "03";
+			$localMes = date("m");
+			$localAno = date("Y");
+        } 
+        else
+        {			
+			$infProt = $xmlDNFe->getElementsByTagName("infProt")->item(0);        
+        	$dhRecbto = !empty($infProt->getElementsByTagName('dhRecbto')->item(0)->nodeValue) ? $infProt->getElementsByTagName('dhRecbto')->item(0)->nodeValue : '';       	
+
+			$data = explode("T", $dhRecbto);
+			$aData = explode("-", $data[0]);
+			$localAno = $aData[0];
+			$localMes = $aData[1];
+			$localDia = $aData[2];
+		}
+
+		/*		
+		$localDia = date("d");
+		$localMes = date("m");
+		$localAno = date("Y");
+		*/
+
+		// Obter a pasta raiz para a guarda / backup 
+		
+		$diretorioBackup = "/user/nfe/".$pCnpj."/RET/";
+		
+		// Verifica se o diretorio backup existe, caso nao tentar cria-lo
+		if(!is_dir($diretorioBackup)){
+			if(!mkdir($diretorioBackup)){
+				$this->mensagemErro = "CBackup ->mGuardarXml: Falha ao criar o diretorio ".$retorno['diretorio_backup']." crie manualmente ou verifique as permissoes";
+				return false;
+			}
+		}
+
+		// Verifica se o diretorio backup + ANO existe, caso nao tentar cria-lo
+		if(!is_dir($diretorioBackup.$localAno."/")){
+			if(!mkdir($diretorioBackup.$localAno."/")){
+				$this->mensagemErro = "CBackup ->mGuardarXml: Falha ao criar o diretorio ".$diretorioBackup.$localAno."/"." crie manualmente ou verifique as permissoes";
+				return false;
+			}
+		}
+		
+		// Verifica se o diretorio backup + ANO + MES existe, caso nao tentar cria-lo
+		if(!is_dir($diretorioBackup.$localAno."/".$localMes."/")){
+			if(!mkdir($diretorioBackup.$localAno."/".$localMes."/")){
+				$this->mensagemErro = "CBackup ->mGuardarXml: Falha ao criar o diretorio ".$diretorioBackup.$localAno."/".$localMes."/"." crie manualmente ou verifique as permissoes";
+				return false;
+			}
+		}
+		
+		// Verifica se o diretorio backup + ANO + MES + DIA existe, caso nao tentar cria-lo
+		if(!is_dir($diretorioBackup.$localAno."/".$localMes."/".$localDia."/")){
+			if(!mkdir($diretorioBackup.$localAno."/".$localMes."/".$localDia."/")){
+				$this->mensagemErro = "CBackup ->mGuardarXml: Falha ao criar o diretorio ".$diretorioBackup.$localAno."/".$localMes."/".$localDia."/"." crie manualmente ou verifique as permissoes";
+				return false;
+			}
+		}
+
+		switch($pTipo){
+			case "nfe";
+				$localExtension = "-procNFe.xml";
+			break;
+			case "cc":
+				$localExtension = "-procCCeNFe.xml";
+			break;
+			case "canc":
+				$localExtension = "-procCanNFe.xml";
+			break;
+			case "inut":
+				$localExtension = "-procInutNFe.xml";
+			break;
+            case "nfc";
+				$localExtension = "-procNFC.xml";
+			break;
+			case "cancc":
+				$localExtension = "-procCanNFC.xml";
+			break;
+			case "inutc":
+				$localExtension = "-procInutNFC.xml";
+			break;
+			default:
+				$localExtension = $pTipo.".xml";
+			break;
+		}
+
+
+
+		if(!file_put_contents($diretorioBackup.$localAno."/".$localMes."/".$localDia."/".$pChave.$localExtension,$xml_final)){
+			$this->mensagemErro = "CBackup ->mGuardarXml: Falha ao criar o arquivo ".$diretorioBackup.$localAno."/".$localMes."/".$localDia."/"." crie manualmente ou verifique as permissoes";
+			return false;
+		}
+
+
+	}
+}
+?>

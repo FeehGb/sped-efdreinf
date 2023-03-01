@@ -1,0 +1,189 @@
+
+*** These modified files were found in JOE when it aborted on Sat Dec  3 13:11:50 2016
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+SNF8
+.PHP
+.php
+.php
+.php
+.php
+.php
+.php
+.PHP
+.php
+
+*** File '(Unnamed)'
+CNFS-000006633-F-20160704-135042.txt
+CNFS-teste-CAMPOMAGRO.txt
+CNFSR-000008770-F-20160414-140938.txt
+TVE436S-20160525-151737.xml
+TVE436S-20160822-083244.xml
+TVE436S-20160822-083244.xml
+TVE436S-20160822-083244.xml
+TVE436S-20160822-083244.xml
+TVE436S-20160822-083244.xml
+TVE436S-20160822-083244.xml
+CXml.php
+CXml.php
+
+*** These modified files were found in JOE when it aborted on Sat Dec  3 15:35:08 2016
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+				// Curitiba/
+				case 4106902:
+					file_put_contents("/var/tmp/nfse.log","Curitiba} \n\n", FILE_APPEND);
+					$CCuritiba = new CCuritiba($this->grupo);
+					$CCuritiba->ibge = $this->codigoIBGE;
+					$cancelamento = true;
+					$envio = true;
+
+					if($pCancelamento == "C")
+					{
+						$cancelamento = $CCuritiba->cancelarRPS($this->prestadorCnpj, $this->numeroControle, $pDiretorio, $pChamada, $pDadosTXT, $ambiente);
+					}
+					else
+					{
+						$envio = $CCuritiba->enviarRPS($this->prestadorCnpj, $this->numeroControle, $pDiretorio, $pChamada, $pDadosTXT, $ambiente, $xml);
+					}
+
+					$this->codEmpresa = $CCuritiba->codEmpresa;
+					$this->codFilial = $CCuritiba->codFilial;
+					$this->numeroControle = $CCuritiba->numeroControle;
+					$this->numeroNota = $CCuritiba->numeroNota;
+					$this->serieNota = $CCuritiba->serieNota;
+					$this->status = $CCuritiba->status;
+					$this->criticas = $CCuritiba->criticas;
+					$this->protocolo = $CCuritiba->protocolo;
+					$this->codigoVerificacao = $CCuritiba->codigoVerificacao;
+					$this->nroRps = $CCuritiba->nroRps;
+
+					if($pChamada == "COBOL")
+					{
+						if($pCancelamento == "C")
+						{
+							$conteudo_arquivo_retorno = "";
+							$conteudo_arquivo_retorno .= trim($this->prestadorCnpj)."|";
+							$conteudo_arquivo_retorno .= trim($this->codigoIBGE)."|";
+							$conteudo_arquivo_retorno .= trim(date("Ym"))."||";
+							$conteudo_arquivo_retorno .= trim($this->serieNota)."|";
+							$conteudo_arquivo_retorno .= trim($this->numeroNota)."|";
+							$conteudo_arquivo_retorno .= trim($this->status)."|";
+							$conteudo_arquivo_retorno .= trim($this->criticas)."||||";
+							file_put_contents($pDiretorio, $conteudo_arquivo_retorno);
+						}
+						else
+						{
+							$saidaArquivo = "";
+							$saidaArquivo .= $CCuritiba->numeroNota."|".$CCuritiba->numeroControle."|".$CCuritiba->status."|";
+							$saidaArquivo .= $CCuritiba->criticas."|";
+							$saidaArquivo .= $CCuritiba->nroRps."|".$CCuritiba->codigoVerificacao."|".$CCuritiba->protocolo."|";
+							file_put_contents($pDiretorio, $saidaArquivo);
+						}
+	
+						return true;
+					}
+					else
+					{
+						if($cancelamento == false || $envio == false){
+							return false;
+						}
+					}
+
+				break;
+
+*** File '(Unnamed)'
+CCampoMagro
+
+*** File '(Unnamed)'
+.php
+.php
+.php
+.php
+.php
+.php
+.PHP
+.php
+efetuarEntradaArquivo
+$xml
+comunicar
+Curitiba
+Campo Ma
+CCuritiba
+CCampoMagro
+
+*** File '(Unnamed)'
+IntegradorNovo.php
+IntegradorNovo.php
+IntegradorNovo.php
+CArquivoComunicacao.php
+IntegradorNovo.php
+IntegradorNovo.php
+IntegradorNovo.php
+IntegradorNovo.php
+IntegradorNovo.php
+IntegradorNovo.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+CComunicadorWebService.php
+
+*** These modified files were found in JOE when it aborted on Sat Dec  3 20:58:28 2016
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Tue Jan 24 16:15:53 2017
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Tue Jan 24 17:24:28 2017
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+ 
+ 
+//
+//
+                 $CEmpresa->cnpj = $this->prestadorCNPJ;     
+
+*** File '(Unnamed)'
+cancelar
+gro2
+xmlEnv
+cancelar
+cancelar
+email
+enviar
+CEmail
+xmlEntrada
+efetuarEntra
+CCuritiba
+Curitiba
+CCuritiba
+CCuritiba
+CampoMa
+
+*** File '(Unnamed)'
+CCuritiba.php
+CCuritiba.php
+CCuritiba.php
+CCuritiba.php
+CCuritiba.php
+gravarNoticia.php
+MBd.class.php
+Integrador.php
+IntegradorNovo.php
+CArquivoComunicacao.php
+CComunicadorWebService.php
+
+*** These modified files were found in JOE when it aborted on Wed Jan 25 12:17:43 2017
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Sat Jan 28 05:05:26 2017
+*** JOE was aborted because the terminal closed

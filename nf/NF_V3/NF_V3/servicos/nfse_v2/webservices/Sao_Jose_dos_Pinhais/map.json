@@ -1,0 +1,143 @@
+{
+    
+    
+        "municipio"  :"Sao Jose Dos Pinhais"
+    ,   "uf"         :"PR"
+    ,   "producao"   :"https://nfe.sjp.pr.gov.br/servicos/issOnline2/ws/index.php?wsdl"
+    ,   "homologacao":"https://nfe.sjp.pr.gov.br/servicos/issOnline2/homologacao/ws/index.php?wsdl"
+    ,   "version"    :"3.00"
+    ,   "msgns"      :"http:\/\/nfe.sjp.pr.gov.br\/tipos_v03.xsd"
+    ,   "soapns"     :""
+    
+    ,"response": {
+            "response_wrapped"   :"return"
+        ,   "custom_replacements":[["&lt;","<"], ["&gt;",">"],["&quot;","\""],["ns1:",""],["ns2:",""],["ns3:",""]]
+        
+        ,   "template":[
+                {"from":"{service_response}/NumeroLote"                                        ,"custom_path_from":"response_from" 
+                , "to":"res_numero_lote"                , "required": false                        }
+            ,   {"from":"{service_response}/DataRecebimento"                                   ,"custom_path_from":"response_from" 
+                , "to":"res_data_recebimento"         , "required": false                          }
+            ,   {"from":"{service_response}/Protocolo"                                         ,"custom_path_from":"response_from" 
+                    , "to":"res_protocolo"            , "required": false                              }
+            
+            ,   {"from":"{service_response}/ListaMensagemRetorno/MensagemRetorno"    
+                , "custom_path_from":"response_from"       , "to":"res_mensagem_retorno"   , "custom": "mensagem_retorno", "required": false}
+                
+                
+            ,   {"from":"{service_response}/ListaNfse/CompNfse/Nfse/InfNfse/Numero"    
+                    , "custom_path_from":"response_from"       , "to":"res_consulta_numero" ,   "required": false}
+                    
+            ,   {"from":"{service_response}/ListaNfse/CompNfse/Nfse/InfNfse/CodigoVerificacao"    
+                    , "custom_path_from":"response_from"       , "to":"res_consulta_verificacao"   , "required": false}
+                    
+            ,   {"from":"{service_response}/ListaNfse/CompNfse/Nfse/InfNfse/DataEmissao"    
+                    , "custom_path_from":"response_from"       , "to":"res_consulta_data_emisao"  , "required": false}
+                    
+            ,   {"from":"{service_response}/ListaNfse/CompNfse/NfseCancelamento/Confirmacao/InfConfirmacaoCancelamento/DataHora"    
+                    , "custom_path_from":"response_from"       , "to":"res_data_cancelamento"  , "required": false}
+                    
+            
+        
+        ]
+        
+    },
+    
+    "send":{
+        "sign":{
+                
+            "XMLSigner" : {
+                    "signature_algorithm":"rsa-sha1"
+                ,   "c14n_algorithm":"http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+                ,   "digest_algorithm":"sha1"
+            }
+        }
+    },
+    
+    "recepcionar" :{
+        "send": {
+            "SOAPAction" :"RecepcionarLoteRpsV3"
+        ,   "sign"      :{
+                    "tags":["LoteRps"]
+                ,   "options": {"reference_uri":"1"}
+            }
+        ,   "xml" :{
+                
+                "root": { "tag": "EnviarLoteRpsEnvio", "attrs":{
+                    "xmlns":"http://nfe.sjp.pr.gov.br/servico_enviar_lote_rps_envio_v03.xsd"
+                }}
+                ,"template": [
+                    {"from":"nfse/nf/controle"                            ,"to":"LoteRps@Id=1/NumeroLote@xmlns='http://nfe.sjp.pr.gov.br/tipos_v03.xsd'", "_custom_path_to": "controle_rps"}
+                ,   {"from":"nfse/prestador/cpfcnpj"                      ,"to":"LoteRps/Cnpj@xmlns='http://nfe.sjp.pr.gov.br/tipos_v03.xsd'"              }
+                ,   {"from":"nfse/prestador/inscricaomunicipal"           ,"to":"LoteRps/InscricaoMunicipal@xmlns='http://nfe.sjp.pr.gov.br/tipos_v03.xsd'"}
+                ,   {"default":"1"                                        ,"to":"LoteRps/QuantidadeRps@xmlns='http://nfe.sjp.pr.gov.br/tipos_v03.xsd'"}
+                ,   {"from":"nfse/nf/controle"                            ,"to":"LoteRps/ListaRps@xmlns='http://nfe.sjp.pr.gov.br/tipos_v03.xsd'/Rps/InfRps@Id=2/IdentificacaoRps/Numero", "_custom_path_to": "controle_rps"}
+                ,   {"from":"nfse/nf/serie"                               ,"to":"LoteRps/ListaRps/Rps/InfRps/IdentificacaoRps/Serie"}
+                ,   {"default":"1"                                        ,"to":"LoteRps/ListaRps/Rps/InfRps/IdentificacaoRps/Tipo"}
+                ,   {"default":""                                         ,"to":"LoteRps/ListaRps/Rps/InfRps/DataEmissao"            , "custom":"datetime_now"                                                                         }
+                ,   {"from":"nfse/total/situacao_tributaria"              ,"to":"LoteRps/ListaRps/Rps/InfRps/NaturezaOperacao"}
+                ,   {"default":"1"                                        ,"to":"LoteRps/ListaRps/Rps/InfRps/RegimeEspecialTributacao"}
+                ,   {"from":"nfse/prestador/optantesimples"               ,"to":"LoteRps/ListaRps/Rps/InfRps/OptanteSimplesNacional"}
+                ,   {"from":"nfse/prestador/incentivadorcultural"         ,"to":"LoteRps/ListaRps/Rps/InfRps/IncentivadorCultural"}
+                ,   {"default":"1"                                        ,"to":"LoteRps/ListaRps/Rps/InfRps/Status"}
+                ,   {"from":"nfse/nf/valor_total"                         ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorServicos"}
+                ,   {"from":"nfse/nf/valor_contribuicao_social"           ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorCsll"}
+                ,   {"from":"nfse/total/iss_retido"                       ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/IssRetido" , "globalThis": "IssRetido"}
+                ,   {"from":"nfse/total/valor_iss"                        ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorIss"}
+                ,   {"from":"nfse/total/valor_issrf"                      ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorIssRetido" ,"custom_path_to": "valoriss_retido"}
+                ,   {"default":""                                         ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/OutrasRetencoes", "required":false}
+                ,   {"from":"nfse/total/valor_tributavel"                 ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/BaseCalculo"}
+                ,   {"from":"nfse/total/aliquota_item_lista_servico"      ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/Aliquota"}
+                ,   {"from":"nfse/nf/valor_total"                         ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorLiquidoNfse"}
+                ,   {"from":"nfse/total/codigo_item_lista_servico"        ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/ItemListaServico"}
+                ,   {"from":"nfse/total/codigo_tributacao_municipio"      ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/CodigoTributacaoMunicipio"}
+                ,   {"from":"nfse/itens/lista/descritivo/$ && `{lineBreak}` && nfse/nf/observacao/$ || nfse/itens/lista/[0:]`{lineBreak}`/descritivo/$ && `{lineBreak}`  && nfse/nf/observacao/$"     ,  "custom_value": "break_line"
+                                                                            ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Discriminacao"}
+                ,   {"from":"nfse/total/codigo_local_prestacao_servico"   ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/CodigoMunicipio"}
+                ,   {"from":"nfse/prestador/cpfcnpj"                      ,"to":"LoteRps/ListaRps/Rps/InfRps/Prestador/Cnpj" }
+                ,   {"from":"nfse/prestador/inscricaomunicipal"           ,"to":"LoteRps/ListaRps/Rps/InfRps/Prestador/InscricaoMunicipal"}
+                ,   {"from":"nfse/tomador/cpfcnpj"                        ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/IdentificacaoTomador/CpfCnpj/{tipo}" ,"custom_path_to": "tipo_pessoa_tomador_path", "custom": "cpfcnpj"}
+                ,   {"from":"nfse/tomador/inscricaomunicipal"             ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/IdentificacaoTomador/InscricaoMunicipal", "required":false}
+                ,   {"from":"nfse/tomador/nome_razao_social"              ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/RazaoSocial"}
+                ,   {"from":"nfse/tomador/logradouro"                     ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Endereco"}
+                ,   {"from":"nfse/tomador/numero_residencia"              ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Numero"}
+                ,   {"from":"nfse/tomador/bairro"                         ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Bairro"}
+                ,   {"from":"nfse/tomador/cidade"                         ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/CodigoMunicipio"}
+                ,   {"from":"nfse/tomador/estado"                         ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Uf"}
+                ,   {"from":"nfse/tomador/cep"                            ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Cep"}
+                ,   {"from":"nfse/tomador/ddd_fone_residencial/$ && nfse/tomador/fone_residencial/$"  , "trim":true
+                                                                          ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Contato/Telefone"}
+                ,   {"from":"nfse/tomador/email"                          ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Contato/Email"   }
+                
+                ]
+            }
+        }
+        
+        
+        ,"response" :{
+            "result_tag":"EnviarLoteRpsResposta"
+        }
+        
+    },
+    
+    "consultar":{
+        "send":{
+            "SOAPAction":"ConsultarLoteRpsV3"
+            ,"sign"  :{"tags":["ConsultarLoteRpsEnvio"]}
+        }
+        ,"response":{
+            "result_tag":"ConsultarLoteRpsResposta"
+        }
+    },
+    "consultarNFSE":{
+        
+        "send":{
+            "SOAPAction":"ConsultarNfseV3"
+            ,"sign"  :{"tags":["ConsultarNfseEnvio"]}
+        }
+        ,"response":{
+            "result_tag":"ConsultarNfseResposta"
+        }
+        
+    }
+}

@@ -1,0 +1,1 @@
+000003958|00003094|N| CNotaFiscal -> verificarNF() {Esta Nota Fiscal ja foi autorizada/cancelada pela prefeitura altere o Numero de Controle e tente novamente }||||

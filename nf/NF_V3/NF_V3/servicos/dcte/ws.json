@@ -1,0 +1,369 @@
+
+{
+    "default":{
+        "desciption":"objeto com as configuracoes default",
+        "curl":{
+            "conexao_segura"  :"S"   ,
+            "verbose"         :"0"   ,
+            "porta"           :"443" ,
+            "header"          :"1"   ,
+            "sslversion"      :"6"   ,
+            "ssl_verifyhost"  :"0"   ,
+            "ssl_verifypeer"  :"0"   ,
+            "connecttimeout"  :""    ,
+            "timeout"         :""    ,
+            "maxredirs"       :""    ,
+            "followlocation"  :"0"   ,
+            "post"            :"1"   ,
+            "returntransfer"  :"1"   ,
+            "fresh_connect"   :"0"    
+        },
+        "extra":{
+            "use_cter": 0
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                
+                "url": "",
+                "url_homologacao": "",
+                
+                
+                "namespace"     : "http://www.portalfiscal.inf.br/cte",
+                "servico"       : "cteDistiDFeInteresse",
+                "metodo"        : "cteDistiDFeInteresse",
+                "tag_cabecalho" : "",
+                "tag_corpo"     : "<cteDadosMsg><eventoCTe xmlns=\"http://www.portalfiscal.inf.br/cte\" versao=\"3.00\"><infEvento Id=\"ID610110ALTERAR_CHAVE01\"><cOrgao>ALTERAR_CUF_AUTOR</cOrgao><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><CNPJ>ALTERAR_CNPJ</CNPJ><chCTe>ALTERAR_CHAVE</chCTe><dhEvento>ALTERAR_DATA</dhEvento><tpEvento>ALTERAR_TPEVENTO</tpEvento><nSeqEvento>1</nSeqEvento><detEvento versaoEvento=\"3.00\"><evPrestDesacordo><descEvento>ALTERAR_DESCEVENTO</descEvento><indDesacordoOper>ALTERAR_INDDESACORDOOPER</indDesacordoOper><xObs>ALTERAR_XOBS</xObs></evPrestDesacordo></detEvento></infEvento></eventoCTe></cteDadosMsg>"
+                
+            }
+            
+        }
+    },
+    "MT":{
+        "estado" : "Mato Grosso",
+        "webservices":{
+            
+            "CteRecepcaoEvento": {
+                "url": "https://cte.sefaz.mt.gov.br/ctews2/services/CteRecepcaoEvento?wsdl",
+                "url_homologacao": "https://homologacao.sefaz.mt.gov.br/ctews2/services/CteRecepcaoEvento?wsdl"
+            }	
+        }
+    },
+    
+    "MS":{
+        "estado" : "Mato Grosso do Sul",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            
+            "CteRecepcaoEvento": {
+                "url": "https://producao.cte.ms.gov.br/ws/CteRecepcaoEvento?wsdl",
+                "url_homologacao":"https://homologacao.cte.ms.gov.br/ws/CteRecepcaoEvento"
+            }
+        }
+    },
+    
+    "MG":{
+        "estado" : "Minas Gerais",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.fazenda.mg.gov.br/cte/services/RecepcaoEvento",
+                "url_homologacao":"https://hcte.fazenda.mg.gov.br/cte/services/RecepcaoEvento?wsdl",
+                "servico"       : "CteRecepcaoEvento",
+                "metodo"        : "CteRecepcaoEvento",
+                "namespace"     : "http://www.portalfiscal.inf.br/cte/wsdl"
+                
+            }
+        }
+    },
+    
+    "PR":{
+        "estado" : "Parana",
+        
+        "curl":{
+            "sslversion": "6" 
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento?wsdl",
+                "url_homologacao": "https://homologacao.cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento?wsdl"
+            }
+        }
+    },
+    
+    "RS":{
+        "estado" : "Rio Grande do Sul",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    },
+    "GO":{
+        "estado" : "Goais",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    },
+    "AC":{
+        "estado" : "Acre",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"AL":{
+        "estado" : "Alagoas",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"AM":{
+        "estado" : "Amazonas",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"BA":{
+        "estado" : "Baia",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"CE":{
+        "estado" : "Ceara",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"DF":{
+        "estado" : "Distrito Federal",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"ES":{
+        "estado" : "Espirito Santo",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"MA":{
+        "estado" : "Maranhao",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"PA":{
+        "estado" : "Para",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"PB":{
+        "estado" : "Pernambuco",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"PI":{
+        "estado" : "Piaui",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"RJ":{
+        "estado" : "Rio de Janeiro",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"RN":{
+        "estado" : "Rio Grande do Norte",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"RO":{
+        "estado" : "Roraima",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"SE":{
+        "estado" : "Sergipe",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    }
+    ,"TO":{
+        "estado" : "Tocantins",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao":"https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    },
+    
+    "SC":{
+        "estado" : "Virtual Rio Grande do Sul",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao": "https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    },                
+    
+    "SVRS":{
+        "estado" : "Virtual Rio Grande do Sul",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx",
+                "url_homologacao": "https://cte-homologacao.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            }
+        }
+    },
+    
+    "SP":{
+        "estado" : "São Paulo",
+        "extra":{
+            "use_cter": 1
+        },
+        "webservices":{
+            "CteRecepcaoEvento": {
+                "url": "https://nfe.fazenda.sp.gov.br/cteweb/services/cteRecepcaoEvento.asmx",
+                "url_homologacao": "https://homologacao.nfe.fazenda.sp.gov.br/cteweb/services/cteRecepcaoEvento.asmx"
+            }
+        }
+    },
+    
+    
+    
+    
+    "BR":{
+        "estado" : "Nacional do CTe",
+        "webservices":{
+            "CTeDistribuicaoDFe": {
+                "url"           : "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
+                "namespace"     : "http://www.portalfiscal.inf.br/cte",
+                "servico"       : "cteDistiDFeInteresse",
+                "metodo"        : "cteDistiDFeInteresse",
+                "tag_cabecalho" : "",
+                "tag_corpo"     : "<cteDistDFeInteresse xmlns=\"http://www.portalfiscal.inf.br/cte/wsdl/CTeDistribuicaoDFe\"><cteDadosMsg><distDFeInt xmlns=\"http://www.portalfiscal.inf.br/cte\" versao=\"1.00\"><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><cUFAutor>ALTERAR_CUF_AUTOR</cUFAutor><CNPJ>ALTERAR_CNPJ</CNPJ><distNSU><ultNSU>ALTERAR_ULT_NSU</ultNSU></distNSU></distDFeInt></cteDadosMsg></cteDistDFeInteresse>"
+            }
+        }
+    }
+}

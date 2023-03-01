@@ -1,0 +1,23 @@
+{
+    "3.00":{
+        "consulta":{
+            "url"           : "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
+            "namespace"     : "http://www.portalfiscal.inf.br/cte",
+            "servico"       : "cteDistiDFeInteresse",
+            "metodo"        : "cteDistiDFeInteresse",
+            "tag_cabecalho" : "",
+            "tag_corpo"     : "<cteDistDFeInteresse xmlns=\"http://www.portalfiscal.inf.br/cte/wsdl/CTeDistribuicaoDFe\"><cteDadosMsg><distDFeInt xmlns=\"http://www.portalfiscal.inf.br/cte\" versao=\"1.00\"><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><cUFAutor>ALTERAR_CUF_AUTOR</cUFAutor><CNPJ>ALTERAR_CNPJ</CNPJ><distNSU><ultNSU>ALTERAR_ULT_NSU</ultNSU></distNSU></distDFeInt></cteDadosMsg></cteDistDFeInteresse>"
+        },
+        "evento":{
+            "url"           : "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
+            "namespace"     : "http://www.portalfiscal.inf.br/cte",
+            "servico"       : "evPrestDesacordo",
+            "metodo"        : "RecepcionarEventoFiscal",
+            "tag_cabecalho" : "",
+            "tag_corpo"     : "<eventoCTe xmlns=\"http://www.portalfiscal.inf.br/cte\" versao=\"3.00\"><infEvento Id=\"ID6101103517010000000000019157001000000001106510045301\"><cOrgao>35</cOrgao><tpAmb>2</tpAmb><CNPJ>72071541000200</CNPJ><chCTe>35170100000000000191570010000000011065100453</chCTe><dhEvento>2017-01-26T22:14:29-02:00</dhEvento><tpEvento>610110</tpEvento><nSeqEvento>1</nSeqEvento><detEvento versaoEvento=\"3.00\"><evPrestDesacordo><descEvento>Prestacao do Servico em Desacordo</descEvento><indDesacordoOper>1</indDesacordoOper><xObs>CT-e emitido com dados incorretos</xObs></evPrestDesacordo></detEvento></infEvento></eventoCTe>",
+            "tag_corpo2"    : "<eventoCTe versao=\"3.00\" xmlns=\"http://www.portalfiscal.inf.br/cte\"><infEvento Id=\"ID6101104218020924998000013557010000000214100000002001\"><cOrgao>42</cOrgao><tpAmb>2</tpAmb><CNPJ>26199852000143</CNPJ><chCTe>42180209249980000135570100000002141000000020</chCTe><dhEvento>2018-02-08T13:18:06-02:00</dhEvento><tpEvento>610110</tpEvento><nSeqEvento>1</nSeqEvento><detEvento versaoEvento=\"3.00\"><evPrestDesacordo><descEvento>Prestação do Serviço em Desacordo</descEvento><indDesacordoOper>1</indDesacordoOper><xObs>Estou em desacordo deste Cte</xObs></evPrestDesacordo></detEvento></infEvento></eventoCTe>",
+            "tag_corpo3"    : "<EnvioEvento><ModeloDocumento>CTe</ModeloDocumento><Versao>3.00</Versao><Evento><CteCnpjEmissor>99999999999999</CteCnpjEmissor><CteNumero>10</CteNumero><CteSerie>1</CteSerie><tpAmb>2</tpAmb><ChaAcesso>41170501399199000101499510000000101172899388</ChaAcesso><EveInf><EveDh>2017-05-23T14:38:00</EveDh><EveFusoHorario>-03:00</EveFusoHorario><EveTp>610110</EveTp><EvenSeq>1</EvenSeq><Evedet><EveDesc>Prestação do Serviço em Desacordo</EveDesc><PrestDesacordo><indDesacordo>1</indDesacordo><Observacao>Teste de envio de Desacordo</Observacao></PrestDesacordo></Evedet></EveInf></Evento></EnvioEvento>"
+            
+        }
+    }
+}

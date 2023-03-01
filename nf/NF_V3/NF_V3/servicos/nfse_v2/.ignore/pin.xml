@@ -1,0 +1,104 @@
+<nfse>
+    <nf>
+        <usuarioPrefeitura><![CDATA[29.662.663/0001-53]]></usuarioPrefeitura>
+        <senhaPrefeitura><![CDATA[Ipm@2021]]></senhaPrefeitura>
+        <ambiente><![CDATA[2]]></ambiente>
+        <grupo><![CDATA[NAUCONTROL]]></grupo>
+        <empresa>
+            <codigo><![CDATA[001]]></codigo>
+            <descricao><![CDATA[NAU CONTROLES SIT INTEGR AR COND LT]]></descricao>
+        </empresa>
+        <filial>
+            <codigo><![CDATA[001]]></codigo>
+            <descricao><![CDATA[NAU CONTROLES SIT INTEGR AR COND LT]]></descricao>
+        </filial>
+        <controle><![CDATA[000000001]]></controle>
+        <numero><![CDATA[000000907]]></numero>
+        <serie><![CDATA[1]]></serie>
+        <situacao><![CDATA[]]></situacao>
+        <valor_total><![CDATA[0000dddd000000100,00]]></valor_total>
+        <valor_desconto><![CDATA[0000000000000,00]]></valor_desconto>
+        <valor_ir><![CDATA[0000000000000,00]]></valor_ir>
+        <valor_inss><![CDATA[0000000000000,00]]></valor_inss>
+        <valor_contribuicao_social><![CDATA[0000000000000,00]]></valor_contribuicao_social>
+        <valor_rps><![CDATA[0000000000000,00]]></valor_rps>
+        <valor_pis><![CDATA[0000000000000,00]]></valor_pis>
+        <valor_cofins><![CDATA[0000000000000,00]]></valor_cofins>
+        <observacao><![CDATA[Pedido:   I 000458/00                                                           Fatura: 01 Vcto 20/07/2021 R$     100,00]]></observacao>
+        <data_emissao><![CDATA[2021-07-20]]></data_emissao>
+        <hora_emissao><![CDATA[13:58:00]]></hora_emissao>
+    </nf>
+    <prestador>
+        <cpfcnpj><![CDATA[29662663000153]]></cpfcnpj>
+        <tipoPessoaPrestador><![CDATA[J]]></tipoPessoaPrestador>
+        <tipoRps><![CDATA[1]]></tipoRps>
+        <cidade><![CDATA[           4119152]]></cidade>
+        <codTom><![CDATA[5453]]></codTom>
+        <inscricaomunicipal><![CDATA[]]></inscricaomunicipal>
+        <cnae><![CDATA[3314704]]></cnae>
+        <optantesimples><![CDATA[1]]></optantesimples>
+        <incentivadorcultural><![CDATA[2]]></incentivadorcultural>
+    </prestador>
+    <tomador>
+        <tipo><![CDATA[J]]></tipo>
+        <identificador><![CDATA[]]></identificador>
+        <estado><![CDATA[PR]]></estado>
+        <pais><![CDATA[BRASIL]]></pais>
+        <cpfcnpj><![CDATA[76659820002367]]></cpfcnpj>
+        <ie><![CDATA[]]></ie>
+        <inscricaomunicipal><![CDATA[]]></inscricaomunicipal>
+        <nome_razao_social><![CDATA[ASSOCIACAO PARANAENSE DE CULTURA(C00029)]]></nome_razao_social>
+        <sobrenome_nome_fantasia><![CDATA[]]></sobrenome_nome_fantasia>
+        <logradouro><![CDATA[AVENIDA PRESIDENTE AFFONSO CAMARGO]]></logradouro>
+        <email><![CDATA[wallace.caldas@naucontrols.com.br]]></email>
+        <numero_residencia><![CDATA[00001399]]></numero_residencia>
+        <complemento><![CDATA[]]></complemento>
+        <ponto_referencia><![CDATA[]]></ponto_referencia>
+        <bairro><![CDATA[CRISTO REI]]></bairro>
+        <cidade><![CDATA[           4106902]]></cidade>
+        <codTom><![CDATA[7535]]></codTom>
+        <cep><![CDATA[80050370]]></cep>
+        <ddd_fone_comercial><![CDATA[000]]></ddd_fone_comercial>
+        <fone_comercial><![CDATA[                 0]]></fone_comercial>
+        <ddd_fone_residencial><![CDATA[041]]></ddd_fone_residencial>
+        <fone_residencial><![CDATA[          30877686]]></fone_residencial>
+        <ddd_fax><![CDATA[000]]></ddd_fax>
+        <fone_fax><![CDATA[                 0]]></fone_fax>
+    </tomador>
+    <itens>
+        <lista>
+            <tributa_municipio_prestador><![CDATA[S]]></tributa_municipio_prestador>
+            <codigo_local_prestacao_servico><![CDATA[004119152]]></codigo_local_prestacao_servico>
+            <codigo_tom_prestacao_servico><![CDATA[5453]]></codigo_tom_prestacao_servico>
+            <unidade_codigo><![CDATA[000000000]]></unidade_codigo>
+            <unidade_quantidade><![CDATA[000000000000001]]></unidade_quantidade>
+            <unidade_valor_unitario><![CDATA[0000000000100,00]]></unidade_valor_unitario>
+            <codigo_item_lista_servico><![CDATA[000001402]]></codigo_item_lista_servico>
+            <descritivo><![CDATA[SERV DE MANU E REP EM BOMBA D VAC]]></descritivo>
+            <aliquota_item_lista_servico><![CDATA[0000000000003,12]]></aliquota_item_lista_servico>
+            <situacao_tributaria><![CDATA[000]]></situacao_tributaria>
+            <valor_tributavel><![CDATA[0000000000100,00]]></valor_tributavel>
+            <valor_deducao><![CDATA[0000000000000,00]]></valor_deducao>
+            <numero_deducao><![CDATA[000000000]]></numero_deducao>
+            <valor_issrf><![CDATA[0000000000000,00]]></valor_issrf>
+            <valor_iss><![CDATA[0000000000003,12]]></valor_iss>
+            <desconto_cond><![CDATA[0000000000000,00]]></desconto_cond>
+            <desconto_incond><![CDATA[0000000000000,00]]></desconto_incond>
+        </lista>
+    </itens>
+    <total>
+        <codigo_local_prestacao_servico><![CDATA[           4119152]]></codigo_local_prestacao_servico>
+        <codigo_item_lista_servico><![CDATA[              1402]]></codigo_item_lista_servico>
+        <aliquota_item_lista_servico><![CDATA[            0.03]]></aliquota_item_lista_servico>
+        <situacao_tributaria><![CDATA[                 0]]></situacao_tributaria>
+        <codigo_tributacao_municipio><![CDATA[331470401]]></codigo_tributacao_municipio>
+        <iss_retido><![CDATA[                 2]]></iss_retido>
+        <valor_tributavel><![CDATA[          100.00]]></valor_tributavel>
+        <valor_deducao><![CDATA[            0.00]]></valor_deducao>
+        <valor_issrf><![CDATA[            0.00]]></valor_issrf>
+        <valor_iss><![CDATA[            3.12]]></valor_iss>
+        <desconto_cond><![CDATA[            0.00]]></desconto_cond>
+        <desconto_incond><![CDATA[            0.00]]></desconto_incond>
+    </total>
+</nfse>
+    

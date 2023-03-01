@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Header>
+    <gnreCabecMsg xmlns="http://www.gnre.pe.gov.br/webservice/GnreLoteRecepcao">
+      <versaoDados>2.00</versaoDados>
+    </gnreCabecMsg>
+  </soap12:Header>
+  <soap12:Body>
+    <gnreDadosMsg xmlns="http://www.gnre.pe.gov.br/webservice/GnreLoteRecepcao">
+      <TLote_GNRE versao="2.00" xmlns="http://www.gnre.pe.gov.br">
+        <guias>
+        <TDadosGNRE versao="2.00">
+            <ufFavorecida>RS</ufFavorecida>
+            <tipoGnre>0</tipoGnre>
+            <contribuinteEmitente>
+                <identificacao>
+                    <CNPJ>01631022000112</CNPJ>
+                </identificacao>
+                <razaoSocial>VIANMAQ EQUIPAMENTOS LTDA</razaoSocial>
+                <endereco>RUA XXXXX</endereco>
+                <municipio>04808</municipio>
+                <uf>PR</uf>
+                <cep>85818577</cep>
+                <telefone>4599999999</telefone>
+            </contribuinteEmitente>
+            <itensGNRE>
+                <item>
+                    <receita>100080</receita>
+                    <detalhamentoReceita>000049</detalhamentoReceita>
+                    
+                    <documentoOrigem tipo="10">35442</documentoOrigem>
+                    <referencia/>
+                    <dataVencimento>2019-11-01</dataVencimento>
+                    <valor tipo="11">96.73</valor>
+                    <contribuinteDestinatario>
+                        <identificacao>
+                            <CNPJ>10995055000132</CNPJ>
+                        </identificacao>
+                        <razaoSocial>XXXXXXXXXX E CIA LTDA</razaoSocial>
+                        <municipio>22400</municipio>
+                    </contribuinteDestinatario>
+                    <camposExtras>
+                        <campoExtra>
+                            <codigo>74</codigo>
+                            <valor>41199999999999999999999999999999999999999999</valor>
+                        </campoExtra>
+                    </camposExtras>
+                </item>
+            </itensGNRE>
+            <valorGNRE>96.73</valorGNRE>
+            <dataPagamento>2019-11-01</dataPagamento>
+                   
+
+        </TDadosGNRE>
+        </guias>
+      </TLote_GNRE>
+    </gnreDadosMsg>
+  </soap12:Body>
+</soap12:Envelope>

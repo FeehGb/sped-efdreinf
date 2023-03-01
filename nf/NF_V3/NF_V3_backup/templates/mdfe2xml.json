@@ -1,0 +1,199 @@
+{
+    "3.00": {
+        "mapa": {
+            "MANIFESTO": [
+                "tipo",
+                "quantidade_notas"
+            ],
+            "A": [
+                "linha",
+                "versao",
+                "tipo_nota"
+            ],
+            "B": [
+                "linha",
+                "/infMDFe/ide/cUF",
+                "/infMDFe/ide/tpAmb",
+                "/infMDFe/ide/tpEmit",
+                "/infMDFe/ide/tpTransp",
+                "/infMDFe/ide/mod",
+                "/infMDFe/ide/serie",
+                "/infMDFe/ide/nMDF",
+                "/infMDFe/ide/cMDF",
+                "/infMDFe/ide/cDV",
+                "/infMDFe/ide/modal",
+                "/infMDFe/ide/dhEmi",
+                "/infMDFe/ide/tpEmis",
+                "/infMDFe/ide/procEmi",
+                "/infMDFe/ide/verProc",
+                "/infMDFe/ide/UFIni",
+                "/infMDFe/ide/UFFim"
+            ],
+            "B1": [
+                "linha",
+                "/infMDFe/ide/infMunCarrega/cMunCarrega",
+                "/infMDFe/ide/infMunCarrega/xMunCarrega"
+            ],
+            "BA": [
+                "linha",
+                "/infMDFe/ide/dhIniViagem"
+            ],
+            "C": [
+                "linha",
+                "/infMDFe/ide/infPercurso/UFPer"
+            ],
+            "D": [
+                "linha",
+                "/infMDFe/emit/CNPJ",
+                "/infMDFe/emit/IE",
+                "/infMDFe/emit/xNome",
+                "/infMDFe/emit/xFant",
+                "/infMDFe/emit/enderEmit/xLgr",
+                "/infMDFe/emit/enderEmit/nro",
+                "/infMDFe/emit/enderEmit/xCpl",
+                "/infMDFe/emit/enderEmit/xBairro",
+                "/infMDFe/emit/enderEmit/cMun",
+                "/infMDFe/emit/enderEmit/xMun",
+                "/infMDFe/emit/enderEmit/CEP",
+                "/infMDFe/emit/enderEmit/UF",
+                "/infMDFe/emit/enderEmit/fone",
+                "/infMDFe/emit/enderEmit/email"
+            ],
+            "F": [
+                "linha",
+                "/infMDFe/infModal/versaoModal"
+            ],
+            "R": [
+                "linha",
+                "/infMDFe/infModal/rodo/infANTT/RNTRC",
+                "/infMDFe/infModal/rodo/veicTracao/cInt",
+                "/infMDFe/infModal/rodo/veicTracao/placa",
+                "/infMDFe/infModal/rodo/veicTracao/RENAVAM",
+                "/infMDFe/infModal/rodo/veicTracao/tara",
+                "/infMDFe/infModal/rodo/veicTracao/capKG",
+                "/infMDFe/infModal/rodo/veicTracao/capM3",
+                "/infMDFe/infModal/rodo/veicTracao/prop/CPF",
+                "/infMDFe/infModal/rodo/veicTracao/prop/CNPJ",
+                "/infMDFe/infModal/rodo/veicTracao/prop/RNTRC",
+                "/infMDFe/infModal/rodo/veicTracao/prop/xNome",
+                "/infMDFe/infModal/rodo/veicTracao/prop/IE",
+                "/infMDFe/infModal/rodo/veicTracao/prop/UF",
+                "/infMDFe/infModal/rodo/veicTracao/prop/tpProp"
+            ],
+            "RA": [
+                "linha",
+                "/infMDFe/infModal/rodo/veicTracao/tpRod",
+                "/infMDFe/infModal/rodo/veicTracao/tpCar",
+                "/infMDFe/infModal/rodo/veicTracao/UF"
+            ],
+            "R1": [
+                "linha",
+                "/infMDFe/infModal/rodo/veicTracao/condutor/xNome",
+                "/infMDFe/infModal/rodo/veicTracao/condutor/CPF"
+            ],
+            "R3": [
+                "linha",
+                "/infMDFe/infModal/rodo/infANTT/valePed/disp/CNPJForn",
+                "/infMDFe/infModal/rodo/infANTT/valePed/disp/CNPJPg",
+                "/infMDFe/infModal/rodo/infANTT/valePed/disp/CPFPg",
+                "/infMDFe/infModal/rodo/infANTT/valePed/disp/nCompra",
+                "/infMDFe/infModal/rodo/infANTT/valePed/disp/vValePed"
+            ],
+            "R0": [
+                "linha",
+                "/infMDFe/infModal/rodo/infANTT/infCIOT/CIOT",
+                "/infMDFe/infModal/rodo/infANTT/infCIOT/CPF",
+                "/infMDFe/infModal/rodo/infANTT/infCIOT/CNPJ"
+            ],
+            "R2": [
+                "linha",
+                "/infMDFe/infModal/rodo/veicReboque/cInt",
+                "/infMDFe/infModal/rodo/veicReboque/placa",
+                "/infMDFe/infModal/rodo/veicReboque/RENAVAM",
+                "/infMDFe/infModal/rodo/veicReboque/tara",
+                "/infMDFe/infModal/rodo/veicReboque/capKG",
+                "/infMDFe/infModal/rodo/veicReboque/capM3",
+                "/infMDFe/infModal/rodo/veicReboque/prop/CPF",
+                "/infMDFe/infModal/rodo/veicReboque/prop/CNPJ",
+                "/infMDFe/infModal/rodo/veicReboque/prop/RNTRC",
+                "/infMDFe/infModal/rodo/veicReboque/prop/xNome",
+                "/infMDFe/infModal/rodo/veicReboque/prop/IE",
+                "/infMDFe/infModal/rodo/veicReboque/prop/UF",
+                "/infMDFe/infModal/rodo/veicReboque/prop/tpProp",
+                "/infMDFe/infModal/rodo/veicReboque/tpCar",
+                "/infMDFe/infModal/rodo/veicReboque/UF",
+                "/infMDFe/infModal/rodo/veicReboque/codAgPorto"
+            ],
+            "G": [
+                "linha",
+                "/infMDFe/infDoc/infMunDescarga/cMunDescarga",
+                "/infMDFe/infDoc/infMunDescarga/xMunDescarga"
+            ],
+            "G1": [
+                "linha",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/chNFe",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/SegCodBarra"
+            ],
+            "G11": [
+                "linha",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/infUnidTransp/tpUnidTransp",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/infUnidTransp/idUnidTransp",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/infUnidTransp/qtdRat"
+            ],
+            "G111": [
+                "linha",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/infUnidTransp/lacUnidTransp/nLacre"
+            ],
+            "G112": [
+                "linha",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/infUnidTransp/infUnidCarga/tpUnidCarga",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/infUnidTransp/infUnidCarga/idUnidCarga",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/infUnidTransp/infUnidCarga/qtdRat"
+            ],
+            "G1121": [
+                "linha",
+                "/infMDFe/infDoc/infMunDescarga/infNFe/infUnidTransp/infUnidCarga/lacUnidCarga/nLacre"
+            ],
+            "H": [
+                "linha",
+                "/infMDFe/seg/infResp/respSeg",
+                "/infMDFe/seg/infResp/CNPJ",
+                "/infMDFe/seg/infResp/CPF",
+                "/infMDFe/seg/infSeg/xSeg",
+                "/infMDFe/seg/infSeg/CNPJ",
+                "/infMDFe/seg/infSeg/nApol",
+                "/infMDFe/seg/infSeg/nAver"
+            ],
+            "W": [
+                "linha",
+                "/infMDFe/tot/qCTe",
+                "/infMDFe/tot/qNFe",
+                "/infMDFe/tot/qMDFe",
+                "/infMDFe/tot/vCarga",
+                "/infMDFe/tot/cUnid",
+                "/infMDFe/tot/qCarga"
+            ],
+            "X": [
+                "linha",
+                "/infMDFe/lacres/nLacre"
+            ],
+            "Y": [
+                "linha",
+                "/infMDFe/autXML/CPF",
+                "/infMDFe/autXML/CNPJ"
+            ],
+            "Z": [
+                "linha",
+                "/infMDFe/infAdic/infAdFisco",
+                "/infMDFe/infAdic/infCpl"
+            ],
+            "Z1": [
+                "linha",
+                "/infMDFe/infRespTec/CNPJ",
+                "/infMDFe/infRespTec/xContato",
+                "/infMDFe/infRespTec/email",
+                "/infMDFe/infRespTec/fone"
+            ]
+        }
+    }
+}

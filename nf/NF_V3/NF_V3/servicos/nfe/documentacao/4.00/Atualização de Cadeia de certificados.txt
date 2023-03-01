@@ -1,0 +1,9 @@
+ATUALIZAR CADEIAS DE CERTIFICADOS
+-Baixar os arquivo com as cadeias de certificados normalmente
+ disponibilizado pelo sefaz de origem ou nacional (*.cert)
+-Salvar no diretório: /usr/local/share/ca-certificates/
+-Fazer backup e remover o diretório /etc/ssl/certs/
+-Executar o comando: update-ca-certificates
+-Remover os *.pem dentro do /var/www/html/nf/nfse/certificados/
+
+Obs: utilizar o sudo.

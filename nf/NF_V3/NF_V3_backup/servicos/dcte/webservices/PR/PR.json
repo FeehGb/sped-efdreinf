@@ -1,0 +1,44 @@
+{
+    "PR":{
+        "estado" : "Paraná",
+        "configuracoes":{
+            "conexao_segura"  :"S"   ,
+            "verbose"         :"0"   ,
+            "porta"           :"443" ,
+            "header"          :"1"   ,
+            "sslversion"      :"6"   ,
+            "ssl_verifyhost"  :"0"   ,
+            "ssl_verifypeer"  :"0"   ,
+            "connecttimeou"   :""    ,
+            "timeou"          :""    ,
+            "maxredir"        :""    ,
+            "followlocation"  :"0"   ,
+            "post"            :"1"   ,
+            "returntransfer"  :"1"   ,
+            "fresh_connect"   :"0"    
+        },
+        "servico":{
+            "CteRecepcao": {
+                "url":"https://cte.fazenda.pr.gov.br/cte/CteRecepcao?wsdl"
+            },
+            "CteRetRecepcao": {
+                "url":"https://cte.fazenda.pr.gov.br/cte/CteRetRecepcao?wsdl"
+            },
+            "CteInutilizacao": {
+                "url":"https://cte.fazenda.pr.gov.br/cte/CteInutilizacao?wsdl"
+            },
+            "CteConsultaProtocolo": {
+                "url":"https://cte.fazenda.pr.gov.br/cte/CteConsulta?wsdl"
+            },
+            "CteStatusServico": {
+                "url":"https://cte.fazenda.pr.gov.br/cte/CteStatusServico?wsdl"
+            },
+            "CteRecepcaoEvento": {
+                "url":"https://cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento?wsdl"
+            },
+            "CTeRecepcaoOS": {
+                "url":"https://cte.fazenda.pr.gov.br/cte/CteRecepcaoOS?wsdl"
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+17055652000126|producao|00000021||||||||O campo LoteRps/ListaRps/Rps/InfRps/NaturezaOperacao é requerido |

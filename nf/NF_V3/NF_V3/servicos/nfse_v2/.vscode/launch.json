@@ -1,0 +1,228 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python: Curitiba NFS-e",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bootstrap_nfse.py",
+            "console": "internalConsole",
+            "args": [
+                "4106902"
+            ,   "recepcionar"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/ctba.xml"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "ctba": [
+                "4106902"
+            ,   "consultar"
+            ,   "cpfcnpj=01204762000172&inscricaomunicipal=3272235&ambiente=1&controle=000003684&protocolo=638004989620819740"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "ctba": [
+                "4106902"
+            ,   "cancelar"
+            ,   "protocolo=637395778327183762&cpfcnpj=20042802000171&inscricaomunicipal=06911730"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ]
+            
+            
+            
+        } 
+        ,{
+            "name": "Python: Pinhais NFS-e",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bootstrap_nfse.py",
+            "console": "internalConsole",
+            "args": [
+                "4119152"
+            ,   "recepcionar"
+            ,   "/user/nfse/29662663000153/CaixaEntrada/Processar/TVE436S-20211110-14441411001194.xml"
+            ,   "/user/nfse/29662663000153/CaixaSaida/Processar/LTVE436SR-20211110-14441411001194.xml"
+            //,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/pin2.xml"
+            //,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "args": [
+                "4119152"
+            ,   "cancelar"
+            ,   "cpfcnpj=10678646000186&inscricaomunicipal=58026&ambiente=1&numero=000029207&competencia=2022-01-07&codigomunicipio=4119152&usuarioprefeitura=10678646000186&senhaprefeitura=7979Per$&codtom=54534&protocolo=000000000000000000"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            
+            
+            
+        } 
+        ,{
+            "name": "Python: Araucaria NFS-e",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bootstrap_nfse.py",
+            "console": "internalConsole",
+            
+            "args": [
+                "4101804"
+            ,   "recepcionar"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/ara.xml"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            
+            "ara": [
+                "4101804"
+            ,   "cancelar"
+            ,   "cpfcnpj=10703580000560&inscricaomunicipal=83990&ambiente=1&numero=386&competencia=2020-08-19&usuarioprefeitura=10703580000560&senhaprefeitura=0y5b8u07&codtom=74357"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+        } 
+        ,{
+            "name": "Python: Colomb NFS-e",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bootstrap_nfse.py",
+            "console": "internalConsole",
+            
+            "args": [
+                "4105805"
+            ,   "recepcionar"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/col.xml"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            
+            "col": [
+                "4101804"
+            ,   "cancelar"
+            ,   "cpfcnpj=10703580000560&inscricaomunicipal=83990&ambiente=1&numero=386&competencia=2020-08-19&usuarioprefeitura=10703580000560&senhaprefeitura=0y5b8u07&codtom=74357"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+        } 
+        
+        ,{
+            "name": "Python: Sao Jose dos Pinhais NFS-e",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bootstrap_nfse.py",
+            "console": "internalConsole",
+            
+            "sjp": [
+                "4125506"
+            ,   "consultarNFSE"
+            ,   "cpfcnpj=10703580000641&inscricaomunicipal=83990&ambiente=2&numero=000000018&competencia=2020-08-19"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "args": [
+                "4125506"
+            ,   "consultar"
+            ,   "cpfcnpj=10703580000641&inscricaomunicipal=83990&ambiente=2&controle=300&protocolo=000000000071900485"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "sjp": [
+                "4125506"
+            ,   "recepcionar"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/sjp.xml"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "sjp": [
+                "4125506"
+            ,   "recepcionar"
+            ,   "/user/nfse/10703580000641/CaixaEntrada/Processar/TVE436S-20200915-082924.xml"
+            ,   "/user/nfe/10703580000641/CaixaSaida/Processar/LTVE436S-20200915-082924.xml"
+            ,   "debug"
+            ]
+        } 
+        ,{
+            "name": "Python: Fazenda Rio Grande NFS-e",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bootstrap_nfse.py",
+            "console": "internalConsole",
+            
+            
+            
+            "frg": [
+                "4107652"
+            ,   "recepcionar"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/frg.xml"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "frg": [
+                "4107652"
+            ,   "cancelar"
+            ,   "cpfcnpj=10703580000722&inscricaomunicipal=176480235320&numero=2&codigomunicipio=4107652&ambiente=2&controle=3"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "args": [
+                "4107652"
+            ,   "consultar"
+            ,   "cpfcnpj=10703580000722&inscricaomunicipal=176480235320&ambiente=2&controle=000000001&protocolo=956137503529528"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ]
+        } 
+        ,{
+            "name": "Python: Lages NFS-e",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bootstrap_nfse.py",
+            "console": "internalConsole",
+            
+            
+            
+            "lag": [
+                "4209300"
+            ,   "recepcionar"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/lag.xml"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "lag": [
+                "4209300"
+            ,   "cancelar"
+            ,   "cpfcnpj=10703580000722&inscricaomunicipal=176480235320&numero=2&codigomunicipio=4209300&ambiente=2&controle=3"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ],
+            "lag": [
+                "4209300"
+            ,   "consultar"
+            ,   "cpfcnpj=10703580000722&inscricaomunicipal=176480235320&ambiente=2&controle=000000001&protocolo=956137503529528"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ]
+        } 
+        ,{
+            "name": "Python: Guaiba NFS-e",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/bootstrap_nfse.py",
+            "console": "internalConsole",
+            
+            "args": [
+                "4309308"
+            ,   "recepcionar"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/pin.xml"
+            ,   "/var/www/html/nf/NF_V3/NF_V3/servicos/nfse_v2/.ignore/saida.txt"
+            ,   "debug"
+            ]
+        } 
+        
+
+    ]
+}

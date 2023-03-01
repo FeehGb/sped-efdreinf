@@ -1,0 +1,9 @@
+PASTA: 	    libs
+FINALIDADE: Armazenar as classes/programas frameworks ou módulos adicionais
+AUTOR:	    Guilherme Silva
+DATA: 	    07/08/2013
+
+DESCRIÇÃO:  Esta pasta é responsável por armazenar as classes e/ou programas frameworks adicionados
+	    ao projeto ou módulos que sejam adicionais.
+ 	    Neste projeto iremos trabalhar com alguns módulos como o NFePHP, PHPJasperXML, FPDF, 
+	    ADODB.

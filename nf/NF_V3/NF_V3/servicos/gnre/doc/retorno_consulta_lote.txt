@@ -1,0 +1,52 @@
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <gnreRespostaMsg xmlns="http://www.gnre.pe.gov.br/webservice/GnreResultadoLote">
+         <ns1:TResultLote_GNRE xmlns="http://www.gnre.pe.gov.br" xmlns:ns1="http://www.gnre.pe.gov.br">
+            <ns1:ambiente>2</ns1:ambiente>
+            <ns1:numeroRecibo>1900854614</ns1:numeroRecibo>
+            <ns1:situacaoProcess>
+               <ns1:codigo>402</ns1:codigo>
+               <ns1:descricao>Lote Processado com sucesso</ns1:descricao>
+            </ns1:situacaoProcess>
+            <ns1:resultado>
+               <ns1:guia versao="2.00">
+                  <ns1:situacaoGuia>0</ns1:situacaoGuia>
+                  <ns1:ufFavorecida>RS</ns1:ufFavorecida>
+                  <ns1:tipoGnre>0</ns1:tipoGnre>
+                  <ns1:contribuinteEmitente>
+                     <ns1:identificacao>
+                        <ns1:CNPJ>18248803000125</ns1:CNPJ>
+                     </ns1:identificacao>
+                     <ns1:razaoSocial>VIANMAQ EQUIPAMENTOS LTDA</ns1:razaoSocial>
+                     <ns1:endereco>RUA XXXXX</ns1:endereco>
+                     <ns1:municipio>04808</ns1:municipio>
+                     <ns1:uf>PR</ns1:uf>
+                     <ns1:cep>85818577</ns1:cep>
+                     <ns1:telefone>4599999999</ns1:telefone>
+                  </ns1:contribuinteEmitente>
+                  <ns1:itensGNRE>
+                     <ns1:item>
+                        <ns1:receita>100080</ns1:receita>
+                        <ns1:detalhamentoReceita>000049</ns1:detalhamentoReceita>
+                        <ns1:documentoOrigem tipo="10">35442</ns1:documentoOrigem>
+                        <ns1:dataVencimento>2019-11-01</ns1:dataVencimento>
+                        <ns1:valor tipo="11">96.73</ns1:valor>
+                        <ns1:valor tipo="21">96.73</ns1:valor>
+                     </ns1:item>
+                  </ns1:itensGNRE>
+                  <ns1:valorGNRE>96.73</ns1:valorGNRE>
+                  <ns1:dataPagamento>2019-11-01</ns1:dataPagamento>
+                  <ns1:dataLimitePagamento>2019-11-01</ns1:dataLimitePagamento>
+                  <ns1:informacoesComplementares>
+                     <ns1:informacao>ICMS CARNE E GADO</ns1:informacao>
+                     <ns1:informacao>Chave da NFE: 4119 9999 9999 9999 9999 9999 9999 9999 9999 9999 9999</ns1:informacao>
+                  </ns1:informacoesComplementares>
+                  <ns1:nossoNumero>0066119055235961</ns1:nossoNumero>
+                  <ns1:linhaDigitavel>858400000000967399991936050100661196055235961008</ns1:linhaDigitavel>
+                  <ns1:codigoBarras>85840000000967399991930501006611905523596100</ns1:codigoBarras>
+               </ns1:guia>
+            </ns1:resultado>
+         </ns1:TResultLote_GNRE>
+      </gnreRespostaMsg>
+   </soapenv:Body>
+</soapenv:Envelope>

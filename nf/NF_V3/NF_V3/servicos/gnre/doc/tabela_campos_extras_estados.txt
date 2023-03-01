@@ -1,0 +1,254 @@
+       ACRE
+       Receita Código    Título                                   Tipo Obrigat.
+       100056    76      Chave de Acesso da NFe                     T    Não
+       100099    76      Chave de Acesso da NFe                     T    Sim
+       100102    76      Chave de Acesso da NFe                     T    Sim
+       100030    25      CNPJ REMETENTE                             T    Não
+       100030    24      NOME DO REMETENTE                          T    Não
+       100030    26      NRO DA NOTA FISCAL                         T    Não
+       100048    68      OBS1.:                                     T    Não
+       100080    68      OBS1.:                                     T    Sim
+       100099    68      OBS1.:                                     T    Não
+       100102    68      OBS1.:                                     T    Não
+       100110    68      OBS1.:                                     T    Não
+       100048    69      OBS2.:                                     T    Não
+       100080    69      OBS2.:                                     T    Não
+       100099    69      OBS2.:                                     T    Não
+       100110    69      OBS2.:                                     T    Não
+
+       ALAGOAS
+       100099    90      Chave de Acesso da NFe                     T    Sim
+       100013    65      Informação Complementar                    T    Não
+       100021    65      Informação Complementar                    T    Não
+       100030    65      Informação Complementar                    T    Não
+       100048    65      Informação Complementar                    T    Não
+       100056    65      Informação Complementar                    T    Não
+       100080    65      Informação Complementar                    T    Não
+       100099    65      Informação Complementar                    T    Não
+       100102    65      Informação Complementar                    T    Não
+       100110    65      Informação Complementar                    T    Não
+       100129    65      Informação Complementar                    T    Não
+       100137    65      Informação Complementar                    T    Não
+       600016    65      Informação Complementar                    T    Sim
+
+       AMAZONAS
+       100021    12      Chave de Acesso da NFe                     T    Sim
+       100099    12      Chave de Acesso da NFe                     T    Sim
+       100102    12      Chave de Acesso da NFe                     T    Não
+       100129    12      Chave de Acesso da NFe                     T    Sim
+       100030    95      Chave de Acesso do CTe/CTE-OS              T    Sim
+       100030    14      Manifesto de Carga                         N    Não
+       100072    13      Observações                                T    Não
+       100099    13      Observações                                T    Não
+
+       AMAPA
+       100099    47      Chave de Acesso da NFe                     T    Sim
+       100102    47      Chave de Acesso da NFe                     T    Sim
+       100030    103     Chave de Acesso da NFe ou do CTe/CTE-OS    T    Não
+
+       BAHIA
+       100102    86      Chave de Acesso da NFe                     T    Sim
+       100129    86      Chave de Acesso da NFe                     T    Sim
+       100030    81      NOTA FISCAL / OUTROS                       T    Não
+
+       CEARA
+       100030    105     Chave de Acesso da NFe                     T    Não
+       100030    104     Chave de Acesso do CTe/CTE-OS              T    Não
+       100056    53      Conhecimento de Transporte Internacional   T    Não
+       100099    50      Data da saida da Mercadoria                D    Não
+       100102    50      Data da saida da Mercadoria                D    Não
+       100129    50      Data da saida da Mercadoria                D    Não
+       100056    52      Data do desembaraco                        D    Não
+       100048    48      GUIAST                                     N    Não
+       100110    48      GUIAST                                     N    Não
+       100137    48      GUIAST                                     N    Não
+       100080    55      justificativa                              T    Não
+       100080    54      Protocolo TED de Transmissao do Sintegra   T    Não
+       100056    51      Valor Aduaneiro                            N    Não
+
+       GOIAS
+       100030    102     Chave de Acesso da NFe ou do CTe/CTE-OS    T    Não
+       100099    102     Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100102    102     Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100013    10      Informações complementares 1               T    Não
+       100021    10      Informações complementares 1               T    Não
+       100030    10      Informações complementares 1               T    Não
+       100048    10      Informações complementares 1               T    Não
+       100056    10      Informações complementares 1               T    Não
+       100056    10      Informações complementares 1               T    Não
+       100099    10      Informações complementares 1               T    Não
+       100102    10      Informações complementares 1               T    Não
+       100110    10      Informações complementares 1               T    Não
+       100013    60      Informações complementares 2               T    Não
+       100021    60      Informações complementares 2               T    Não
+       100030    60      Informações complementares 2               T    Não
+       100048    60      Informações complementares 2               T    Não
+       100056    60      Informações complementares 2               T    Não
+       100056    60      Informações complementares 2               T    Não
+       100099    60      Informações complementares 2               T    Não
+       100102    60      Informações complementares 2               T    Não
+       100110    60      Informações complementares 2               T    Não
+
+       MARANHAO
+       100056    94      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100099    94      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100102    94      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100129    94      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100030    93      Chave de Acesso do CTe/CTE-OS              T    Sim
+
+       MINAS GERAIS
+       100013    45      Informações Complementares                 T    Não
+       100021    45      Informações Complementares                 T    Não
+       100030    45      Informações Complementares                 T    Não
+       100048    45      Informações Complementares                 T    Não
+       100056    45      Informações Complementares                 T    Não
+       100064    45      Informações Complementares                 T    Não
+       100080    45      Informações Complementares                 T    Não
+       100099    45      Informações Complementares                 T    Não
+       600016    45      Informações Complementares                 T    Não
+
+       MATO GROSSO DO SSUL
+       100056    27      Chave de Acesso da NFe                     T    Não
+       100099    27      Chave de Acesso da NFe                     T    Sim
+       100030    88      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100102    88      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100129    88      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+
+       MATO GROSSO
+       100099    17      Chave de Acesso da NFe                     T    Sim
+       100102    108      Chave de Acesso da NFe ou do CTe/CTE-OS   T    Sim
+       100129    108      Chave de Acesso da NFe ou do CTe/CTE-OS   T    Sim
+
+       PARA
+       100099    101      Chave de Acesso da NFe                    T    Não
+       100102    101      Chave de Acesso da NFe                    T    Não
+       100030    100      Chave de Acesso do CTe/CTE-OS             T    Não
+       100102    100      Chave de Acesso do CTe/CTE-OS             T    Não
+
+       PARAIBA
+       100099    30      Chave de Acesso da NFe                     T    Sim
+       100129    30      Chave de Acesso da NFe                     T    Não
+       100030    99      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100102    99      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+
+       PERNAMBUCO
+       100099    9    CCChave de Acesso da NFe                      T    Sim
+       100102    92      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100129    92      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100030    91      Chave de Acesso do CTe/CTE-OS              T    Não
+       100048    4    OOOBSERVACAO                                  T    Não
+
+       PIAUI
+       100056    11      Observações                                T    Não
+
+       PARANA
+       100102    107      Chave de Acesso da NFe ou do CTe/CTE-OS   T    Sim
+       100056    56      Informações Complementares                 T    Não
+       100099    56      Informações Complementares                 T    Não
+       100102    56      Informações Complementares                 T    Não
+       100056    57      Informações Complementares 2               T    Não
+       100099    57      Informações Complementares 2               T    Não
+       100102    57      Informações Complementares 2               T    Não
+       100056    58      Informações Complementares 3               T    Não
+
+       RIO GRANDE DO NORTE
+       100099    97      Chave de Acesso da NFe                     T    Sim
+       100102    97      Chave de Acesso da NFe                     T    Sim
+       100129    97      Chave de Acesso da NFe                     T    Sim
+       100013    61      Informações Complementares                 T    Não
+       100021    61      Informações Complementares                 T    Não
+       100030    61      Informações Complementares                 T    Não
+       100048    61      Informações Complementares                 T    Não
+       100056    61      Informações Complementares                 T    Não
+       100080    61      Informações Complementares                 T    Não
+
+       RONDONIA
+       100056    83      Chave de Acesso da NFe                     T    Não
+       100099    83      Chave de Acesso da NFe                     T    Sim
+       100102    83      Chave de Acesso da NFe                     T    Sim
+       100129    83      Chave de Acesso da NFe                     T    Sim
+       100030    89      Chave de Acesso do CTe/CTE-OS              T    Não
+
+       RORAIMA
+       100013    36      Chave de Acesso da NFe                     T    Não
+       100021    36      Chave de Acesso da NFe                     T    Não
+       100030    36      Chave de Acesso da NFe                     T    Não
+       100048    36      Chave de Acesso da NFe                     T    Não
+       100056    36      Chave de Acesso da NFe                     T    Não
+       100080    36      Chave de Acesso da NFe                     T    Não
+       100099    36      Chave de Acesso da NFe                     T    Sim
+       100102    36      Chave de Acesso da NFe                     T    Sim
+       100013    71      Informacoes Complementares                 T    Não
+       100021    71      Informacoes Complementares                 T    Não
+       100030    71      Informacoes Complementares                 T    Não
+       100048    71      Informacoes Complementares                 T    Não
+       100056    71      Informacoes Complementares                 T    Não
+       100080    71      Informacoes Complementares                 T    Não
+       100099    71      Informacoes Complementares                 T    Não
+       100102    71      Informacoes Complementares                 T    Não
+       100110    71      Informacoes Complementares                 T    Não
+
+       RIO GRANDE DO SUL
+       100030    74      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Não
+       100080    74      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Não
+       100099    74      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100102    74      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100129    74      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100021    82      Detalhamento da Receita                    T    Não
+       100048    82      Detalhamento da Receita                    T    Não
+       100080    82      Detalhamento da Receita                    T    Não
+       100137    82      Detalhamento da Receita                    T    Não
+       600016    82      Detalhamento da Receita                    T    Não
+       100013    62      Informações Complementares 1               T    Não
+       100021    62      Informações Complementares 1               T    Não
+       100030    62      Informações Complementares 1               T    Não
+       100048    62      Informações Complementares 1               T    Não
+       100056    62      Informações Complementares 1               T    Não
+       100064    62      Informações Complementares 1               T    Não
+       100072    62      Informações Complementares 1               T    Não
+       100080    62      Informações Complementares 1               T    Não
+       100099    62      Informações Complementares 1               T    Não
+       100102    62      Informações Complementares 1               T    Não
+       100110    62      Informações Complementares 1               T    Não
+       100129    62      Informações Complementares 1               T    Não
+       100137    62      Informações Complementares 1               T    Não
+       150010    62      Informações Complementares 1               T    Não
+       500011    62      Informações Complementares 1               T    Não
+       600016    62      Informações Complementares 1               T    Não
+
+       SANTA CATARINA
+       100099    84      Chave de Acesso da NFe                     T    Sim
+       100102    84      Chave de Acesso da NFe                     T    Sim
+
+       SERGIPE
+       100030    77      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Não
+       100080    77      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Não
+       100099    77      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100102    77      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100129    77      Chave de Acesso da NFe ou do CTe/CTE-OS    T    Sim
+       100030    73      Informações Complementares                 T    Não
+       100048    73      Informações Complementares                 T    Não
+       100056    73      Informações Complementares                 T    Não
+       100080    73      Informações Complementares                 T    Não
+       100099    73      Informações Complementares                 T    Não
+       100102    73      Informações Complementares                 T    Não
+       100110    73      Informações Complementares                 T    Não
+       100129    73      Informações Complementares                 T    Não
+       100137    73      Informações Complementares                 T    Não
+
+       TOCANTINS
+       100099    80      Chave de Acesso da NFe                     T    Sim
+       100102    80      Chave de Acesso da NFe                     T    Sim
+       100129    80      Chave de Acesso da NFe                     T    Não
+       100013    72      OBSERVAÇÃO                                 T    Não
+       100021    72      OBSERVAÇÃO                                 T    Não
+       100030    72      OBSERVAÇÃO                                 T    Não
+       100048    72      OBSERVAÇÃO                                 T    Sim
+       100056    72      OBSERVAÇÃO                                 T    Não
+       100080    72      OBSERVAÇÃO                                 T    Não
+       100099    72      OBSERVAÇÃO                                 T    Sim
+       100102    72      OBSERVAÇÃO                                 T    Não
+       100110    72      OBSERVAÇÃO                                 T    Sim
+       100129    72      OBSERVAÇÃO                                 T    Sim
+       100137    72      OBSERVAÇÃO                                 T    Sim
+

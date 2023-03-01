@@ -1,0 +1,78 @@
+{
+    "3.00": {
+        "recepcao": {
+            "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcao/MDFeRecepcao.asmx",
+            "namespace": "http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcao",
+            "servico": "MDFeRecepcao",
+            "metodo": "mdfeRecepcaoLote",
+            "versao": "3.00",
+            "schema": "mdfe_v3.00.xsd",
+            "tag_cabecalho": "<mdfeCabecMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcao'><cUF>ALTERAR_DADOS_UF</cUF><versaoDados>3.00</versaoDados></mdfeCabecMsg>",
+            "tag_corpo": "<mdfeDadosMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcao'><enviMDFe xmlns = 'http://www.portalfiscal.inf.br/mdfe' versao='3.00'><idLote>ALTERAR_DADOS_ID_LOTE</idLote>ALTERAR_DADOS_XML</enviMDFe></mdfeDadosMsg>"
+        },
+        "consulta_lote": {
+            "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRetRecepcao/MDFeRetRecepcao.asmx",
+            "namespace": "http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRetRecepcao",
+            "servico": "MDFeRetRecepcao",
+            "metodo": "mdfeRetRecepcao",
+            "versao": "3.00",
+            "schema": " consReciMdfe_v3.00.xsd",
+            "tag_cabecalho": "<mdfeCabecMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRetRecepcao'><cUF>ALTERAR_DADOS_UF</cUF><versaoDados>3.00</versaoDados></mdfeCabecMsg > ",
+            "tag_corpo": "<mdfeDadosMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRetRecepcao'><consReciMDFe xmlns='http://www.portalfiscal.inf.br/mdfe' versao='3.00'><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><nRec>ALTERAR_RECIBO</nRec></consReciMDFe></mdfeDadosMsg>"
+        },
+        "consulta": {
+            "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx",
+            "namespace": "http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeConsulta",
+            "servico": "CONSULTAR",
+            "metodo": "mdfeConsultaMDF",
+            "versao": "3.00",
+            "schema": "consReciMDFe_v3.00.xsd",
+            "tag_cabecalho": "<mdfeCabecMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeConsulta'><cUF>ALTERAR_DADOS_UF</cUF><versaoDados>3.00</versaoDados></mdfeCabecMsg> ",
+            "tag_corpo": "<mdfeDadosMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeConsulta'><consSitMDFe xmlns='http://www.portalfiscal.inf.br/mdfe' versao='3.00'><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><xServ>CONSULTAR</xServ><chMDFe>ALTERAR_CHAVE_MDFE</chMDFe></consSitMDFe></mdfeDadosMsg>"
+        },
+        "status": {
+            "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx",
+            "namespace": "http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeStatusServico",
+            "servico": "CONSULTAR",
+            "metodo": "mdfeConsultaMDF",
+            "versao": "3.00",
+            "schema": "",
+            "tag_cabecalho": "<mdfeCabecMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeStatusServico'><cUF>ALTERAR_DADOS_UF</cUF><versaoDados>3.00</versaoDados></mdfeCabecMsg > ",
+            "tag_corpo": "<mdfeDadosMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeStatusServico'><consStatServMDFe xmlns = 'http://www.portalfiscal.inf.br/mdfe' versao='3.00'><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><xServ>STATUS</xServ></consStatServMDFe></mdfeDadosMsg>"
+        },
+        "nao_encerrados": {
+            "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx",
+            "namespace": "http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeConsNaoEnc",
+            "servico": "CONSULTAR",
+            "metodo": "mdfeConsNaoEnc",
+            "versao": "3.00",
+            "schema": "",
+            "tag_cabecalho": "<mdfeCabecMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeConsNaoEnc'><cUF>ALTERAR_DADOS_UF</cUF><1versaoDados>3.00</versaoDados></mdfeCabecMsg > ",
+            "tag_corpo": "<mdfeDadosMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeConsNaoEnc'><consMDFeNaoEnc xmlns = 'http://www.portalfiscal.inf.br/mdfe' versao = '3.00' ><tpAmb>ALTERAR_TIPO_AMBIENTE </tpAmb><xServ > CONSULTAR NÃO ENCERRADOS </xServ><CNPJ > ALTERAR_CNPJ </CNPJ></consMDFeNaoEnc ></mdfeDadosMsg>"
+        },
+        "encerramento": {
+            "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx",
+            "namespace": "http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcaoEvento",
+            "servico": "MDFeRecepcaoEvento",
+            "metodo": "mdfeRecepcaoEvento",
+            "versao": "3.00",
+            "schema": "eventoMDFe_v3.00.xsd",
+            "tag_cabecalho": "<mdfeCabecMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcaoEvento'><cUF>ALTERAR_UF_AUTORIZADOR</cUF><versaoDados>3.00</versaoDados></mdfeCabecMsg>",
+            "envelope_corpo_superior": "<mdfeDadosMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcaoEvento'>",
+            "envelope_corpo_inferior": "</mdfeDadosMsg>",
+            "tag_corpo": "<eventoMDFe xmlns = 'http://www.portalfiscal.inf.br/mdfe' versao='3.00'><infEvento Id='ALTERAR_ID'><cOrgao>ALTERAR_UF_AUTORIZADOR</cOrgao><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><CNPJ>ALTERAR_CNPJ</CNPJ><chMDFe>ALTERAR_CHAVE_MDFE</chMDFe><dhEvento>ALTERAR_DH_EVENTO</dhEvento><tpEvento>ALTERAR_TIPO_EVENTO</tpEvento><nSeqEvento>1</nSeqEvento><detEvento versaoEvento='3.00'><evEncMDFe><descEvento>Encerramento</descEvento><nProt>ALTERAR_NRO_PROTOCOLO</nProt><dtEnc>ALTERAR_DATA_ENCERRAMENTO</dtEnc><cUF>ALTERAR_UF_ENCERRAMENTO</cUF><cMun>ALTERAR_MUNICIPIO_ENCERRAMENTO</cMun></evEncMDFe></detEvento></infEvento></eventoMDFe>"
+        },
+        "cancelamento": {
+            "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx",
+            "namespace": "http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcaoEvento",
+            "servico": "MDFeRecepcaoEvento",
+            "metodo": "mdfeRecepcaoEvento",
+            "versao": "3.00",
+            "schema": "eventoMDFe_v3.00.xsd",
+            "envelope_corpo_superior": "<mdfeDadosMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcaoEvento'>",
+            "envelope_corpo_inferior": "</mdfeDadosMsg>",
+            "tag_cabecalho": "<mdfeCabecMsg xmlns='http://www.portalfiscal.inf.br/mdfe/wsdl/MDFeRecepcaoEvento'><cUF>ALTERAR_UF_AUTORIZADOR</cUF><versaoDados>3.00</versaoDados></mdfeCabecMsg>",
+            "tag_corpo": "<eventoMDFe xmlns = 'http://www.portalfiscal.inf.br/mdfe' versao='3.00'><infEvento Id='ALTERAR_ID'><cOrgao>ALTERAR_UF_AUTORIZADOR</cOrgao><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><CNPJ>ALTERAR_CNPJ</CNPJ><chMDFe>ALTERAR_CHAVE_MDFE</chMDFe><dhEvento>ALTERAR_DH_EVENTO</dhEvento><tpEvento>ALTERAR_TIPO_EVENTO</tpEvento><nSeqEvento>1</nSeqEvento><detEvento versaoEvento='3.00'><evCancMDFe><descEvento>Cancelamento</descEvento><nProt>ALTERAR_NRO_PROTOCOLO</nProt><xJust>ALTERAR_JUSTIFICATIVA</xJust></evCancMDFe></detEvento></infEvento></eventoMDFe>"
+        }
+    }
+}

@@ -1,0 +1,231 @@
+<?php
+
+	/*
+		Classe:					CCampoMagro.php
+		Autor:					J. Eduardo Nunes Lino
+		Data:					10/11/2016
+		                                        03/12/2016 - Alterado - Guilherme Pinto
+		Finalidade: 			Classe responsavel pela comunicacao com o WebService de Campo Magro
+		Programas chamadores:
+		Programas chamados:
+	*/
+
+	require_once("/var/www/html/nf/nfse/control/CXml.php");
+	require_once("/var/www/html/nf/nfse/control/CAssinaturaDigital.php");
+
+	class CCampoMagro
+	{ 
+		/* Atruibutos publicos utilizada por todos */
+		private $grupo;
+		
+		public $cnpj;
+		public $numeroControle;
+		public $dadosTxt;
+		public $ambiente;
+		public $chaveCertificado;
+		public $ibge;
+
+		public $mensagemErro;
+	
+	
+		/* Metodos publicos chamados por programas externos*/                 
+		// Construtor inserido par gerar setar o grupo que instancia a classe 
+		function __construct($pGrupo="") {                                    
+		    $this->grupo = $pGrupo;                                               
+                }                                                                     
+
+
+
+		
+		public function mEnviarRPS($cnpj="", $numeroControle="", $dadosTxt="", $ambiente="")
+		{
+			$this->cnpj = $cnpj;
+			$this->numeroControle = $numeroControle;
+			$this->dadosTxt = $dadosTxt;
+			$this->ambiente = $ambiente;
+
+			$xml = $this->mConverteXmlEnvio("");
+
+			$this->chaveCertificado = $this->mObterChaveCertificadoDigital();
+
+			$this->mExecutar('RecepcionarLoteRps', $CXml->xml, "S", 'LoteRps', "");
+
+		}
+
+		
+		public function mCancelarRPS()
+		{
+			
+		}
+
+		private function mExecutar($metodo="", $dados="", $assinatura="N", $tagAssinada="", $noAssinar="")
+		{
+			$CAssinaturaDigital = new CAssinaturaDigital("");
+
+			$xmlSoap = '';
+			$xmlSoap .= '<?xml version="1.0" encoding="utf-8"?>';
+			$xmlSoap .= '<soap12:Envelope ';
+			$xmlSoap .= 'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ';
+			$xmlSoap .= 'xmlns:xsd="http://www.w3.org/2001/XMLSchema" ';
+			$xmlSoap .= 'xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">';
+			$xmlSoap .= '<soap12:Body>';
+			$xmlSoap .= '<'.$metodo.' xmlns="http://www.e-governeapps2.com.br/">';
+
+			$CAssinaturaDigital->xml = $dados;
+			$CAssinaturaDigital->arquivoPFX = "/var/www/html/nf/nfse/certificados/".$this->prestadorCNPJ.".pfx";
+			$CAssinaturaDigital->senhaPFX = $this->chaveCertificado;
+
+			if($assinatura == "S")
+		  	{
+		  		if(!$CAssinaturaDigital->assinarXml($tagAssinada, $noAssinar, $this->cnpj))
+				{
+					$this->mensagemErro = $CAssinaturaDigital->mensagemErro;
+					return false;
+				}
+				$xmlSoap .= $CAssinaturaDigital->xml;
+		  	}
+		  	else
+		  	{
+		  		$CAssinaturaDigital->cnpj = $this->cnpj;
+				if(!$CAssinaturaDigital->loadCerts())
+				{
+					$this->mensagemErro = $CAssinaturaDigital->mensagemErro;
+					return false;
+				}
+				$xmlSoap .= $pDados;
+		  	}
+
+		  	$xmlSoap .= '</'.$pMetodo.'>';
+			$xmlSoap .= '</soap12:Body>';
+			$xmlSoap .= '</soap12:Envelope>'; 
+
+
+			file_put_contents("/var/tmp/nfse.log","CCuritiba.php\n  executarWS(".$pMetodo.") {XML Enviado a enviar para prefeitura: \n ".$xmlSoap." } \n\n", FILE_APPEND);
+			$tamanho = strlen($xmlSoap);
+
+			$this->obterConfiguracoesWS($this->prestadorCNPJ);
+
+			$parametrosSoap = Array("Host: 200.140.228.224", 'Content-Type: application/soap+xml;charset=utf-8',"Content-length: $tamanho");
+			$oCurl = curl_init();
+
+			curl_setopt($oCurl, CURLOPT_FRESH_CONNECT, TRUE);
+			if($this->ConfigWs[0]['proxy'] == "S")
+			{
+				curl_setopt($oCurl, CURLOPT_HTTPPROXYTUNNEL, 1);
+				curl_setopt($oCurl, CURLOPT_PROXYTYPE, "CURLPROXY_HTTP");
+				curl_setopt($oCurl, CURLOPT_PROXY, $this->ConfigWs[0]['proxy_servidor'].':'.$this->ConfigWs[0]['proxy_porta']);
+
+				if( $this->ConfigWs[0]['proxy_senha'] != '' )
+				{
+					curl_setopt($oCurl, CURLOPT_PROXYUSERPWD, $this->ConfigWs[0]['proxy_usuario'].':'.$this->ConfigWs[0]['proxy_senha']);
+					curl_setopt($oCurl, CURLOPT_PROXYAUTH, "CURLAUTH_BASIC");
+				}
+			}
+
+			if($this->ambiente == "0")
+			{
+				curl_setopt($oCurl, CURLOPT_URL, "https://isscuritiba.curitiba.pr.gov.br/Iss.NfseWebService/nfsews.asmx?wsdl");
+			}
+			else
+			{
+				curl_setopt($oCurl, CURLOPT_URL, "https://pilotoisscuritiba.curitiba.pr.gov.br/nfse_ws/nfsews.asmx?wsdl");
+			}
+
+			curl_setopt($oCurl, CURLOPT_PORT , 443); // porta normal HTTP
+			curl_setopt($oCurl, CURLOPT_VERBOSE, 1);
+			curl_setopt($oCurl, CURLOPT_HEADER, 1); //retorna o cabeÃ§alho de resposta
+			//curl_setopt($oCurl, CURLOPT_SSLVERSION, 3); -- Removido pelo possÃ­vel ataque POODLE para V3 - atualizar para TLS1.0 ou superior
+			curl_setopt($oCurl, CURLOPT_SSL_VERIFYHOST, 0);
+			curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, 0);
+			//curl_setopt($oCurl, CURLOPT_CONNECTTIMEOUT, 500);
+			//curl_setopt($oCurl, CURLOPT_TIMEOUT, 0);
+			//curl_setopt($oCurl, CURLOPT_MAXREDIRS, 15);
+			curl_setopt($oCurl, CURLOPT_FOLLOWLOCATION, TRUE);
+
+			/* Para conexoes seguras eh necessario certificado digital*/
+			curl_setopt($oCurl, CURLOPT_SSLCERT, $CAssinaturaDigital->getPubKey());
+			curl_setopt($oCurl, CURLOPT_SSLKEY, $CAssinaturaDigital->getPriKey());
+
+			curl_setopt($oCurl, CURLOPT_POST, 1);
+			curl_setopt($oCurl, CURLOPT_POSTFIELDS, $xmlSoap);
+			curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($oCurl, CURLOPT_HTTPHEADER,$parametrosSoap);
+			curl_setopt($oCurl, CURLOPT_USERAGENT,'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)');
+			/* Executar chamada o servidor */
+
+			$__xml = curl_exec($oCurl);
+			file_put_contents("/var/tmp/nfse.log","CCuritiba.php\n  executarWS(".$pMetodo.") { Retorno servidor:\n".$__xml." }\n\n", FILE_APPEND);
+
+			$info = curl_getinfo($oCurl); //informaÃ§Ãµes da conexÃ£o
+
+			$txtInfo  = "";
+			$txtInfo .= "URL=$info[url]\n";
+			$txtInfo .= "Content type=$info[content_type]\n";
+			$txtInfo .= "Http Code=$info[http_code]\n";
+			$txtInfo .= "Header Size=$info[header_size]\n";
+			$txtInfo .= "Request Size=$info[request_size]\n";
+			$txtInfo .= "Filetime=$info[filetime]\n";
+			$txtInfo .= "SSL Verify Result=$info[ssl_verify_result]\n";
+			$txtInfo .= "Redirect Count=$info[redirect_count]\n";
+			$txtInfo .= "Total Time=$info[total_time]\n";
+			$txtInfo .= "Namelookup=$info[namelookup_time]\n";
+			$txtInfo .= "Connect Time=$info[connect_time]\n";
+			$txtInfo .= "Pretransfer Time=$info[pretransfer_time]\n";
+			$txtInfo .= "Size Upload=$info[size_upload]\n";
+			$txtInfo .= "Size Download=$info[size_download]\n";
+			$txtInfo .= "Speed Download=$info[speed_download]\n";
+			$txtInfo .= "Speed Upload=$info[speed_upload]\n";
+			$txtInfo .= "Download Content Length=$info[download_content_length]\n";
+			$txtInfo .= "Upload Content Length=$info[upload_content_length]\n";
+			$txtInfo .= "Start Transfer Time=$info[starttransfer_time]\n";
+			$txtInfo .= "Redirect Time=$info[redirect_time]\n";
+			$txtInfo .= "Certinfo=$info[certinfo]\n";
+
+			/* Retirar espacoes no inicio do retorno do servidor*/
+			$n = strlen($__xml);
+			$x = stripos($__xml, "<");
+			$xmlRetorno = substr($__xml, $x, $n-$x);
+
+			file_put_contents("retorno.txt",$xmlRetorno);
+
+			/* Encerrar Conexao cUrl */
+			curl_close($oCurl);
+			file_put_contents("/var/tmp/nfse.log","CCuritiba.php\n  executarWS(".$pMetodo.") { XML retorno:\n".$xmlRetorno." }\n\n", FILE_APPEND);
+			$this->xmlRetornoWS = $xmlRetorno;
+		}
+
+		public function mConverteXmlEnvio($tipoEnvio="")
+		{
+
+		}	
+		
+		private function mRespostaWebService()
+		{
+			
+		}
+		
+		public function mConsultarNotaFiscal()
+		{
+
+		}
+		
+		private function mObterConfiguracoes()
+		{
+		  
+		}
+
+	    public function mObterChaveCertificadoDigital()
+	    {
+	    	$file = parse_ini_file("/var/www/html/nf/nfe/config/config.ini");
+
+			if(!$file)
+			{
+				echo "\nErro ao abrir o arquivo config.ini\n";
+			}
+
+	        return $file[trim($this->cnpj)];
+	    }
+
+		
+	}
+?>

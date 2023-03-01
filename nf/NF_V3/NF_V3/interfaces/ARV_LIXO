@@ -1,0 +1,1 @@
+PHP Warning:  file_put_contents(/user/nfe/3995841300011/CaixaSaida/Sefaz/DNFER2022.07.19-14.40.01.txt): failed to open stream: No such file or directory in /home/www/html/nf/NF_V3/NF_V3/interfaces/dnfe-consulta.php on line 200

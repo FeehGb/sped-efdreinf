@@ -1,0 +1,8 @@
+Os programas deste diretorio NAO DEVEM ser executados diretamente,
+Nem devem ser chamados via linha de comando. Por este motivo, NUNCA devem receber parâmetros do $argv, ou equivalente.
+
+A princípio cada arquivo deve possuir uma, E APENAS UMA função dentro dele.
+A função do arquivo deve possuiir o mesmo nome do arquivo, sem a extensão:
+EX: 
+	Arquivo: exemplo.php
+	funcao : exemplo()

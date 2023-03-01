@@ -1,0 +1,47 @@
+{
+    "MS":{
+        "estado" : "Mato Grosso do Sul",
+        "configuracoes":{
+            "conexao_segura"  :"S"   ,
+            "verbose"         :"0"   ,
+            "porta"           :"443" ,
+            "header"          :"1"   ,
+            "sslversion"      :"6"   ,
+            "ssl_verifyhost"  :"0"   ,
+            "ssl_verifypeer"  :"0"   ,
+            "connecttimeou"   :""    ,
+            "timeou"          :""    ,
+            "maxredir"        :""    ,
+            "followlocation"  :"0"   ,
+            "post"            :"1"   ,
+            "returntransfer"  :"1"   ,
+            "fresh_connect"   :"0"    
+        },
+        "servico":{
+            "CteRecepcao": {
+                "url":"https://producao.cte.ms.gov.br/ws/CteRecepcao"
+            },
+            "CteRetRecepcao": {
+                "url":"https://producao.cte.ms.gov.br/ws/CteRetRecepcao"
+            },
+            "CteInutilizacao": {
+                "url":"https://producao.cte.ms.gov.br/ws/CteInutilizacao"
+            },
+            "CteConsultaProtocolo": {
+                "url":"https://producao.cte.ms.gov.br/ws/CteConsulta"
+            },
+            "CteStatusServico": {
+                "url":"https://producao.cte.ms.gov.br/ws/CteStatusServico"
+            },
+            "CteConsultaCadastro": {
+                "url":"https://nfe.sefaz.ms.gov.br/ws/CadConsultaCadastro4"
+            },
+            "CteRecepcaoEvento": {
+                "url":"https://producao.cte.ms.gov.br/ws/CteRecepcaoEvento"
+            },
+            "CTeRecepcaoOS": {
+                "url":"https://producao.cte.ms.gov.br/ws/CteRecepcaoOS"
+            }
+        }
+    }
+}

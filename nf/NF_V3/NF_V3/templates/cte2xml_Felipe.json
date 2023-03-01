@@ -1,0 +1,652 @@
+{
+    "3.00": {
+        "mapa": {
+            "CTE": [
+                "tipo"
+            ],
+            "A01": [
+                "linha"
+            ,   "/infCte/@versao"
+            ,   "/infCte/@Id"
+            ],
+            "B01": [
+                "linha"
+            ,   "/infCte/ide/cUF"
+            ,   "/infCte/ide/cCT"
+            ,   "/infCte/ide/CFOP"
+            ,   "/infCte/ide/natOp"
+            ,   "/infCte/ide/mod"
+            ,   "/infCte/ide/serie"
+            ,   "/infCte/ide/nCT"
+            ,   "/infCte/ide/dhEmi"
+            ,   "/infCte/ide/tpImp"
+            ,   "/infCte/ide/tpEmis"
+            ,   "/infCte/ide/cDV"
+            ,   "/infCte/ide/tpAmb"
+            ,   "/infCte/ide/tpCTe"
+            ,   "/infCte/ide/procEmi"
+            ,   "/infCte/ide/verProc"
+            ,   "/infCte/ide/indGlobalizado"
+            ,   "/infCte/ide/cMunEnv"
+            ,   "/infCte/ide/xMunEnv"
+            ,   "/infCte/ide/UFEnv"
+            ,   "/infCte/ide/modal"
+            ,   "/infCte/ide/tpServ"
+            ,   "/infCte/ide/cMunIni"
+            ,   "/infCte/ide/xMunIni"
+            ,   "/infCte/ide/UFIni"
+            ,   "/infCte/ide/cMunFim"
+            ,   "/infCte/ide/xMunFim"
+            ,   "/infCte/ide/UFFim"
+            ,   "/infCte/ide/retira"
+            ,   "/infCte/ide/xDetRetira"
+            ,   "/infCte/ide/indIEToma"
+                
+            
+            ],
+            "B02": [
+                "linha"
+            ,   "/infCte/ide/toma3/toma"
+            ],
+            "B03": [
+                "linha"
+            ,   "/infCte/ide/toma4/toma"
+            ,   "/infCte/ide/toma4/CNPJ"
+            ,   "/infCte/ide/toma4/CPF"
+            ,   "/infCte/ide/toma4/IE"
+            ,   "/infCte/ide/toma4/xNome"
+            ,   "/infCte/ide/toma4/xFant"
+            ,   "/infCte/ide/toma4/fone"
+                
+            ],
+            "B03A01": [
+                "linha"
+            ,   "/infCte/ide/toma4/enderToma/xLgr"
+            ,   "/infCte/ide/toma4/enderToma/nro"
+            ,   "/infCte/ide/toma4/enderToma/xCpl"
+            ,   "/infCte/ide/toma4/enderToma/xBairro"
+            ,   "/infCte/ide/toma4/enderToma/cMun"
+            ,   "/infCte/ide/toma4/enderToma/xMun"
+            ,   "/infCte/ide/toma4/enderToma/CEP"
+            ,   "/infCte/ide/toma4/enderToma/UF"
+            ,   "/infCte/ide/toma4/enderToma/cPais"
+            ,   "/infCte/ide/toma4/enderToma/xPais"
+            ,   "/infCte/ide/toma4/enderToma/xPais"
+            ,   "/infCte/ide/toma4/enderToma/email"
+                
+            ],
+            "B04": [
+                "linha"
+            ,   "/infCte/ide/X"
+            ,   "/infCte/ide/dhCont"
+            ,   "/infCte/ide/xJust"
+                
+            ],
+            "C01": [
+                "linha"
+            ,   "/infCte/compl/xCaracAd"
+            ,   "/infCte/compl/xCaracSer"
+            ,   "/infCte/compl/xEmi"
+            ],
+            "C02": [
+                "linha"
+            ,   "/infCte/compl/fluxo/xOrig"
+            ],
+            "C02A01": [
+                "linha"
+            ,   "/infCte/compl/fluxo/pass/xPass"
+            ,   "/infCte/compl/fluxo/xDest"
+            ,   "/infCte/compl/fluxo/xRota"
+                
+                
+            ],
+            "C02A02": [
+                "linha"
+            ,   "/infCte/compl/Entrega/semData/tpPer"
+            ,   "/infCte/compl/Entrega/comData/tpPer"
+            ,   "/infCte/compl/Entrega/comData/dProg"
+                    
+            ],
+            "C02A03": [
+                "linha"
+            ,   "/infCte/compl/Entrega/noPeriodo/tpPer"
+            ,   "/infCte/compl/Entrega/noPeriodo/dIni"
+            ,   "/infCte/compl/Entrega/noPeriodo/dFim"
+            ],
+            "C02A04": [
+                "linha"
+            ,   "/infCte/compl/Entrega/semHora/tpHor"
+            ],
+            "C02A05": [
+                "linha"
+            ,   "/infCte/compl/Entrega/comHora/tpHor"
+            ,   "/infCte/compl/Entrega/comHora/hProg"
+            ],
+            "C02A06": [
+                "linha"
+            ,   "/infCte/compl/Entrega/noInter/tpHor"
+            ,   "/infCte/compl/Entrega/noInter/hIni"
+            ,   "/infCte/compl/Entrega/noInter/hFim"
+            
+            ],
+            "C03": [
+                "linha"
+            ,   "/infCte/compl/origCalc"
+            ,   "/infCte/compl/destCalc"
+            ,   "/infCte/compl/xObs"
+            
+            ],
+            "C04": [
+                "linha"
+            ,   "/infCte/compl/ObsCont/@xCampo"
+            ,   "/infCte/compl/ObsCont/xTexto"
+            ],
+            
+            "C05": [
+                "linha"
+            ,   "/infCte/compl/ObsFisco/xCampo"
+            ,   "/infCte/compl/ObsFisco/xTexto"
+            
+            ],
+            
+            "D01": [
+                "linha"
+            ,   "/infCte/emit/CNPJ"
+            ,   "/infCte/emit/IE"
+            ,   "/infCte/emit/IEST"
+            ,   "/infCte/emit/xNome"
+            ,   "/infCte/emit/xFant"
+            ],
+        
+            "D01A01": [
+                "linha"
+            ,   "/infCte/emit/enderEmit/xLgr"
+            ,   "/infCte/emit/enderEmit/nro"
+            ,   "/infCte/emit/enderEmit/xCpl"
+            ,   "/infCte/emit/enderEmit/xBairro"
+            ,   "/infCte/emit/enderEmit/cMun"
+            ,   "/infCte/emit/enderEmit/xMun"
+            ,   "/infCte/emit/enderEmit/CEP"
+            ,   "/infCte/emit/enderEmit/UF"
+            ,   "/infCte/emit/enderEmit/fone"
+            ],
+            
+            "E01": [
+                "linha"
+            ,   "/infCte/rem/CNPJ"
+            ,   "/infCte/rem/CPF"
+            ,   "/infCte/rem/IE"
+            ,   "/infCte/rem/xNome"
+            ,   "/infCte/rem/xFant"
+            ,   "/infCte/rem/fone"
+            ,   "/infCte/rem/email"
+                    
+            ],
+            "E01A01": [
+                "linha"
+            ,   "/infCte/rem/enderReme/xLgr"
+            ,   "/infCte/rem/enderReme/nro"
+            ,   "/infCte/rem/enderReme/xCpl"
+            ,   "/infCte/rem/enderReme/xBairro"
+            ,   "/infCte/rem/enderReme/cMun"
+            ,   "/infCte/rem/enderReme/xMun"
+            ,   "/infCte/rem/enderReme/CEP"
+            ,   "/infCte/rem/enderReme/UF"
+            ,   "/infCte/rem/enderReme/cPais"
+            ,   "/infCte/rem/enderReme/xPais"
+                    
+            ],
+            "F01": [
+                "linha"
+            ,   "/infCte/exped/CNPJ"
+            ,   "/infCte/exped/CPF"
+            ,   "/infCte/exped/IE"
+            ,   "/infCte/exped/xNome"
+            ,   "/infCte/exped/fone"
+            ,   "/infCte/exped/email"
+                    
+            ],
+            
+            "F01A01": [
+                "linha"
+            ,   "/infCte/exped/enderExped/xLgr"
+            ,   "/infCte/exped/enderExped/nro"
+            ,   "/infCte/exped/enderExped/xCpl"
+            ,   "/infCte/exped/enderExped/xBairro"
+            ,   "/infCte/exped/enderExped/cMun"
+            ,   "/infCte/exped/enderExped/xMun"
+            ,   "/infCte/exped/enderExped/CEP"
+            ,   "/infCte/exped/enderExped/UF"
+            ,   "/infCte/exped/enderExped/cPais"
+            ,   "/infCte/exped/enderExped/xPais"
+                    
+            ],
+            
+            "G01": [
+                "linha"
+            ,   "/infCte/receb/CNPJ"
+            ,   "/infCte/receb/CPF"
+            ,   "/infCte/receb/IE"
+            ,   "/infCte/receb/xNome"
+            ,   "/infCte/receb/fone"
+            ,   "/infCte/receb/email"
+                    
+            ],
+            
+            "G01A01": [
+                "linha"
+            ,   "/infCte/receb/enderReceb/xLgr"
+            ,   "/infCte/receb/enderReceb/nro"
+            ,   "/infCte/receb/enderReceb/xCpl"
+            ,   "/infCte/receb/enderReceb/xBairro"
+            ,   "/infCte/receb/enderReceb/cMun"
+            ,   "/infCte/receb/enderReceb/xMun"
+            ,   "/infCte/receb/enderReceb/CEP"
+            ,   "/infCte/receb/enderReceb/UF"
+            ,   "/infCte/receb/enderReceb/cPais"
+            ,   "/infCte/receb/enderReceb/xPais"
+                    
+            ],
+            "H01": [
+                "linha"
+            ,   "/infCte/dest/CNPJ"
+            ,   "/infCte/dest/CPF"
+            ,   "/infCte/dest/IE"
+            ,   "/infCte/dest/xNome"
+            ,   "/infCte/dest/fone"
+            ,   "/infCte/dest/ISUF"
+            ,   "/infCte/dest/email"
+                    
+            ],
+            
+            "H01A01": [
+                "linha"
+            ,   "/infCte/dest/enderDest/xLgr"
+            ,   "/infCte/dest/enderDest/nro"
+            ,   "/infCte/dest/enderDest/xCpl"
+            ,   "/infCte/dest/enderDest/xBairro"
+            ,   "/infCte/dest/enderDest/cMun"
+            ,   "/infCte/dest/enderDest/xMun"
+            ,   "/infCte/dest/enderDest/CEP"
+            ,   "/infCte/dest/enderDest/UF"
+            ,   "/infCte/dest/enderDest/cPais"
+            ,   "/infCte/dest/enderDest/xPais"
+            
+            ],
+                
+            "I01": [
+                "linha"
+            ,   "/infCte/vPrest/vTPrest"
+            ,   "/infCte/vPrest/vRec"
+            ],
+            "I01A01": [
+                "linha"
+            ,   "/infCte/vPrest/Comp/xNome"
+            ,   "/infCte/vPrest/Comp/vComp"
+            ],
+            
+            "J01": [
+                "linha"
+            ,   "/infCte/imp/CST"
+            ,   "/infCte/imp/indSN"
+            ,   "/infCte/imp/vTotTrib"
+            ,   "/infCte/imp/infAdFisco"
+            ],
+            
+            "J02": [
+                "linha"
+            ,   "/infCte/imp/ICMS/ICMS00/CST"
+            ,   "/infCte/imp/ICMS/ICMS00/vBC"
+            ,   "/infCte/imp/ICMS/ICMS00/pICMS"
+            ,   "/infCte/imp/ICMS/ICMS00/vICMS"
+            ],
+            "J03": [
+                "linha"
+            ,   "/infCte/imp/ICMS/ICMS20/CST"
+            ,   "/infCte/imp/ICMS/ICMS20/pRedBC"
+            ,   "/infCte/imp/ICMS/ICMS20/vBC"
+            ,   "/infCte/imp/ICMS/ICMS20/pICMS"
+            ,   "/infCte/imp/ICMS/ICMS20/vICMS"
+            ],
+            "J04": [
+                "linha"
+            ,   "/infCte/imp/ICMS/ICMS45/CST"
+            ],
+            "J05": [
+                "linha"
+            ,   "/infCte/imp/ICMS/ICMS60/CST"
+            ,   "/infCte/imp/ICMS/ICMS60/vBCSTRet"
+            ,   "/infCte/imp/ICMS/ICMS60/vICMSSTRet"
+            ,   "/infCte/imp/ICMS/ICMS60/pICMSSTRet"
+            ,   "/infCte/imp/ICMS/ICMS60/vCred"
+            ],
+            "J06": [
+                "linha"
+            ,   "/infCte/imp/ICMS/ICMS90/CST"
+            ,   "/infCte/imp/ICMS/ICMS90/pRedBC"
+            ,   "/infCte/imp/ICMS/ICMS90/vBC"
+            ,   "/infCte/imp/ICMS/ICMS90/pICMS"
+            ,   "/infCte/imp/ICMS/ICMS90/vICMS"
+            ,   "/infCte/imp/ICMS/ICMS90/vCred"
+            ],
+            "J07": [
+                "linha"
+            ,   "/infCte/imp/ICMS/ICMSOutraUF/CST"
+            ,   "/infCte/imp/ICMS/ICMSOutraUF/pRedBCOutraUF"
+            ,   "/infCte/imp/ICMS/ICMSOutraUF/vBCOutraUF"
+            ,   "/infCte/imp/ICMS/ICMSOutraUF/pICMSOutraUF"
+            ,   "/infCte/imp/ICMS/ICMSOutraUF/vICMSOutraUF"
+
+            ],
+            
+            "J08": [
+                "linha"
+            ,   "/infCte/imp/ICMS/ICMSUFFim/vBCUFFim"
+            ,   "/infCte/imp/ICMS/ICMSUFFim/pFCPUFFim"
+            ,   "/infCte/imp/ICMS/ICMSUFFim/pICMSUFFim"
+            ,   "/infCte/imp/ICMS/ICMSUFFim/pICMSInter"
+            ,   "/infCte/imp/ICMS/ICMSUFFim/vFCPUFFim"
+            ,   "/infCte/imp/ICMS/ICMSUFFim/vICMSUFFim"
+            ,   "/infCte/imp/ICMS/ICMSUFFim/vICMSUFIni"
+            ],
+            "K01": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infCarga/vCarga"
+            ,   "/infCte/infCTeNorm/infCarga/proPred"
+            ,   "/infCte/infCTeNorm/infCarga/xOutCat"
+            ,   "/infCte/infCTeNorm/infCarga/vCargaAverb"
+            ],
+            "K01A01": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infCarga/infQ/cUnid"
+            ,   "/infCte/infCTeNorm/infCarga/infQ/tpMed"
+            ,   "/infCte/infCTeNorm/infCarga/infQ/qCarga"
+            ,   "/infCte/infCTeNorm/infCarga/infQ/vCargaAverb"
+            ],
+            "K02": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/nRoma"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/nPed"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/mod"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/serie"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/nDoc"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/dEmi"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/vBC"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/vICMS"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/vBCST"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/vST"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/vProd"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/vNF"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/nCFOP"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/nPeso"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/PIN"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/dPrev"
+            ],
+            "K02A01": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidCarga/tpUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidCarga/idUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidCarga/qtdRat"
+            ],
+            "K02A02": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidCarga/lacUnidCarga/nLacre"
+            ],
+            "K03": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidTransp/tpUnidTransp"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidTransp/idUnidTransp"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidTransp/qtdRat"
+            ],
+            "K03A01": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidTransp/lacUnidTransp/nLacre"
+            
+            ],
+            "K03A02": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidTransp/infUnidCarga/tpUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidTransp/infUnidCarga/idUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidTransp/infUnidCarga/qtdRat"
+            ],
+            "K03A02a": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNF/infUnidTransp/infUnidCarga/lacUnidCarga/nLacre"
+            ],
+            "K04": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/chave"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/PIN"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/dPrev"
+            ],
+            "K04A01": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidCarga/tpUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidCarga/idUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidCarga/qtdRat"
+            ],
+            "K04A01a": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidCarga/lacUnidCarga/nLacre"
+            ],
+            "K05": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidTransp/tpUnidTransp"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidTransp/idUnidTransp"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidTransp/qtdRat"
+            
+            ],
+            "K05A01": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidTransp/lacUnidTransp/nLacre"
+            ],
+            "K05A02": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidTransp/infUnidCarga/tpUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidTransp/infUnidCarga/idUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidTransp/infUnidCarga/qtdRat"
+            ],
+            "K05A02a": [
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infNFe/infUnidTransp/infUnidCarga/lacUnidCarga/nLacre"
+            ],
+            "K06":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/tpDoc"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/descOutros"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/nDoc"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/dEmi"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/vDocFisc"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/dPrev"
+            ],
+            "K06A01":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidCarga/tpUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidCarga/idUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidCarga/qtdRat"
+            ],
+            "K06A01a":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidCarga/lacUnidCarga/nLacre"
+            ],
+            "K06A02":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidTransp/tpUnidTransp"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidTransp/idUnidTransp"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidTransp/qtdRat"
+            ],
+            "K06A02a":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidTransp/infUnidCarga/tpUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidTransp/infUnidCarga/idUnidCarga"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidTransp/infUnidCarga/qtdRat"
+            ],
+            "K06A03a1":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infDoc/infOutros/infUnidCarga/lacUnidCarga/nLacre"
+            ],
+            "K07":[
+                "linha"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/X"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/CNPJ"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/CPF"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/IE"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/UF"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/xNome"
+            ],
+            "K07A01":[
+                "linha"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/idDocAnt/idDocAntPap/tpDoc"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/idDocAnt/idDocAntPap/serie"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/idDocAnt/idDocAntPap/subser"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/idDocAnt/idDocAntPap/nDoc"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/idDocAnt/idDocAntPap/dEmi"
+            ],
+            "K07A02":[
+                "linha"
+            ,   "/infCte/infCTeNorm/docAnt/emiDocAnt/idDocAnt/idDocAntEle/chCTe"
+            ],
+            "K08":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infModal/@versaoModal"
+            ],
+            "K08A01":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infModal/rodo/RNTRC"
+            ],
+            "K08A02":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infModal/occ/serie"
+            ,   "/infCte/infCTeNorm/infModal/occ/nOcc"
+            ,   "/infCte/infCTeNorm/infModal/occ/dEmi"
+            ],
+            "K08A02a":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infModal/occ/emiOcc/CNPJ"
+            ,   "/infCte/infCTeNorm/infModal/occ/emiOcc/cInt"
+            ,   "/infCte/infCTeNorm/infModal/occ/emiOcc/IE"
+            ,   "/infCte/infCTeNorm/infModal/occ/emiOcc/UF"
+            ,   "/infCte/infCTeNorm/infModal/occ/emiOcc/fone"
+                
+                
+            ],
+            "K09":[
+                "linha"
+            ,   "/infCte/infCTeNorm/veicNovos/chassi"
+            ,   "/infCte/infCTeNorm/veicNovos/cCor"
+            ,   "/infCte/infCTeNorm/veicNovos/xCor"
+            ,   "/infCte/infCTeNorm/veicNovos/cMod"
+            ,   "/infCte/infCTeNorm/veicNovos/vUnit"
+            ,   "/infCte/infCTeNorm/veicNovos/vFrete"
+            ],
+            "K10a":[
+                "linha"
+            ,   "/infCte/infCTeNorm/cobr/fat/nFat"
+            ,   "/infCte/infCTeNorm/cobr/fat/vOrig"
+            ,   "/infCte/infCTeNorm/cobr/fat/vDesc"
+            ,   "/infCte/infCTeNorm/cobr/fat/vLiq"
+
+            ],
+            "K10b":[
+                "linha"
+            ,   "/infCte/infCTeNorm/cobr/dup/nDup"
+            ,   "/infCte/infCTeNorm/cobr/dup/dVenc"
+            ,   "/infCte/infCTeNorm/cobr/dup/vDup"
+
+            ],
+            "K11":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infCteSub/chCte"
+            ,   "/infCte/infCTeNorm/infCteSub/refCteAnu"
+            ,   "/infCte/infCTeNorm/infCteSub/indAlteraToma"
+
+            ],
+            "K11A01":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infCteSub/tomaICMS"
+            ,   "/infCte/infCTeNorm/infCteSub/refNFe"
+            ,   "/infCte/infCTeNorm/infCteSub/refCte"
+
+            ],
+            "K11A02":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infCteSub/refNF/CNPJ"
+            ,   "/infCte/infCTeNorm/infCteSub/refNF/CPF"
+            ,   "/infCte/infCTeNorm/infCteSub/refNF/mod"
+            ,   "/infCte/infCTeNorm/infCteSub/refNF/serie"
+            ,   "/infCte/infCTeNorm/infCteSub/refNF/subserie"
+            ,   "/infCte/infCTeNorm/infCteSub/refNF/nro"
+            ,   "/infCte/infCTeNorm/infCteSub/refNF/valor"
+            ,   "/infCte/infCTeNorm/infCteSub/refNF/dEmi"
+
+            ],
+            "K12":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infGlobalizado/xObs"
+
+            ],
+            "K13":[
+                "linha"
+            ,   "/infCte/infCTeNorm/infGlobalizado/infServVinc/infCTeMultimodal/chCTeMultimodal"
+
+            ],
+            "L01":[
+                "linha"
+            ,   "/infCte/infCteComp/chCTe"
+
+            ],
+            "M01":[
+                "linha"
+            ,   "/infCte/infCteAnu/chCTe"
+            ,   "/infCte/infCteAnu/dEmi"
+
+            ],
+            "N01":[
+                "linha"
+            ,   "/infCte/autXML/CNPJ"
+            ,   "/infCte/autXML/CPF"
+
+            ],
+            "N02":[
+                "linha"
+            ,   "/infCte/infRespTec/CNPJ"
+            ,   "/infCte/infRespTec/xContato"
+            ,   "/infCte/infRespTec/email"
+            ,   "/infCte/infRespTec/fone"
+            ,   "/infCte/infRespTec/X"
+            ,   "/infCte/infRespTec/idCSRT"
+            ,   "/infCte/infRespTec/hashCSRT"
+            
+            ],
+            "O01":[
+                "linha"
+            ,   "/infCTeSupl/qrCodCTe"
+
+            
+            ],
+            
+            "@": [
+                "linha"
+            ,   "emailXML"
+            ,   "emailDANFE"
+            ,   "ViasDanfe"
+            ,   "LocalDandeNorm"
+            ,   "LocalDanfeCOnt"
+            ]
+        },
+        "protocolo" : [
+                
+                    "/infProt/tpAmb"
+                ,   "/infProt/verAplic"
+                ,   "/infProt/chCTe"
+                ,   "/infProt/dhRecbto"
+                ,   "/infProt/nProt"
+                ,   "/infProt/digVal"
+                ,   "/infProt/cStat"
+                ,   "/infProt/xMotivo"
+                
+            ]
+            
+        
+    }
+}

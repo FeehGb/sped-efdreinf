@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+            <soap12:Body>
+                <RecepcionarLoteRps xmlns="http://www.e-governeapps2.com.br/"><EnviarLoteRpsEnvio xmlns="http://isscuritiba.curitiba.pr.gov.br/iss/nfse.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://isscuritiba.curitiba.pr.gov.br/iss/nfse.xsd"><LoteRps><NumeroLote>00001286</NumeroLote><Cnpj>24751995000190</Cnpj><InscricaoMunicipal>14010744251-0</InscricaoMunicipal><QuantidadeRps>1</QuantidadeRps><ListaRps><Rps><InfRps><IdentificacaoRps><Numero>00001286</Numero><Serie>001</Serie><Tipo>1</Tipo></IdentificacaoRps><DataEmissao>2021-05-18T09:56:36</DataEmissao><NaturezaOperacao>1</NaturezaOperacao><RegimeEspecialTributacao>2</RegimeEspecialTributacao><OptanteSimplesNacional>1</OptanteSimplesNacional><IncentivadorCultural>2</IncentivadorCultural><Status>1</Status><Servico><Valores><ValorServicos>0000000000350.00</ValorServicos><ValorDeducoes>0.00</ValorDeducoes><ValorPis>0000000000000.00</ValorPis><ValorCofins>0000000000000.00</ValorCofins><ValorInss>0000000000000.00</ValorInss><ValorIr>0000000000000.00</ValorIr><ValorCsll>0000000000000.00</ValorCsll><ValorIss>0.00</ValorIss><IssRetido>2</IssRetido><ValorIssRetido>0.00</ValorIssRetido><BaseCalculo>350.00</BaseCalculo><Aliquota>0.0000</Aliquota><ValorLiquidoNfse>0000000000350.00</ValorLiquidoNfse></Valores><ItemListaServico>1401</ItemListaServico><CodigoTributacaoMunicipio>0000000</CodigoTributacaoMunicipio><Discriminacao>DIV SERVICO MAO OBRA E TROCA DE PECAS
+EMPRESA OPTANTE PELO SIMPLES NACIONAL                                           Fatura: 01-11/06/2021-          350,00</Discriminacao><CodigoMunicipio>4106902</CodigoMunicipio></Servico><Prestador><Cnpj>24751995000190</Cnpj><InscricaoMunicipal>14010744251-0</InscricaoMunicipal></Prestador><Tomador><IdentificacaoTomador><CpfCnpj><Cnpj>73586976000161</Cnpj></CpfCnpj></IdentificacaoTomador><RazaoSocial>SIDERQUIMICA INDUSTRIA E COMERCIO DE PRODUTOS QUIM(C01469)</RazaoSocial><Endereco><Endereco>ROD BR-376</Endereco><Numero>00022591</Numero><Bairro>SAO MARCOS</Bairro><CodigoMunicipio>4125506</CodigoMunicipio><Uf>PR</Uf><Cep>83090360</Cep></Endereco><Contato><Telefone>04121016206</Telefone><Email>valdemir.maciel@siderquimica.com.br</Email></Contato></Tomador></InfRps></Rps></ListaRps></LoteRps><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2006/12/xml-c14n11"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>6UQpa1wFziwvSgEs7K3XBrsm0fb5y4gl4ZuuQnHm0vc=</DigestValue></Reference></SignedInfo><SignatureValue>WLO2MKjl5uHI1M2sxDClUtvWbGkxD0YCH59rlt80EdGVEvYBO0e5RX/fg0K3ouYfaU4J0+qdmRGLmFpPbx2QJO8l+qjNR1OKDuxfs96EdZmFE4mhl11PGFSyNoxetHtFeREUYikeXgwOtRzLTwfR9zmGM0mThSRHTq3/GwwbpYhuBaBiicUjuoZP1cs2dhHW5HD2XLE6mXIBYdftWCdY+O+hM8Ss1+638+odj+3ik8YJEv7pP+Y/OSzlMbKparqWjQKO4gcPvRZebG1tNhLshq1XPCvNyH6gU+IK8igWoeFbsmDqQ1BcXmYBQ6RPeDpmmolsEqPl6+3tJXqlj63nfg==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIEwDCCA6igAwIBAgITYwAACTHhM05oJQwt4gAAAAAJMTANBgkqhkiG9w0BAQUF
+ADBcMRMwEQYKCZImiZPyLGQBGRYDY29tMRowGAYKCZImiZPyLGQBGRYKcGlsb3Rv
+LmlzczEpMCcGA1UEAxMgY2EucGlsb3RvLmlzcy5jdXJpdGliYS5wci5nb3YuYnIw
+HhcNMjEwNTE3MTUwNDMzWhcNMjIwNTE3MTUxNDMzWjCBlzELMAkGA1UEBhMCQlIx
+DzANBgNVBAgTBlBhcmFuYTERMA8GA1UEBxMIQ3VyaXRpYmExEDAOBgNVBAoTB3Nv
+ZnRkaWIxEzARBgNVBAsTClRlY25vbG9naWExFzAVBgNVBAMTDkZlbGlwZSBCYXNp
+bGlvMSQwIgYJKoZIhvcNAQkBFhVmZWxpcGVAc29mdGRpYi5jb20uYnIwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCYLlOQxYpt+nXeUnHd79cqvjssPZPc
+eSwwVZfIAtccXKExuhvggoNWES7NCUetDGHn4+NeQEf4g4RNyRJHegDPiM4FdJ7V
+rm6betIItZPqzsMN7IkixzxVPExhw4FCcaM8f3d/gbH7HCzHhV0tzJtZLu/vJLJy
+xrW5/hQtX3dSoEGwsNZl/XOdyecMxysSBeUzyBtturt3MucThirEfl+H3i7xn6Hu
+Ie9UCWiTAUtGRSgKj36zudMbwKSz0hi4qeXxV7ho2Ym0cYSg1Vm6iHJ8v+GOKzb/
+3FB0hTJszJzZkALmLvsc6aNRsk5m10VekkYMnpRP4Pi2BXImsL1FV1AZAgMBAAGj
+ggE9MIIBOTAOBgNVHQ8BAf8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwIwHQYD
+VR0OBBYEFH0Q9MZ46deGYnMcFk28myVKh1kzMB8GA1UdIwQYMBaAFD/B+Gd9H++R
+fbRMgPfXk4Y939QMMFoGA1UdHwRTMFEwT6BNoEuGSWZpbGU6Ly8vL0FQUFNSVi1Q
+SUxPVE9JU1MvQ2VydEVucm9sbC9jYS5waWxvdG8uaXNzLmN1cml0aWJhLnByLmdv
+di5ici5jcmwwdgYIKwYBBQUHAQEEajBoMGYGCCsGAQUFBzAChlpmaWxlOi8vLy9B
+UFBTUlYtUElMT1RPSVNTL0NlcnRFbnJvbGwvQVBQU1JWLVBJTE9UT0lTU19jYS5w
+aWxvdG8uaXNzLmN1cml0aWJhLnByLmdvdi5ici5jcnQwDQYJKoZIhvcNAQEFBQAD
+ggEBACL15R/+kIVe+AR+yENvtVPs3sCXAGrxpoUh8HhSdzdeGSdK/4f60XbdUol/
+EzvAjwIhxL9hUW2x0D+P5bM5SuMxyHUz5xXr/YpFR6UQpq6FQBIw3TTJAFBY+4Qn
+RmTQfh9kfEIeTUdzdTxrQRkQSPrZErzmR9KyMrxcRAzSemQSlE79vEbX3OvQlZ/Q
+giv4tCNYfvMHIDHzGSvSX/E/vcBE7gI7NVE2NLClMe88+7g04yGZTQ58PvJIKuYk
+llRoUwkTYIfMn60Lcgzio0Teo83kGNp8lrXwbxd4Phs+XgPonq4RJq7nU3oDIzhq
+uWVKSG92ioeF0dNHjCjcpodLacI=
+</X509Certificate></X509Data></KeyInfo></Signature></EnviarLoteRpsEnvio></RecepcionarLoteRps>
+            </soap12:Body>
+        </soap12:Envelope>

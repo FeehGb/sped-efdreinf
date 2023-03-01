@@ -1,0 +1,44 @@
+{
+    "MT":{
+        "estado" : "Mato Grosso",
+        "configuracoes":{
+            "conexao_segura"  :"S"   ,
+            "verbose"         :"0"   ,
+            "porta"           :"443" ,
+            "header"          :"1"   ,
+            "sslversion"      :"6"   ,
+            "ssl_verifyhost"  :"0"   ,
+            "ssl_verifypeer"  :"0"   ,
+            "connecttimeou"   :""    ,
+            "timeou"          :""    ,
+            "maxredir"        :""    ,
+            "followlocation"  :"0"   ,
+            "post"            :"1"   ,
+            "returntransfer"  :"1"   ,
+            "fresh_connect"   :"0"    
+        },
+        "servico":{
+            "CteRecepcao": {
+                "url":"https://cte.sefaz.mt.gov.br/ctews/services/CteRecepcao"
+            },
+            "CteRetRecepcao": {
+                "url":"https://cte.sefaz.mt.gov.br/ctews/services/CteRetRecepcao"
+            },
+            "CteInutilizacao": {
+                "url":"https://cte.sefaz.mt.gov.br/ctews/services/CteInutilizacao"
+            },
+            "CteConsultaProtocolo": {
+                "url":"https://cte.sefaz.mt.gov.br/ctews/services/CteConsulta"
+            },
+            "CteStatusServico": {
+                "url":"https://cte.sefaz.mt.gov.br/ctews/services/CteStatusServico"
+            },
+            "CteRecepcaoEvento": {
+                "url":"https://cte.sefaz.mt.gov.br/ctews2/services/CteRecepcaoEvento?wsdl"
+            },
+            "CTeRecepcaoOS": {
+                "url":"https://cte.sefaz.mt.gov.br/ctews/services/CteRecepcaoOS?wsdl"
+            }
+        }
+    }
+}

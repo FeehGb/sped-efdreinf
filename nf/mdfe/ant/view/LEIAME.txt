@@ -1,0 +1,8 @@
+PASTA: 	    view
+FINALIDADE: Armazenar as classes de de visualização da aplicação
+AUTOR:	    Guilherme Silva
+DATA: 	    07/08/2013
+
+DESCRIÇÃO:  Esta pasta é responsável por armazenar os programas de visualização da aplicação.
+	    As views são todas as interfaces que um sistema pode trabalhar comunicar com o usuário:
+		no nosso caso HTML, CSS, Javascript, jQuery, etc.

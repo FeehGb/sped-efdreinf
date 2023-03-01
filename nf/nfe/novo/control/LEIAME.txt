@@ -1,0 +1,9 @@
+PASTA: 	    control
+FINALIDADE: Armazenar as classes controladoras da aplicação
+AUTOR:	    Guilherme Silva
+DATA: 	    07/08/2013
+
+DESCRIÇÃO:  Esta pasta é responsável por armazenar as classes controladoras da aplicação.
+	    Uma classe controladora faz a comuniação com as Views (telas HTML) e classes
+		Model (conexão banco de dados).
+	    Nestas classes também encontra-se as principais regras negociais.

@@ -1,0 +1,5 @@
+Os arquivos que se encontram neste diretório são fontes legado,
+Eles devem desaparecer em novas versoes do programa, mas por enquanto elas se encontram aqui, e APENAS aqui.
+Evitar copiar fontes para este diretório.
+Evitar usar os fontes deste diretorio.
+Evitar manutenção nos fontes deste diretório.

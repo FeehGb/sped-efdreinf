@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="retrato" language="groovy" pageWidth="595" pageHeight="842" columnWidth="559" leftMargin="18" rightMargin="18" topMargin="18" bottomMargin="18" uuid="87812a2e-5181-4b13-a7be-aec14458b66d">
+	<property name="ireport.zoom" value="1.6934217901613335"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="6bb3e865-b44a-475e-9fa7-fc03a3488f57"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="cab-logo" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/logo]]></fieldDescription>
+	</field>
+	<field name="cab-titulo" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/nome-relatorio]]></fieldDescription>
+	</field>
+	<field name="cab-empresa" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/empresa]]></fieldDescription>
+	</field>
+	<field name="cab-filial" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/filial]]></fieldDescription>
+	</field>
+	<field name="rod-usuario" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/usuario]]></fieldDescription>
+	</field>
+	<field name="rod-data-emissao" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/data-emissao]]></fieldDescription>
+	</field>
+	<field name="rod-horario" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/horario]]></fieldDescription>
+	</field>
+	<field name="rod-periodo-inicial" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/periodo-inicial]]></fieldDescription>
+	</field>
+	<field name="rod-periodo-final" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/periodo-final]]></fieldDescription>
+	</field>
+	<field name="det-cliente" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/cliente]]></fieldDescription>
+	</field>
+	<field name="rod-tipo-selecao" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/tipo-selecao]]></fieldDescription>
+	</field>
+	<field name="det-data" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/detail/record/data]]></fieldDescription>
+	</field>
+	<field name="tot-total-dia" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/detail/record/total-dia]]></fieldDescription>
+	</field>
+	<field name="rod-nome-relatorio" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/footer/id-relatorio]]></fieldDescription>
+	</field>
+	<field name="tot-label-total-dia" class="java.lang.String"/>
+	<field name="det-data-emissao-doc" class="java.lang.String"/>
+	<field name="det-numero-doc" class="java.lang.String"/>
+	<field name="det-serie-doc" class="java.lang.String"/>
+	<field name="det-desc-cliente" class="java.lang.String"/>
+	<field name="det-valor-doc" class="java.lang.String"/>
+	<field name="rod-cab-cliente" class="java.lang.String"/>
+	<field name="field1" class="java.lang.String"/>
+	<background>
+		<band height="836"/>
+	</background>
+	<detail>
+		<band height="806" splitType="Stretch">
+			<line>
+				<reportElement key="1" x="0" y="109" width="558" height="1" uuid="00b6f01e-d9e0-4488-bfe6-ff4ed84c9b45"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="78" y="6" width="182" height="48" isPrintWhenDetailOverflows="true" uuid="e6d08b5f-5583-4e80-afcd-98501e93641f"/>
+				<textElement>
+					<font fontName="Courier New" size="12" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit-xNome}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="1" x="347" y="36" width="1" height="93" uuid="9e40261e-01e8-4ca9-b43f-3372082d2632"/>
+			</line>
+			<line>
+				<reportElement key="1" x="558" y="0" width="1" height="129" uuid="b3bfc35d-de26-444b-a12a-f4275f38cc9a"/>
+			</line>
+			<line>
+				<reportElement key="1" x="260" y="0" width="1" height="109" uuid="26635ed3-5d81-46f1-a87f-640da0950570"/>
+			</line>
+			<line>
+				<reportElement key="1" x="0" y="0" width="1" height="129" uuid="0eb27b43-91d5-47bf-891f-3f2d56f2f312"/>
+			</line>
+			<line>
+				<reportElement key="1" x="0" y="0" width="558" height="1" uuid="59069309-f88c-41f2-9713-7463272d1b0a"/>
+			</line>
+			<staticText>
+				<reportElement key="1" x="262" y="1" width="296" height="15" uuid="83ab9e7f-74e7-4c9b-9a45-7158a725912d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[CC-e]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" x="260" y="17" width="298" height="10" uuid="bc6029d4-8270-4bcc-abfc-a96e373f62da"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="7" isBold="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[CARTA DE CORREÇÃO ELETRÔNICA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="1" x="323" y="78" width="21" height="20" uuid="6da64054-b3d8-4084-a099-8a43fa32260c"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="1" x="261" y="67" width="30" height="10" uuid="d9c1dcbc-1c22-439f-bb17-1aa5c5088cc7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ SÉRIE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" x="261" y="54" width="25" height="10" uuid="8b9a0b9b-0932-45ed-838b-50d244b87a2f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ Nº.]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="347" y="85" width="211" height="1" uuid="4d4be525-295f-4aa5-a8cc-8dd98383023d"/>
+			</line>
+			<line>
+				<reportElement key="1" x="261" y="35" width="297" height="1" uuid="cfab65e4-80e8-4284-aae6-c335e24b953e"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="348" y="87" width="210" height="10" backcolor="#FFFFFF" uuid="6f2b6d6b-4cff-4114-a93f-29f361ff3804"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CHAVE DE ACESSO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="129" width="558" height="1" uuid="f7488d32-6adc-484e-ac3c-76775eb1a4be"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="165" y="110" width="182" height="10" backcolor="#FFFFFF" uuid="fd58cfe1-f452-44a6-80d8-ae14db77ded1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ INSCRIÇÃO ESTADUAL]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="164" y="109" width="1" height="20" uuid="c00c8be7-7f51-4ccf-bd0c-fd0ae898c0e9"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="350" y="110" width="182" height="10" backcolor="#FFFFFF" uuid="1cd26928-70f5-4dad-965c-302424faad3e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ PROTOCOLO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="110" width="161" height="10" backcolor="#FFFFFF" uuid="48e19c0c-725c-4e4f-9f38-fa7cc8d20873"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CNPJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" x="260" y="25" width="299" height="10" uuid="1eaba2f1-70f7-4e3a-b13a-168e7067f44b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="7" isBold="false" isItalic="true" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[Relatório sem valor fiscal, simples representação da carta de correção eletrônica indicada abaixo]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="78" y="54" width="185" height="10" isPrintWhenDetailOverflows="true" uuid="4b2bb2f0-cd0a-4816-bbe7-bc88f9bd5c24"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit-xLgr-nro}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="78" y="64" width="185" height="10" isPrintWhenDetailOverflows="true" uuid="21f4a7fc-05a1-4731-b658-e79f46304e1a"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit-xBairro}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="78" y="74" width="185" height="10" isPrintWhenDetailOverflows="true" uuid="89da8b90-82a8-4ca1-9964-276978dc0c6a"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit-xMun-UF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="78" y="84" width="185" height="10" isPrintWhenDetailOverflows="true" uuid="032481b1-947f-4e36-9ebc-381e5e1153cc"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit-CEP}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="78" y="94" width="185" height="10" isPrintWhenDetailOverflows="true" uuid="d63fe358-fa26-4f79-b400-35a00b5639c6"/>
+				<textElement>
+					<font fontName="Courier New" size="7" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit-fone}]]></textFieldExpression>
+			</textField>
+			<image isUsingCache="false">
+				<reportElement key="1" x="4" y="21" width="74" height="41" uuid="5856b783-62af-4fc7-ad97-fa109974e4e7"/>
+				<imageExpression><![CDATA[$F{logomarca}]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="281" y="49" width="64" height="14" isPrintWhenDetailOverflows="true" uuid="87532524-b83f-46a0-8991-d291aa509640"/>
+				<textElement>
+					<font fontName="Courier New" size="14" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nNF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="291" y="62" width="54" height="14" isPrintWhenDetailOverflows="true" uuid="f7176ff2-8e2f-4b60-91bb-0bb21a7acbb4"/>
+				<textElement>
+					<font fontName="Courier New" size="12" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{serie}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="323" y="82" width="21" height="12" isPrintWhenDetailOverflows="true" uuid="ff88935e-92cc-4b72-b465-cb533efa18b5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="10" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sequencia}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="340" y="98" width="230" height="10" isPrintWhenDetailOverflows="true" uuid="4f11a227-cb58-447f-92f4-f47adfcdbc33"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="true" isItalic="false" pdfFontName="Times"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement key="1" x="352" y="43" width="203" height="41" uuid="fc6c33db-8367-4a69-9031-92f448fa181f"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{codbar}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="348" y="118" width="210" height="12" isPrintWhenDetailOverflows="true" uuid="64f97427-e8d3-4a16-b015-9241adfb2558"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{protNFe}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="168" y="117" width="178" height="12" isPrintWhenDetailOverflows="true" uuid="3f4c452a-cbc4-43a0-822a-c1a50199e1c9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit-IE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="2" y="117" width="160" height="12" isPrintWhenDetailOverflows="true" uuid="bbd41d66-c4a1-49f4-bf8c-c6e15306bc07"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emit-CNPJ}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="1" x="262" y="88" width="76" height="10" uuid="94cc2c56-bc2d-4708-890c-36b87bc20d7e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[SEQUENCIA cc]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="169" width="558" height="1" uuid="75f92609-d18b-4cc2-b57e-0b487bd8c1d7"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="150" width="52" height="10" backcolor="#FFFFFF" uuid="3e8509f9-cc66-42b8-afaa-3b80e5a8826d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ ORGÃO]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="407" y="157" width="151" height="12" isPrintWhenDetailOverflows="true" uuid="530e7fde-d16c-4a8a-943a-0c6ea75c721e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{evento-data-hora}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="1" x="53" y="149" width="1" height="20" uuid="c7946a51-9394-46d6-8761-ff0e4eb2debe"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="170" width="77" height="10" backcolor="#FFFFFF" uuid="687f1826-e402-43fb-908d-1651f4dbfffb"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ STATUS]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="558" y="149" width="1" height="40" uuid="49653b71-6a88-4570-906b-6a58f2612bc0"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="140" width="182" height="10" backcolor="#FFFFFF" uuid="d86225fd-f257-4fe9-8435-adf53fac9e87"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[EVENTO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="149" width="1" height="40" uuid="aba7c033-52bf-4d87-8b7f-40aa8adc00ac"/>
+			</line>
+			<line>
+				<reportElement key="1" x="0" y="189" width="558" height="1" uuid="381b2f1f-a94f-4101-93e9-2f66ef6f40d6"/>
+			</line>
+			<line>
+				<reportElement key="1" x="0" y="149" width="558" height="1" uuid="78ecf19b-b55f-4ffd-987d-a0ee6c631d14"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="7" y="178" width="546" height="12" isPrintWhenDetailOverflows="true" uuid="9733a2aa-458f-4423-967d-f8f9c808bb4d"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{evento-status}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="7" y="157" width="47" height="12" isPrintWhenDetailOverflows="true" uuid="e2e2a7a9-d890-4194-80be-1dbd4b457eaa"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{evento-orgao}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="404" y="150" width="154" height="10" backcolor="#FFFFFF" uuid="a81ec5eb-5768-4e07-9907-0c04d7f68cc4"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DATA E HORÁRIO DO EVENTO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="779" width="558" height="1" uuid="2afe0a72-a508-4e6f-9f27-4c96a0f54da8"/>
+			</line>
+			<line>
+				<reportElement key="1" x="558" y="699" width="1" height="80" uuid="cd96fbee-c7e2-40f8-8261-a4100c410b02"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="690" width="182" height="10" backcolor="#FFFFFF" uuid="766010ed-64b8-4b23-a1a2-89bbb0a21fd3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[CONDIÇÕES DE USO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="699" width="558" height="1" uuid="aa004c2f-d067-4526-a28a-7dea2da68727"/>
+			</line>
+			<line>
+				<reportElement key="1" x="0" y="699" width="1" height="80" uuid="0b6a89c7-2611-4d34-9258-cbb9ce7e0d89"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="7" y="704" width="551" height="12" backcolor="#FFFFFF" uuid="4188e939-af5e-461d-957f-0bd56f2db841"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isItalic="false" isStrikeThrough="false" pdfFontName="Times" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[A Carta de Correção é disciplinada pelo parágrafo 1º-A do artigo 7º do Convênio S/N, de 15 de Dezembro de 1970 e pode ser utilizada para a regularização de erro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="220" y="783" width="333" height="10" backcolor="#FFFFFF" uuid="45f6c270-9639-47da-9a21-0ba4070146c6"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="false" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[CARTA DE CORREÇÃO ELETRÔNICA OPERADA POR SOFTDIB (www.softdib.com.br) 55 41 3276 6457]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="677" width="558" height="1" uuid="ba46c5d2-f730-4778-bb27-04838c09006c"/>
+			</line>
+			<line>
+				<reportElement key="1" x="0" y="293" width="1" height="384" uuid="60f48c8f-b7dd-4655-8255-c37c64ed7b63"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="283" width="182" height="10" backcolor="#FFFFFF" uuid="8dfe6a87-5ea0-4310-9828-74c20f86c9a1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[CORREÇÃO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="292" width="558" height="1" uuid="703387c9-c392-4521-960e-df89936d1c5f"/>
+			</line>
+			<line>
+				<reportElement key="1" x="558" y="293" width="1" height="384" uuid="4b6753f6-1490-4e75-8416-978e9ee5c818"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="7" y="303" width="536" height="13" isPrintWhenDetailOverflows="true" uuid="d64df8f5-86ef-4161-83d5-672a39da9506"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descricao}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="7" y="715" width="551" height="12" backcolor="#FFFFFF" uuid="45ec4cb3-920d-40b8-b6cc-0c815211d967"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isItalic="false" isStrikeThrough="false" pdfFontName="Times" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[ocorrido na emissão de documento fiscal, desde que o erro não esteja relacionado com:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="8" y="726" width="551" height="12" backcolor="#FFFFFF" uuid="80de3d10-022e-4e48-89ff-bd46da6dc666"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isItalic="false" isStrikeThrough="false" pdfFontName="Times" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[   I   - As variáveis que determinam o valor do imposto tais como:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="8" y="737" width="551" height="12" backcolor="#FFFFFF" uuid="c91fca7a-afac-41f8-8466-94ed850e9a3d"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isItalic="false" isStrikeThrough="false" pdfFontName="Times" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[         Base de cálculo, alíquota, diferença do preço, quantidade, valor da operação ou da prestação;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="8" y="748" width="551" height="12" backcolor="#FFFFFF" uuid="2bfc3276-0a49-4928-99c4-c6ab55c6dd85"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isItalic="false" isStrikeThrough="false" pdfFontName="Times" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[   II  - A correção de dados cadastrais que implique mudança do remetente ou do destinatário;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="8" y="759" width="551" height="12" backcolor="#FFFFFF" uuid="4e523f5c-00ba-46fb-9dfb-4edf2a603a31"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isItalic="false" isStrikeThrough="false" pdfFontName="Times" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[   III - A data de emissão ou de saída.]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="7" y="258" width="194" height="12" isPrintWhenDetailOverflows="true" uuid="bcad337d-03fc-45cf-99b3-4210fc7ec54c"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-cMun}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="404" y="210" width="154" height="10" backcolor="#FFFFFF" uuid="5ea55bda-7d12-4ac4-b805-3ff81ee78000"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CNPJ / CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="355" y="250" width="114" height="10" backcolor="#FFFFFF" uuid="3abd6b8b-430a-45a2-acf9-d2c04a5ca2df"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ INSCRIÇÃO ESTADUAL]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="209" width="1" height="60" uuid="24796ed1-ced3-45af-8b10-e9ce370a010d"/>
+			</line>
+			<line>
+				<reportElement key="1" x="403" y="209" width="1" height="20" uuid="afe34f73-8d75-4af0-a000-65c965aea6d1"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="322" y="250" width="26" height="10" backcolor="#FFFFFF" uuid="3cd84200-bc77-463f-b0dc-88bab2dd329b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ UF]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="201" y="249" width="1" height="20" uuid="3053d3cf-ff0c-45a3-b48d-1cdcf548fc25"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="7" y="238" width="274" height="12" isPrintWhenDetailOverflows="true" uuid="74260469-3c16-4109-8386-60a803c16a1b"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-xLgr}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="1" x="468" y="229" width="1" height="20" uuid="99553be1-2904-430d-9b16-17bd02d102d8"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="202" y="258" width="113" height="12" isPrintWhenDetailOverflows="true" uuid="2e3d4d01-1a78-445c-b67f-761e743e3364"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-fone}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="355" y="258" width="198" height="12" isPrintWhenDetailOverflows="true" uuid="7189f7d5-f2c8-42ba-b508-bdf34110d53b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-IE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="202" y="250" width="72" height="10" backcolor="#FFFFFF" uuid="aa7ff1cf-9970-4d98-87e4-b74b5c659821"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ FONE / FAX]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="0" y="249" width="558" height="1" uuid="d1ba0a33-d86f-4aa6-bef3-49679bdc7778"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="469" y="238" width="89" height="12" isPrintWhenDetailOverflows="true" uuid="c92004fa-6128-4622-a74d-916fec032fe8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-CEP}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="7" y="217" width="396" height="12" isPrintWhenDetailOverflows="true" uuid="9c1a9cf8-abf9-4b72-912e-8065aaf8721e"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-xNome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="210" width="182" height="10" backcolor="#FFFFFF" uuid="98326671-6d0f-4d56-a99a-74b463c46d41"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ NOME / RAZAO SOCIAL]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="354" y="249" width="1" height="20" uuid="4e574464-ec0f-4839-9e23-44887ae12272"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="407" y="217" width="151" height="12" isPrintWhenDetailOverflows="true" uuid="16d2bea0-9fc1-495c-8e97-01f4e6a0265c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-CNPJ}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="1" x="338" y="229" width="1" height="20" uuid="d45b3360-9c4d-4a8c-bdb7-798682cb00f2"/>
+			</line>
+			<line>
+				<reportElement key="1" x="0" y="209" width="558" height="1" uuid="8848063a-0fa2-445c-80dc-8dc3c1703d51"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="230" width="77" height="10" backcolor="#FFFFFF" uuid="b65fe5b5-83c6-4f0a-a602-0fffe2b2b38e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ ENDEREÇO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="339" y="230" width="129" height="10" backcolor="#FFFFFF" uuid="084d2154-e0db-47a4-8e44-3b7102c81fba"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ BAIRRO / DISTRITO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="1" y="200" width="182" height="10" backcolor="#FFFFFF" uuid="c5ec450b-fe3e-4216-bb9f-960db2846a19"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DESTINATÁRIO / REMETENTE]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="339" y="238" width="129" height="12" isPrintWhenDetailOverflows="true" uuid="c29f5d93-ed5e-4a90-9dbd-1c21e6491d5e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-xBairro}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="1" x="558" y="209" width="1" height="60" uuid="c06f6600-49ea-4472-bd1a-c0215faab941"/>
+			</line>
+			<line>
+				<reportElement key="1" x="0" y="229" width="558" height="1" uuid="65ff982e-623f-4f17-aae9-cf9598b90d74"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="322" y="258" width="31" height="12" isPrintWhenDetailOverflows="true" uuid="cac66065-5454-4473-a98a-efd0b98bab75"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dest-UF}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="1" x="0" y="269" width="558" height="1" uuid="f5a5e2bc-e28a-4fb3-aabb-a583db9c7721"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="469" y="230" width="89" height="10" backcolor="#FFFFFF" uuid="13c5c633-2048-4edb-832f-ef59a5c2d3e1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CEP]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="321" y="249" width="1" height="20" uuid="53a3836e-136b-43eb-9c60-4f0546315aad"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="2" y="250" width="72" height="10" backcolor="#FFFFFF" uuid="4afeacce-9c47-452d-aae0-3fc7977290ba"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ MUNICÍPIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="54" y="150" width="55" height="10" backcolor="#FFFFFF" uuid="6f40e3d9-1b7b-418f-b2c5-66cdae243c93"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ EVENTO]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="61" y="158" width="294" height="12" isPrintWhenDetailOverflows="true" uuid="255b1324-3785-45d1-8a4d-46e257b8b5b4"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{evento-descricao}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="1" x="403" y="149" width="1" height="20" uuid="70969d56-cd97-4b18-8848-020e78c2f6ca"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

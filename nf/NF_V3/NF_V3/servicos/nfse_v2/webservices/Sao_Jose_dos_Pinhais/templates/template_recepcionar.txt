@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<EnviarLoteRpsEnvio xmlns="http://nfe.sjp.pr.gov.br/servico_enviar_lote_rps_envio_v03.xsd">
+    <LoteRps Id="1">
+        <NumeroLote xmlns="http://nfe.sjp.pr.gov.br/tipos_v03.xsd">{nf_controle}</NumeroLote>
+        <Cnpj xmlns="http://nfe.sjp.pr.gov.br/tipos_v03.xsd">{prestador_cpf_cnpj}</Cnpj>
+        <InscricaoMunicipal xmlns="http://nfe.sjp.pr.gov.br/tipos_v03.xsd">{prestador_inscricaomunicipal}</InscricaoMunicipal>
+        <QuantidadeRps xmlns="http://nfe.sjp.pr.gov.br/tipos_v03.xsd">{nf_quantidade}</QuantidadeRps>
+        <ListaRps  xmlns="http://nfe.sjp.pr.gov.br/tipos_v03.xsd">
+            <Rps>
+                <InfRps Id="{nf_controle}">
+                    <IdentificacaoRps>
+                        <Numero>{nf_controle}</Numero>
+                        <Serie>{nf_serie}</Serie>
+                        <Tipo>{nf_tipo}</Tipo>
+                    </IdentificacaoRps>
+                    <DataEmissao>{nf_data_emisao}</DataEmissao>
+                    <NaturezaOperacao>{total_situacao_tributaria}</NaturezaOperacao>
+                    <RegimeEspecialTributacao>{nf_regime_especial_tributacao}</RegimeEspecialTributacao>
+                    <OptanteSimplesNacional>{prestador_optantesimples}</OptanteSimplesNacional>
+                    <IncentivadorCultural>{prestador_incentivadorcultural}</IncentivadorCultural>
+                    <Status>{nf_status}</Status>
+                    <Servico>
+                        <Valores>
+                            <ValorServicos>{nf_valor_total}</ValorServicos>
+                            <ValorCsll>{nf_valor_contribuicao_social}</ValorCsll>
+                            <IssRetido>{total_iss_retido}</IssRetido>
+                            <ValorIss>{total_valor_iss}</ValorIss>
+                            <ValorIssRetido>{total_valor_iss}</ValorIssRetido>
+                            <OutrasRetencoes>{total_outras_retencoes}</OutrasRetencoes>
+                            <BaseCalculo>{total_valor_tributavel}</BaseCalculo>
+                            <Aliquota>{total_aliquota}</Aliquota>
+                            <ValorLiquidoNfse>{nf_valor_total}</ValorLiquidoNfse>
+                        </Valores>
+                        <ItemListaServico>{total_codigo_item_lista_servico}</ItemListaServico>
+                        <CodigoCnae>{prestador_cnae}</CodigoCnae>
+                        <Discriminacao>{nf_observacao}</Discriminacao>
+                        <CodigoMunicipio>{total_codigo_local_prestacao_servico}</CodigoMunicipio>
+                    </Servico>
+                    <Prestador>
+                        <{prestador_tipo_pessoa}>{prestador_cpf_cnpj}</{prestador_tipo_pessoa}>
+                        <InscricaoMunicipal>{prestador_inscricaomunicipal}</InscricaoMunicipal>
+                    </Prestador>
+                    <Tomador>
+                        <IdentificacaoTomador>
+                            <CpfCnpj>
+                                <{tomador_tipo_pessoa}>{tomador_cpf_cnpj}</{tomador_tipo_pessoa}>
+                            </CpfCnpj>
+                        </IdentificacaoTomador>
+                        <RazaoSocial>{tomador_nome_razao_social}</RazaoSocial>
+                        <Endereco>
+                            <Endereco>{tomador_logradouro}</Endereco>
+                            <Numero>{tomador_numero_residencia}</Numero>
+                            <Bairro>{tomador_bairro}</Bairro>
+                            <CodigoMunicipio>{tomador_cidade}</CodigoMunicipio>
+                            <Uf>{tomador_estado}</Uf>
+                            <Cep>{tomador_cep}</Cep>
+                        </Endereco>
+                        <Contato>
+                            <Telefone>{tomador_fone_residencial}</Telefone>
+                            <Email>{tomador_email}</Email>
+                        </Contato>
+                    </Tomador>
+                </InfRps>
+            </Rps>
+        </ListaRps>
+    </LoteRps>
+</EnviarLoteRpsEnvio>

@@ -1,0 +1,30 @@
+NOTA FISCAL|001|
+A|2.00|NFe|
+B|41|00000000|Venda Merc Adq Terc|1|55|001|000007382|2013-10-28|2013-10-28|17:49:10|1|4125506|1|1|0|2|1|0|1.0.0| | |
+C|ADS COMERCIO DE MATERIAIS ELETRICOS LTDA|1001|1019984520| | | |1|
+C02|81660862000142|
+C05|AVENIDA RUI BARBOSA|008595| |CENTRO|4125506|SAO JOSE DOS PINHAIS|PR|83005340|1058|BRASIL|4132835996|
+E|NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL| | | |
+E02|84818889000109|
+E05|AVENIDA MARECHAL FLORIANO PEIXOTO|005303| |HAUER|4106902|CURITIBA|PR|81610000|1058|BRASIL|04132766457|
+H|001| |
+I|1021| |DISJ MERLIN GERIN 1X40A CURVA C|85362000| |5405|PC|10.0000|7.9870000000|79.87| |PC|10.0000|7.9870000000|0.00|0.00|0.00|0.00|1| |000000| |
+M|30.97|
+N|
+N10g|0|500||0.00|0.00|
+O| |00111430000180| |000000000000|999|
+O08|53|
+Q|
+Q04|04|
+S|
+S04|04|
+W|
+W02|0.00|0.00|0.00|0.00|79.87|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|79.87|30.97|
+X|1|
+Y|
+Y02|007382|79.87|0.00|79.87|
+Y07|007382-01|2013-10-28|79.87|
+Z|                                                                                                                                                                                                                                                |st=60-subst.tributaria conforme decreto 6910/2012                               BASE CALCULO ST   =           66,51     IMPOSTO RETIDO ST =           11,97     Documento emitido por empresa enquadradano regime fiscal das microempresas e dasEmpresas de pequeno porte nao gera ICMS-Decreto PR 246/2003.                    Vlr Aproximado de Tributos calculado cfme percentuais disponibilizados pelo IBPT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+Z04|Vendedor:|U01001-1001|
+Z04|Pedido:|012110/00|
+@| | |1| | |

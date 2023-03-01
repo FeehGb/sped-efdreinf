@@ -1,0 +1,104 @@
+<nfse>
+    <nf>
+        <usuarioPrefeitura><![CDATA[Financ]]></usuarioPrefeitura>
+        <senhaPrefeitura><![CDATA[carplus1419#]]></senhaPrefeitura>
+        <ambiente><![CDATA[0]]></ambiente>
+        <grupo><![CDATA[PNEUPLUS]]></grupo>
+        <empresa>
+            <codigo><![CDATA[006]]></codigo>
+            <descricao><![CDATA[CARPLUS SERVICE CENTER LTDA ME]]></descricao>
+        </empresa>
+        <filial>
+            <codigo><![CDATA[001]]></codigo>
+            <descricao><![CDATA[CARPLUS SERVICE CENTER LTDA - ME]]></descricao>
+        </filial>
+        <controle><![CDATA[00010470]]></controle>
+        <numero><![CDATA[000010424]]></numero>
+        <serie><![CDATA[0]]></serie>
+        <situacao><![CDATA[]]></situacao>
+        <valor_total><![CDATA[0000000000080,00]]></valor_total>
+        <valor_desconto><![CDATA[0000000000000,00]]></valor_desconto>
+        <valor_ir><![CDATA[0000000000000,00]]></valor_ir>
+        <valor_inss><![CDATA[0000000000000,00]]></valor_inss>
+        <valor_contribuicao_social><![CDATA[0000000000000,00]]></valor_contribuicao_social>
+        <valor_rps><![CDATA[0000000000000,00]]></valor_rps>
+        <valor_pis><![CDATA[0000000000000,00]]></valor_pis>
+        <valor_cofins><![CDATA[0000000000000,00]]></valor_cofins>
+        <observacao>Vendedor: V00069 - NILSON VIEIRA        Pedido:   T 024335/00                   Fatura: 01-21/02/2020-           80,00</observacao>
+    </nf>
+    <prestador>
+        <cpfcnpj><![CDATA[10703580000137]]></cpfcnpj>
+        <tipoPessoaPrestador><![CDATA[J]]></tipoPessoaPrestador>
+        <tipoRps><![CDATA[1]]></tipoRps>
+        <cidade><![CDATA[004106902]]></cidade>
+        <codTom><![CDATA[75353]]></codTom>
+        <inscricaomunicipal><![CDATA[5620580]]></inscricaomunicipal>
+        <cnae><![CDATA[4520001]]></cnae>
+        <optantesimples><![CDATA[1]]></optantesimples>
+        <incentivadorcultural><![CDATA[2]]></incentivadorcultural>
+    </prestador>
+    <tomador>
+        <tipo><![CDATA[F]]></tipo>
+        <identificador><![CDATA[]]></identificador>
+        <estado><![CDATA[PR]]></estado>
+        <pais><![CDATA[BRASIL]]></pais>
+        <cpfcnpj><![CDATA[00032237138915]]></cpfcnpj>
+        <ie><![CDATA[]]></ie>
+        <inscricaomunicipal><![CDATA[]]></inscricaomunicipal>
+        <nome_razao_social><![CDATA[SERGIO TRANCOSO DE BRITO(C21730)]]></nome_razao_social>
+        <sobrenome_nome_fantasia><![CDATA[]]></sobrenome_nome_fantasia>
+        <logradouro><![CDATA[AV MANOEL RIBAS]]></logradouro>
+        <email><![CDATA[sergiobritto.sb10@gmail.com]]></email>
+        <numero_residencia><![CDATA[00002150]]></numero_residencia>
+        <complemento><![CDATA[]]></complemento>
+        <ponto_referencia><![CDATA[]]></ponto_referencia>
+        <bairro><![CDATA[MERCES]]></bairro>
+        <cidade><![CDATA[004106902]]></cidade>
+        <codTom><![CDATA[7535]]></codTom>
+        <cep><![CDATA[80810000]]></cep>
+        <ddd_fone_comercial><![CDATA[000]]></ddd_fone_comercial>
+        <fone_comercial><![CDATA[000000000000000000]]></fone_comercial>
+        <ddd_fone_residencial><![CDATA[041]]></ddd_fone_residencial>
+        <fone_residencial><![CDATA[000000000030263747]]></fone_residencial>
+        <ddd_fax><![CDATA[000]]></ddd_fax>
+        <fone_fax><![CDATA[000000000000000000]]></fone_fax>
+    </tomador>
+    <itens>
+        <lista>
+            <tributa_municipio_prestador><![CDATA[S]]></tributa_municipio_prestador>
+            <codigo_local_prestacao_servico><![CDATA[004106902]]></codigo_local_prestacao_servico>
+            <codigo_tom_prestacao_servico><![CDATA[7535]]></codigo_tom_prestacao_servico>
+            <unidade_codigo><![CDATA[000000000]]></unidade_codigo>
+            <unidade_quantidade><![CDATA[000000000000001]]></unidade_quantidade>
+            <unidade_valor_unitario><![CDATA[0000000000040,00]]></unidade_valor_unitario>
+            <codigo_item_lista_servico><![CDATA[000001401]]></codigo_item_lista_servico>
+            <descritivo><![CDATA[ALINHAMENTO DT COMPUTADORIZADO]]></descritivo>
+            <aliquota_item_lista_servico><![CDATA[0000000000005.00]]></aliquota_item_lista_servico>
+            <situacao_tributaria><![CDATA[001]]></situacao_tributaria>
+            <valor_tributavel><![CDATA[0000000000080,00]]></valor_tributavel>
+            <valor_deducao><![CDATA[0000000000000,00]]></valor_deducao>
+            <valor_issrf><![CDATA[0000000000000,00]]></valor_issrf>
+            <valor_iss><![CDATA[0000000000004,00]]></valor_iss>
+            <desconto_cond><![CDATA[0000000000000,00]]></desconto_cond>
+            <desconto_incond><![CDATA[0000000000000,00]]></desconto_incond>
+        </lista>
+        <lista>
+            <tributa_municipio_prestador><![CDATA[S]]></tributa_municipio_prestador>
+            <codigo_local_prestacao_servico><![CDATA[004106902]]></codigo_local_prestacao_servico>
+            <codigo_tom_prestacao_servico><![CDATA[7535]]></codigo_tom_prestacao_servico>
+            <unidade_codigo><![CDATA[000000000]]></unidade_codigo>
+            <unidade_quantidade><![CDATA[000000000000004]]></unidade_quantidade>
+            <unidade_valor_unitario><![CDATA[0000000000010,00]]></unidade_valor_unitario>
+            <codigo_item_lista_servico><![CDATA[000001401]]></codigo_item_lista_servico>
+            <descritivo><![CDATA[BALANCEAMENTO DE RODA 13/14]]></descritivo>
+            <aliquota_item_lista_servico><![CDATA[0000000000005.00]]></aliquota_item_lista_servico>
+            <situacao_tributaria><![CDATA[001]]></situacao_tributaria>
+            <valor_tributavel><![CDATA[0000000000080,00]]></valor_tributavel>
+            <valor_deducao><![CDATA[0000000000000,00]]></valor_deducao>
+            <valor_issrf><![CDATA[0000000000000,00]]></valor_issrf>
+            <valor_iss><![CDATA[0000000000004,00]]></valor_iss>
+            <desconto_cond><![CDATA[0000000000000,00]]></desconto_cond>
+            <desconto_incond><![CDATA[0000000000000,00]]></desconto_incond>
+        </lista>
+    </itens>
+</nfse>

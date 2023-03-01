@@ -1,0 +1,35 @@
+{
+    "SVSP":{
+        "estado" : "Virtual São Paulo",
+        "configuracoes":{
+            "conexao_segura"  :"S"   ,
+            "verbose"         :"0"   ,
+            "porta"           :"443" ,
+            "header"          :"1"   ,
+            "sslversion"      :"6"   ,
+            "ssl_verifyhost"  :"0"   ,
+            "ssl_verifypeer"  :"0"   ,
+            "connecttimeou"   :""    ,
+            "timeou"          :""    ,
+            "maxredir"        :""    ,
+            "followlocation"  :"0"   ,
+            "post"            :"1"   ,
+            "returntransfer"  :"1"   ,
+            "fresh_connect"   :"0"    
+        },
+        "servico":{
+            "CteRecepcao": {
+                "url":"https://nfe.fazenda.sp.gov.br/cteWEB/services/cteRecepcao.asmx"
+            },
+            "CteRetRecepcao": {
+                "url":"https://nfe.fazenda.sp.gov.br/cteWEB/services/CteRetRecepcao.asmx"
+            },
+            "CteConsultaProtocolo": {
+                "url":"https://nfe.fazenda.sp.gov.br/cteWEB/services/CteConsulta.asmx"
+            },
+            "CteStatusServico": {
+                "url":"https://nfe.fazenda.sp.gov.br/cteWEB/services/CteStatusServico.asmx"
+            }
+        }
+    }
+}

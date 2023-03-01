@@ -1,0 +1,44 @@
+{
+    "SVRS":{
+        "estado" : "Virtual Rio Grande do Sul",
+        "configuracoes":{
+            "conexao_segura"  :"S"   ,
+            "verbose"         :"0"   ,
+            "porta"           :"443" ,
+            "header"          :"1"   ,
+            "sslversion"      :"6"   ,
+            "ssl_verifyhost"  :"0"   ,
+            "ssl_verifypeer"  :"0"   ,
+            "connecttimeou"   :""    ,
+            "timeou"          :""    ,
+            "maxredir"        :""    ,
+            "followlocation"  :"0"   ,
+            "post"            :"1"   ,
+            "returntransfer"  :"1"   ,
+            "fresh_connect"   :"0"    
+        },
+        "servico":{
+            "CteRecepcao": {
+                "url":"https://cte.svrs.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx"
+            },
+            "CteRetRecepcao": {
+                "url":"https://cte.svrs.rs.gov.br/ws/cteretrecepcao/cteRetRecepcao.asmx"
+            },
+            "CteInutilizacao": {
+                "url":"https://cte.svrs.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx"
+            },
+            "CteConsultaProtocolo": {
+                "url":"https://cte.svrs.rs.gov.br/ws/cteconsulta/CteConsulta.asmx"
+            },
+            "CteStatusServico": {
+                "url":"https://cte.svrs.rs.gov.br/ws/ctestatusservico/CteStatusServico.asmx"
+            },
+            "CteRecepcaoEvento": {
+                "url":"https://cte.svrs.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx"
+            },
+            "CTeRecepcaoOS": {
+                "url":"https://cte.svrs.rs.gov.br/ws/cterecepcaoos/cterecepcaoos.asmx"
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "soap-sped",
+  "version": "0.0.1",
+  "description": "sped fiscal em nodejs",
+  "main": "soap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    
+    "nfe-consulta-nota": "node ./interfaces/nfe-consulta-nota.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "ini": "^1.3.5",
+    "request": "^2.88.0",
+    "soap": "~0.25.0"
+  }
+}

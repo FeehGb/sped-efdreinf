@@ -1,0 +1,89 @@
+<nfse>
+    <nf>
+        <usuarioPrefeitura><![CDATA[10703580000560]]></usuarioPrefeitura>
+        <senhaPrefeitura><![CDATA[0y5b8u07]]></senhaPrefeitura>
+        <ambiente><![CDATA[2]]></ambiente>
+        <grupo><![CDATA[BARAO]]></grupo>
+        <empresa>
+            <codigo><![CDATA[006]]></codigo>
+            <descricao><![CDATA[VGR SERVICOS AUTOMOTIVOS LTDA]]></descricao>
+        </empresa>
+        <filial>
+            <codigo><![CDATA[005]]></codigo>
+            <descricao><![CDATA[VGR SERV. AUTOM. LTDA - ARAUCARIA]]></descricao>
+        </filial>
+        <controle><![CDATA[00000177]]></controle>
+        <numero><![CDATA[000000175]]></numero>
+        <serie><![CDATA[0]]></serie>
+        <situacao><![CDATA[]]></situacao>
+        <valor_total><![CDATA[0000000000010,00]]></valor_total>
+        <valor_desconto><![CDATA[0000000000000,00]]></valor_desconto>
+        <valor_ir><![CDATA[0000000000000,00]]></valor_ir>
+        <valor_inss><![CDATA[0000000000000,00]]></valor_inss>
+        <valor_contribuicao_social><![CDATA[0000000000000,00]]></valor_contribuicao_social>
+        <valor_rps><![CDATA[0000000000000,00]]></valor_rps>
+        <valor_pis><![CDATA[0000000000000,00]]></valor_pis>
+        <valor_cofins><![CDATA[0000000000000,00]]></valor_cofins>
+        <observacao>Vendedor: U06005 - ARAUCARIA            Pedido:   I 000001/00</observacao>
+        <data_emissao><![CDATA[2020-10-14]]></data_emissao>
+        <hora_emissao><![CDATA[17:42:05]]></hora_emissao>
+    </nf>
+    <prestador>
+        <cpfcnpj><![CDATA[10703580000560]]></cpfcnpj>
+        <tipoPessoaPrestador><![CDATA[J]]></tipoPessoaPrestador>
+        <tipoRps><![CDATA[1]]></tipoRps>
+        <cidade><![CDATA[004101804]]></cidade>
+        <codTom><![CDATA[74357]]></codTom>
+        <inscricaomunicipal><![CDATA[68282472]]></inscricaomunicipal>
+        <cnae><![CDATA[0000000]]></cnae>
+        <optantesimples><![CDATA[1]]></optantesimples>
+        <incentivadorcultural><![CDATA[2]]></incentivadorcultural>
+    </prestador>
+    <tomador>
+        <tipo><![CDATA[F]]></tipo>
+        <identificador><![CDATA[]]></identificador>
+        <estado><![CDATA[PR]]></estado>
+        <pais><![CDATA[BRASIL]]></pais>
+        <cpfcnpj><![CDATA[00016431979087]]></cpfcnpj>
+        <ie><![CDATA[]]></ie>
+        <inscricaomunicipal><![CDATA[]]></inscricaomunicipal>
+        <nome_razao_social><![CDATA[ADALBERTO MARODIM DE ALMEIDA(C53870)]]></nome_razao_social>
+        <sobrenome_nome_fantasia><![CDATA[]]></sobrenome_nome_fantasia>
+        <logradouro><![CDATA[RUA ANA SALIBA NASSAR]]></logradouro>
+        <email><![CDATA[adalberto.cerne@gmail.com]]></email>
+        <numero_residencia><![CDATA[00000433]]></numero_residencia>
+        <complemento><![CDATA[AP 102]]></complemento>
+        <ponto_referencia><![CDATA[]]></ponto_referencia>
+        <bairro><![CDATA[FAZENDA VELHA]]></bairro>
+        <cidade><![CDATA[004101804]]></cidade>
+        <codTom><![CDATA[7435]]></codTom>
+        <cep><![CDATA[83704520]]></cep>
+        <ddd_fone_comercial><![CDATA[000]]></ddd_fone_comercial>
+        <fone_comercial><![CDATA[000000000000000000]]></fone_comercial>
+        <ddd_fone_residencial><![CDATA[041]]></ddd_fone_residencial>
+        <fone_residencial><![CDATA[000000000031260649]]></fone_residencial>
+        <ddd_fax><![CDATA[000]]></ddd_fax>
+        <fone_fax><![CDATA[000000000000000000]]></fone_fax>
+    </tomador>
+    <itens>
+        <lista>
+            <tributa_municipio_prestador><![CDATA[S]]></tributa_municipio_prestador>
+            <codigo_local_prestacao_servico><![CDATA[004101804]]></codigo_local_prestacao_servico>
+            <codigo_tom_prestacao_servico><![CDATA[74357]]></codigo_tom_prestacao_servico>
+            <unidade_codigo><![CDATA[000000000]]></unidade_codigo>
+            <unidade_quantidade><![CDATA[000000000000001]]></unidade_quantidade>
+            <unidade_valor_unitario><![CDATA[0000000000010,00]]></unidade_valor_unitario>
+            <codigo_item_lista_servico><![CDATA[000001401]]></codigo_item_lista_servico>
+            <descritivo><![CDATA[MAO DE OBRA MECANICA 1]]></descritivo>
+            <aliquota_item_lista_servico><![CDATA[0000000000005.00]]></aliquota_item_lista_servico>
+            <situacao_tributaria><![CDATA[0]]></situacao_tributaria>
+            <valor_tributavel><![CDATA[0000000000010,00]]></valor_tributavel>
+            <valor_deducao><![CDATA[0000000000000,00]]></valor_deducao>
+            <numero_deducao><![CDATA[000000000]]></numero_deducao>
+            <valor_issrf><![CDATA[0000000000000,00]]></valor_issrf>
+            <valor_iss><![CDATA[0000000000000,50]]></valor_iss>
+            <desconto_cond><![CDATA[0000000000000,00]]></desconto_cond>
+            <desconto_incond><![CDATA[0000000000000,00]]></desconto_incond>
+        </lista>
+    </itens>
+</nfse>

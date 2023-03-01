@@ -1,0 +1,1 @@
+SELECT SCHEMA_NAME as base FROM INFORMATION_SCHEMA.SCHEMATA JOIN nfse_config.empresas ON SCHEMA_NAME = nfse_config.empresas.bd_nfe

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfse>
+    <nf>
+        <situacao></situacao>
+        <valor_total>0000000000190,00</valor_total>
+        <valor_desconto>0000000000000,00</valor_desconto>
+        <valor_ir>0000000000000,00</valor_ir>
+        <valor_inss>0000000000000,00</valor_inss>
+        <valor_contribuicao_social>0000000000000,00</valor_contribuicao_social>
+        <valor_rps>0000000000000,00</valor_rps>
+        <valor_pis>0000000000000,00</valor_pis>
+        <valor_cofins>0000000000000,00</valor_cofins>
+        <observacao>Fatura: 01-11/06/2015-          190,00</observacao>
+    </nf>
+    <prestador>
+        <cpfcnpj>01631022000112</cpfcnpj>
+        <cidade>54534</cidade>
+    </prestador>
+    <tomador>
+        <tipo>J</tipo>
+        <identificador></identificador>
+        <estado>PR</estado>
+        <pais>BRASIL</pais>
+        <cpfcnpj>03913786000630</cpfcnpj>
+        <ie>9062997980</ie>
+        <nome_razao_social>CONCREXAP SERVICOS CONCRETAGEM LTDA PR(C03749)</nome_razao_social>
+        <sobrenome_nome_fantasia></sobrenome_nome_fantasia>
+        <logradouro>RUA VEREADOR EPAMINONDAS SILVA</logradouro>
+        <email>compras2@concrexap.com.br</email>
+        <numero_residencia>00000290</numero_residencia>
+        <complemento></complemento>
+        <ponto_referencia></ponto_referencia>
+        <bairro>NOVA SERRINHA</bairro>
+        <cidade>7443</cidade>
+        <cep>83650000</cep>
+        <ddd_fone_comercial>000</ddd_fone_comercial>
+        <fone_comercial>000000000</fone_comercial>
+        <ddd_fone_residencial>049</ddd_fone_residencial>
+        <fone_residencial>033310000</fone_residencial>
+        <ddd_fax>000</ddd_fax>
+        <fone_fax>000000000</fone_fax>
+    </tomador>
+    <produtos>
+        <descricao></descricao>
+        <valor>0</valor>
+    </produtos>
+    <itens>
+        <lista>
+            <tributa_municipio_prestador>S</tributa_municipio_prestador>
+            <codigo_local_prestacao_servico>7481</codigo_local_prestacao_servico>
+            <unidade_codigo>000000000</unidade_codigo>
+            <unidade_quantidade>000000000000000</unidade_quantidade>
+            <unidade_valor_unitario>0000000000000,00</unidade_valor_unitario>
+            <codigo_item_lista_servico>000001401</codigo_item_lista_servico>
+            <descritivo>MAO-DE-OBRA</descritivo>
+            <aliquota_item_lista_servico>3,00</aliquota_item_lista_servico>
+            <situacao_tributaria>000</situacao_tributaria>
+            <valor_tributavel>190,00</valor_tributavel>
+            <valor_deducao>0,00</valor_deducao>
+            <valor_issrf>0,00</valor_issrf>
+        </lista>
+    </itens>
+</nfse>

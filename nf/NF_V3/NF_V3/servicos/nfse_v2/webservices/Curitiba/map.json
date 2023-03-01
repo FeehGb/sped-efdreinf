@@ -1,0 +1,148 @@
+{
+    
+    
+    "municipio"     : "Curitiba",
+    "uf"            : "PR",
+    "producao"      : "https://srv2-isscuritiba.curitiba.pr.gov.br/nfsews/nfsews.asmx?wsdl",
+    "producao_2"    : "https://srv2-isscuritiba.curitiba.pr.gov.br/Iss.NfseWebService/nfsews.asmx?wsdl",
+    "producao_ant"  : "https://isscuritiba.curitiba.pr.gov.br/Iss.NfseWebService/nfsews.asmx?wsdl",
+    "homologacao"   : "https://piloto-iss.curitiba.pr.gov.br/nfse_ws/NfseWs.asmx",
+    "version"       : "2.01",
+    "msgns"         : "http://isscuritiba.curitiba.pr.gov.br/iss/nfse.xsd",
+    "soapns"        : "http://www.e-governeapps2.com.br/",
+
+
+    "response":{
+        "response_wrapped":"soap:Body",
+        
+        "template":[
+                {"from":"{service_response}/NumeroLote"                              , "custom_path_from":"response_from"       , "to":"res_numero_lote", "required": false}
+            ,   {"from":"{service_response}/DataRecebimento"                         , "custom_path_from":"response_from"       , "to":"res_data_recebimento", "required": false}
+            ,   {"from":"{service_response}/Protocolo"                               , "custom_path_from":"response_from"       , "to":"res_protocolo" , "required": false}
+
+            ,   {"from":"{service_response}/ListaMensagemRetorno/MensagemRetorno"    
+                , "custom_path_from":"response_from"       , "to":"res_mensagem_retorno"   , "custom": "mensagem_retorno" , "required": false}
+                
+            
+            ,   {"from":"{service_response}/ListaNfse/CompNfse/tcCompNfse/Nfse/InfNfse/Numero"    
+                    , "custom_path_from":"response_from"       , "to":"res_consulta_numero" , "required": false }
+                    
+            ,   {"from":"{service_response}/ListaNfse/CompNfse/tcCompNfse/Nfse/InfNfse/CodigoVerificacao"    
+                    , "custom_path_from":"response_from"       , "to":"res_consulta_verificacao" , "required": false  }
+                    
+            ,   {"from":"{service_response}/ListaNfse/CompNfse/tcCompNfse/Nfse/InfNfse/DataEmissao"    
+                    , "custom_path_from":"response_from"       , "to":"res_consulta_data_emisao" , "required": false }
+                    
+            ,   {"from":"{service_response}/DataRecebimento"    
+                        , "custom_path_from":"response_from"       , "to":"res_data_cancelamento"  , "required": false}
+            
+        ]
+    },
+    
+    "send":{
+            "XMLSigner" : {
+                "signature_algorithm":"rsa-sha1"
+            ,   "c14n_algorithm":"http://www.w3.org/TR/2001/REC-xml-c14n-20010315"
+            ,   "digest_algorithm":"sha1"
+        }
+    },
+    
+    "recepcionar" :{
+        
+        "response": {
+            "result_tag" : "RecepcionarLoteRpsResponse/RecepcionarLoteRpsResult"
+        },
+        "send":{
+            "SOAPAction":"RecepcionarLoteRps",
+            "sign": {"tags":["LoteRps"]},
+            "xml":{
+                
+                "root": { 
+                    "tag": "EnviarLoteRpsEnvio", "attrs":{
+                        "xmlns":"http://isscuritiba.curitiba.pr.gov.br/iss/nfse.xsd"
+                    ,   "xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance"
+                    ,   "xsi:schemaLocation":"http://isscuritiba.curitiba.pr.gov.br/iss/nfse.xsd"
+                }},
+                "template": [
+                        {"from":"nfse/nf/controle"                              ,"to":"LoteRps/NumeroLote" }
+                    ,   {"from":"nfse/prestador/cpfcnpj"                        ,"to":"LoteRps/Cnpj"              }
+                    ,   {"from":"nfse/prestador/inscricaomunicipal"             ,"to":"LoteRps/InscricaoMunicipal"}
+                    ,   {"default":"1"                                          ,"to":"LoteRps/QuantidadeRps"}
+                    ,   {"from":"nfse/nf/controle"                              ,"to":"LoteRps/ListaRps/Rps/InfRps/IdentificacaoRps/Numero"}
+                    ,   {"from":"nfse/nf/serie"                                 ,"to":"LoteRps/ListaRps/Rps/InfRps/IdentificacaoRps/Serie"}
+                    ,   {"default":"1"                                          ,"to":"LoteRps/ListaRps/Rps/InfRps/IdentificacaoRps/Tipo"}
+                    ,   {"default":""                                           ,"to":"LoteRps/ListaRps/Rps/InfRps/DataEmissao"            , "custom":"datetime_now" }
+                    ,   {"from":"nfse/total/situacao_tributaria"                ,"to":"LoteRps/ListaRps/Rps/InfRps/NaturezaOperacao"}
+                    ,   {"default":"2"                                          ,"to":"LoteRps/ListaRps/Rps/InfRps/RegimeEspecialTributacao"}
+                    ,   {"from":"nfse/prestador/optantesimples"                 ,"to":"LoteRps/ListaRps/Rps/InfRps/OptanteSimplesNacional"}
+                    ,   {"from":"nfse/prestador/incentivadorcultural"           ,"to":"LoteRps/ListaRps/Rps/InfRps/IncentivadorCultural"}
+                    ,   {"default":"1"                                          ,"to":"LoteRps/ListaRps/Rps/InfRps/Status"}
+                    ,   {"from":"nfse/nf/valor_total"                           ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorServicos"}
+                    
+                    ,   {"from":"nfse/total/numero_deducao"                     ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/NumeroDeducao" , "required": false   , "custom_path_to":"deducoes_path", "globalThis":"NumeroDeducao"}
+                    ,   {"from":"nfse/total/valor_deducao"                       ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorDeducoes"  , "required": false  , "custom_path_to":"deducoes_path"}
+
+                    ,   {"from":"nfse/nf/valor_pis"                             ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorPis"}
+                    ,   {"from":"nfse/nf/valor_cofins"                          ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorCofins"}
+                    ,   {"from":"nfse/nf/valor_inss"                            ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorInss"}
+                    ,   {"from":"nfse/nf/valor_ir"                              ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorIr"}
+                    ,   {"from":"nfse/nf/valor_contribuicao_social"             ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorCsll"}
+                    ,   {"from":"nfse/total/valor_iss"                          ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorIss"}
+                    ,   {"from":"nfse/total/iss_retido"                         ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/IssRetido"}
+                    ,   {"from":"nfse/total/valor_issrf"                        ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorIssRetido"}
+                    ,   {"default":""                                          ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/OutrasRetencoes" , "required": false}
+                    ,   {"from":"nfse/total/valor_tributavel"                   ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/BaseCalculo"}
+                    ,   {"from":"nfse/total/aliquota_item_lista_servico"        ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/Aliquota"}
+                    ,   {"from":"nfse/nf/valor_total"                           ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Valores/ValorLiquidoNfse"}
+                    ,   {"from":"nfse/total/codigo_item_lista_servico"          ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/ItemListaServico"}
+                    ,   {"from":"nfse/prestador/cnae"                           ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/CodigoTributacaoMunicipio"}
+                    
+                    ,   {"from":"nfse/itens/lista/descritivo/$ && `{lineBreak}` && nfse/nf/observacao/$ || nfse/itens/lista/[0:]`{lineBreak}`/descritivo/$ && `{lineBreak}`  && nfse/nf/observacao/$"     ,  "custom_value": "break_line"
+                        ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/Discriminacao", "required":false}
+                    ,   {"from":"nfse/total/codigo_local_prestacao_servico"     ,"to":"LoteRps/ListaRps/Rps/InfRps/Servico/CodigoMunicipio"}
+                    ,   {"from":"nfse/prestador/cpfcnpj"                        ,"to":"LoteRps/ListaRps/Rps/InfRps/Prestador/Cnpj"}
+                    ,   {"from":"nfse/prestador/inscricaomunicipal"             ,"to":"LoteRps/ListaRps/Rps/InfRps/Prestador/InscricaoMunicipal"}
+                    
+                    ,   {"from":"nfse/tomador/cpfcnpj"                          ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/IdentificacaoTomador/CpfCnpj/{tipo}" ,"custom_path_to": "tipo_pessoa_tomador_path", "custom": "cpfcnpj", "acceptFalsy":true,  "required":false}
+                    ,   {"from":"nfse/tomador/nome_razao_social"                ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/RazaoSocial", "required":false}
+                    ,   {"from":"nfse/tomador/logradouro"                       ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Endereco", "required":false}
+                    ,   {"from":"nfse/tomador/complemento"                     ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Complemento", "required":false}
+                    ,   {"from":"nfse/tomador/numero_residencia"                ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Numero", "required":false}
+                    ,   {"from":"nfse/tomador/bairro"                           ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Bairro", "required":false}
+                    ,   {"from":"nfse/tomador/cidade"                           ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/CodigoMunicipio", "required":false}
+                    ,   {"from":"nfse/tomador/estado"                           ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Uf" , "custom_path_to":"estado_path", "required":false}
+                    ,   {"from":"nfse/tomador/cep"                              ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Endereco/Cep", "required":false}
+                    ,   {"from":"nfse/tomador/ddd_fone_residencial/$ && nfse/tomador/fone_residencial/$"  ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Contato/Telefone", "trim":true, "required":false}
+                    ,   {"from":"nfse/tomador/email"                                                      ,"to":"LoteRps/ListaRps/Rps/InfRps/Tomador/Contato/Email" , "required":false  }
+                    
+                ]
+            }
+        }
+        
+    },
+    "consultar":{
+        "send":{
+            "SOAPAction": "ConsultarLoteRps"
+            
+            
+        },
+        "response": {
+            "result_tag" : "ConsultarLoteRpsResponse/ConsultarLoteRpsResult"
+        }
+        
+        
+    },
+    "cancelar":{
+        "send":{
+            "SOAPAction": "CancelarLoteRps"
+            ,"sign"  :{"tags":["CancelarLoteRpsEnvio"]}
+            
+        },
+        
+        "response": {
+            "result_tag" : "CancelarLoteRpsResponse/CancelarLoteRpsResult"
+        }
+        
+        
+    }
+}

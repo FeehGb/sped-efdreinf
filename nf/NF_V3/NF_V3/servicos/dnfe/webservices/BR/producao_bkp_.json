@@ -1,0 +1,14 @@
+{
+	"1.01":{
+		"consulta":{
+			"url"           : "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
+			"namespace"     : "http://www.portalfiscal.inf.br/cte",
+			"servico"       : "cteDistiDFeInteresse",
+			"metodo"        : "cteDistiDFeInteresse",
+			"versao"        : "1.00",
+			"schema"        : "distDFeInt_v1.01.xsd",
+			"tag_cabecalho" : "",
+			"tag_corpo"     : "<cteDistDFeInteresse xmlns=\"http://www.portalfiscal.inf.br/cte/wsdl/CTeDistribuicaoDFe\"><cteDadosMsg><distDFeInt xmlns=\"http://www.portalfiscal.inf.br/cte\" versao=\"1.0.1\"><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><cUFAutor>ALTERAR_CUF_AUTOR</cUFAutor><CNPJ>ALTERAR_CNPJ</CNPJ><distNSU><ultNSU>ALTERAR_ULT_NSU</ultNSU></distNSU></distDFeInt></cteDadosMsg></cteDistDFeInteresse>"
+		}
+	}
+}

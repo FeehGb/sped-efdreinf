@@ -1,0 +1,1 @@
+Adicionar no nfse_config (automático e snf800) a coluna bd_mdfe / atualização deste campo nos clientes

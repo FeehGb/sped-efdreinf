@@ -1,0 +1,259 @@
+2,3d1
+<     // /var/www/nf/NF_V3/NF_V3/interfaces/nfe-consulta-nota.php
+<     // /var/www/nf/NF_V3/NF_V3/interfaces/dnfe-consulta.php
+9,34c7
+<     
+<     if (!isset($argv[1])){
+<         echo "
+<             ENTRADA:
+<                 argv[1] = arquivo_txt ; 
+<                 argv[2]*= estado      | BR; 
+<                 
+<             arquivo_txt:
+<                 ARQUIVO[0] =          cnpj | 
+<                 ARQUIVO[1] =           cpf | 
+<                 ARQUIVO[2] =            uf | 
+<                 ARQUIVO[3] = tipo_ambiente | 
+<                 ARQUIVO[4] =    ultimo_nsu | 
+<                 ARQUIVO[5] =       seq_nsu | 
+<                 ARQUIVO[6] =      chaveNFe | 
+<                 
+<             SAIDA:
+<                 reNFe:
+<                     001|chave|nsu|emit_cpf_cnpj|emit_nome|ie|data_emissao|tipo_nota|valor_nf|digest_value|data_hora_recebimento|protocolo|situacao_nfe|
+<                 resEvento:
+<                     002|chave|nsu|emit_cpf_cnpj|data_hora_evento|tp_evento|seq_evento|desc_evento|data_hora_recebimento|nProt|
+<                 procEventoNFe:
+<                     002|nsu|chave|emit_cpf_cnpj|data_hora_evento|tp_evento|seq_evento|desc_evento|data_hora_recebimento|nProt|
+<         \n"; exit() ;
+<     }
+<     
+---
+> 
+42c15
+<     require_once("../ferramentas/formatXML.php"      ) ; //   
+---
+> 
+45c18
+<     
+---
+> 
+48,60d20
+<     //
+<     
+<     
+<     if (!file_exists($argv[1])){
+<         echo "\nARQUIVO NAO EXISTE\n";
+<         exit();
+<     }
+<     //     
+<     // echo ">>>";
+<     // echo file_get_contents($argv[1]);
+<     // echo "<<<";
+<     //     
+<     
+64c24
+<     
+---
+> 
+69c29
+<     
+---
+> 
+75c35
+<     
+---
+> 
+78,81c38,41
+<     
+<     $cnpj          = trim($arquivo_txt[0]);
+<     $cpf           = trim($arquivo_txt[1]);
+<     $uf            = trim($arquivo_txt[2]);
+---
+> 
+>     $cnpj = trim($arquivo_txt[0]);
+>     $cpf = trim($arquivo_txt[1]);
+>     $uf = trim($arquivo_txt[2]);
+83,86c43,46
+<     $ultimo_nsu    = trim($arquivo_txt[4]);
+<     $seq_nsu       = trim($arquivo_txt[5]);
+<     $chaveNFe      = str_replace("\n", "", trim($arquivo_txt[6]));
+<     
+---
+>     $ultimo_nsu = trim($arquivo_txt[4]);
+>     $seq_nsu = trim($arquivo_txt[5]);
+>     $chaveNFe = str_replace("\n", "", trim($arquivo_txt[6]));
+> 
+88c48
+<     
+---
+> 
+90c50
+<     
+---
+> 
+93c53
+<     
+---
+> 
+96,97c56,57
+<     //  echo ">\n";
+<     
+---
+>     // print_r($dados_ws);exit();
+> 
+100c60
+<     
+---
+> 
+107c67
+<     
+---
+> 
+125c85
+<     
+---
+> 
+129,131c89
+<     
+<     print_r(formatXML($template_soap));
+<     
+---
+> 
+134,137c92,94
+<     
+<     print_r(formatXML($xml_webservice));exit();
+<     
+<     
+---
+> 
+>     // print_r($xml_webservice);exit();
+> 
+140c97
+<     
+---
+> 
+142,143d98
+<     
+<     
+145c100
+<     
+---
+> 
+147c102
+<     
+---
+> 
+150c105
+<     
+---
+> 
+192c147
+<         
+---
+>        
+194c149
+<         
+---
+> 
+200c155
+<             
+---
+> 
+202d156
+<                 $criar_arquivo = false;
+206c160
+<             
+---
+> 
+208d161
+<                 $criar_arquivo = false;
+212c165
+<             
+---
+> 
+215c168
+<                 if ($tmp->NFe->infNFe->dest->CNPJ != $cnpj){
+---
+>                 if ($tmp->NFe->infNFe->dest->CNPJ != $cnpj)
+217d169
+<                 }
+220c172
+<                 
+---
+> 
+222d173
+<                 $criar_arquivo = false;
+228d178
+<                 $criar_arquivo = false;
+247,248c197,198
+<     
+<     
+---
+> 
+> 
+265c215
+<         
+---
+> 
+268,269c218,219
+<     
+<     
+---
+> 
+> 
+280c230
+<         
+---
+> 
+283c233
+<     
+---
+> 
+294c244
+<         
+---
+> 
+297,298c247,248
+<     
+<     
+---
+> 
+> 
+305c255
+<         
+---
+> 
+309c259
+<         
+---
+> 
+311a262,264
+> 
+> 
+>   
+313,316c266
+<     
+<     
+<     
+<     
+---
+> 
+325,326c275,276
+<     
+<     
+---
+> 
+> 
+329,336c279,280
+<     
+<     
+<     
+<     
+<     
+<     
+<     
+<     
+---
+> 
+>  ?>

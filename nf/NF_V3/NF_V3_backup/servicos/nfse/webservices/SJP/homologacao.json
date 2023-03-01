@@ -1,0 +1,14 @@
+{
+    "3.00":{
+        "recepcao": {
+            "url": "https://homologacao.nfe.sefa.pr.gov.br/nfe/NFeAutorizacao4",
+            "namespace": "http://www.portalfiscal.inf.br/nfe/wsdl/NFeAutorizacao4",
+            "servico": "NFeAutorizacao4",
+            "metodo": "nfeAutorizacaoLote4",
+            "versao": "4.00",
+            "schema": "enviNFe_v4.00.xsd",
+            "tag_cabecalho": "<nfeCabecMsg xmlns='http://www.portalfiscal.inf.br/nfe/wsdl/NFeAutorizacao4'></nfeCabecMsg>",
+            "tag_corpo": "<nfeDadosMsg xmlns='http://www.portalfiscal.inf.br/nfe/wsdl/NFeAutorizacao4'><enviNFe xmlns = 'http://www.portalfiscal.inf.br/nfe' versao='4.00'><idLote>ALTERAR_DADOS_ID_LOTE</idLote><indSinc>ALTERAR_INDSINC</indSinc>ALTERAR_DADOS_XML</enviNFe></nfeDadosMsg>"
+        }
+    }
+}

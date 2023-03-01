@@ -1,0 +1,2329 @@
+{
+    "1.04.00": {
+        "mapa": {
+            "REINF": [
+                "tipo"
+            ],
+            "A01": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/@id"
+            ],
+            "A02": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtInfoContri/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtInfoContri/ideEvento/verProc"
+            ],
+            "A03": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtInfoContri/ideContri/nrInsc"
+            ],
+            "A04": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/idePeriodo/iniValid",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/idePeriodo/fimValid"
+            ],
+            "A05": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/classTrib",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/indEscrituracao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/indDesoneracao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/indAcordoIsenMulta",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/indSitPJ"
+            ],
+            "A06": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/nmCtt",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/cpfCtt",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/foneFixo",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/foneCel",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/email"
+            ],
+            "A07": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/cnpjSoftHouse",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/nmRazao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/nmCont",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/telefone",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/email"
+            ],
+            "A08": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/infoEFR/ideEFR",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/infoEFR/cnpjEFR"
+            ],
+            "A09": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/idePeriodo/iniValid",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/idePeriodo/fimValid"
+            ],
+            "A10": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/classTrib",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/indEscrituracao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/indDesoneracao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/indAcordoIsenMulta",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/indSitPJ"
+            ],
+            "A11": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/nmCtt",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/cpfCtt",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/foneFixo",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/foneCel",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/email"
+            ],
+            "A12": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/cnpjSoftHouse",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/nmRazao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/nmCont",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/telefone",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/email"
+            ],
+            "A13": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/infoEFR/ideEFR",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/infoEFR/cnpjEFR"
+            ],
+            "A14": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/novaValidade/iniValid",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/novaValidade/fimValid"
+            ],
+            "A15": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/exclusao/idePeriodo/iniValid",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/exclusao/idePeriodo/fimValid"
+                
+            ],
+            "B01": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/@id"
+            ],
+            "B02": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtTabProcesso/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtTabProcesso/ideEvento/verProc"
+            ],
+            "B03": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtTabProcesso/ideContri/nrInsc"
+            ],
+            "B04": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/tpProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/nrProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/iniValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/fimValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/indAutoria"
+                
+            ],
+            "B05": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/infoSusp/codSusp",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/infoSusp/indSusp",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/infoSusp/dtDecisao",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/infoSusp/indDeposito"
+            ],
+            "B06": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/dadosProcJud/ufVara",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/dadosProcJud/codMunic",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/dadosProcJud/idVara"
+            ],
+            "B07": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/tpProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/nrProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/iniValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/fimValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/indAutoria"
+            ],
+            "B08": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/infoSusp/codSusp",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/infoSusp/indSusp",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/infoSusp/dtDecisao",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/infoSusp/indDeposito"
+            ],
+            "B09": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/dadosProcJud/ufVara",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/dadosProcJud/codMunic",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/dadosProcJud/idVara"
+            ],
+            "B10": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/novaValidade/iniValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/novaValidade/fimValid"
+            ],
+            "B11": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/exclusao/ideProcesso/tpProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/exclusao/ideProcesso/nrProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/exclusao/ideProcesso/iniValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/exclusao/ideProcesso/fimValid"
+            ],
+            "C01": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/@id"
+            ],
+            "C02": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtServTom/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtServTom/ideEvento/perApur",
+                "/Reinf/loteEventos/evtServTom/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtServTom/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtServTom/ideEvento/verProc"
+            ],
+            "C03": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtServTom/ideContri/nrInsc"
+            ],
+            "C04": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/tpInscEstab",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/nrInscEstab",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/indObra"
+            ],
+            "C05": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/cnpjPrestador",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalBruto",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalBaseRet",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalRetAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalNRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalNRetAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/indCPRB"
+            ],
+            "C06": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/serie",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/numDocto",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/dtEmissaoNF",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/vlrBruto",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/obs"
+            ],
+            "C07": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/tpServico",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrBaseRet",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrRetencao",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrRetSub",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrNRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrServicos15",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrServicos20",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrServicos25",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrAdicional",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrNRetAdic"
+            ],
+            "C08": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetPr/tpProcRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetPr/nrProcRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetPr/codSuspPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetPr/valorPrinc"
+            ],
+            "C09": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetAd/tpProcRetAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetAd/nrProcRetAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetAd/codSuspAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetAd/valorAdic"
+            ],
+            "D01": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/@id"
+            ],
+            "D02": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/perApur",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/verProc"
+            ],
+            "D03": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtServPrest/ideContri/nrInsc"
+            ],
+            "D04": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/tpInscEstabPrest",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/nrInscEstabPrest"
+            ],
+            "D05": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/tpInscTomador",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nrInscTomador",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/indObra",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalBruto",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalBaseRet",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalRetAdic",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalNRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalNRetAdic"
+            ],
+            "D06": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/serie",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/numDocto",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/dtEmissaoNF",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/vlrBruto",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/obs"
+            ],
+            "D07": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/tpServico",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrBaseRet",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrRetencao",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrRetSub",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrNRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrServicos15",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrServicos20",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrServicos25",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrAdicional",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrNRetAdic"
+            ],
+            "D08": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetPr/tpProcRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetPr/nrProcRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetPr/codSuspPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetPr/valorPrinc"
+            ],
+            "D09": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetAd/tpProcRetAdic",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetAd/nrProcRetAdic",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetAd/codSuspAdic",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetAd/valorAdic"
+            ],
+            "E01": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/@id"
+            ],
+            "E02": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/perApur",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/verProc"
+            ],
+            "E03": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/nrInsc"
+            ],
+            "E04": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/nrInscEstab"
+            ],
+            "E05": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/cnpjOrigRecurso",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/vlrTotalRec",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/vlrTotalRet",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/vlrTotalNRet"
+            ],
+            "E06":[
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoRecurso/tpRepasse",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoRecurso/descRecurso",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoRecurso/vlrBruto",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoRecurso/vlrRetApur"
+            ],
+            "E07":[
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoProc/tpProc",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoProc/nrProc",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoProc/codSusp",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoProc/vlrNRet"
+            ],
+            "F01": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/@id"
+            ],
+            "F02": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/perApur",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/verProc"
+            ],
+            "F03": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/nrInsc"
+            ],
+            "F04": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/nrInscEstab"
+            ],
+            "F05": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/cnpjAssocDesp",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/vlrTotalRep",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/vlrTotalRet",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/vlrTotalNRet"
+            ],
+            "F06": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoRecurso/tpRepasse",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoRecurso/descRecurso",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoRecurso/vlrBruto",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoRecurso/vlrRetApur"
+            ],
+            "F07": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoProc/tpProc",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoProc/nrProc",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoProc/codSusp",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoProc/vlrNRet"
+            ],
+            "G01": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/@id"
+            ],
+            "G02": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtComProd/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtComProd/ideEvento/perApur",
+                "/Reinf/loteEventos/evtComProd/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtComProd/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtComProd/ideEvento/verProc"
+            ],
+            "G03": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtComProd/ideContri/nrInsc"
+            ],
+            "G04": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/nrInscEstab",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrRecBrutaTotal",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrCPApur",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrRatApur",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrSenarApur",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrCPSuspTotal",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrRatSuspTotal",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrSenarSuspTotal"
+            ],
+            "G05": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/indCom",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/vlrRecBruta"
+            ],
+            "G06": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/tpProc",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/nrProc",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/codSusp",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/vlrCPSusp",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/vlrRatSusp",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/vlrSenarSusp"
+            ],
+            "H01": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/@id"
+            ],
+            "H02": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/perApur",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/verProc"
+            ],
+            "H03": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtCPRB/ideContri/nrInsc"
+            ],
+            "H04": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/nrInscEstab",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/vlrRecBrutaTotal",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/vlrCPApurTotal",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/vlrCPRBSuspTotal"
+            ],
+            "H05": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/codAtivEcon",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrRecBrutaAtiv",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrExcRecBruta",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrAdicRecBruta",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrBcCPRB",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrCPRBapur"
+            ],
+            "H06": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/tpAjuste",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/codAjuste",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/vlrAjuste",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/descAjuste",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/dtAjuste"
+            ],
+            "H07": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/infoProc/tpProc",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/infoProc/nrProc",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/infoProc/codSusp",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/infoProc/vlrCPRBSusp"
+            ],
+            "I01": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/@id"
+            ],
+            "I02": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/perApur",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/verProc"
+            ],
+            "I03": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtPgtosDivs/ideContri/nrInsc"
+            ],
+            "I04": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/codPgto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/tpInscBenef",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/nrInscBenef",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/nmRazaoBenef"
+            ],
+            "I05": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/paisResid",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/dscLograd",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/nrLograd",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/complem",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/bairro",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/cidade",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/codPostal"
+            ],
+            "I06": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoFiscal/indNIF",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoFiscal/nifBenef",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoFiscal/relFontePagad"
+            ],
+            "I07": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoMolestia/dtLaudo"
+            ],
+            "I08": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/tpInsc",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/nrInsc"
+            ],
+            "I09": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/dtPgto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/indSuspExig",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/indDecTerceiro",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/vlrRendTributavel",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/vlrIRRF"
+            ],
+            "I10": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detDeducao/indTpDeducao",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detDeducao/vlrDeducao"
+            ],
+            "I11": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/rendIsento/tpIsencao",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detDeducao/vlrIsento",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detDeducao/descRendimento"
+            ],
+            "I12": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detCompet/indPerReferencia",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detCompet/perRefPagto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detCompet/vlrRendTributavel"
+            ],
+            "I13": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/compJud/vlrCompAnoCalend",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/compJud/vlrCompAnoAnt"
+            ],
+            "I14": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/tpProcRRA",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/nrProcRRA",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/codSusp",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/natRRA",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/qtdMesesRRA"
+            ],
+            "I15": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/despProcJud/vlrDespCustas",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/despProcJud/vlrDespAdvogados"
+            ],
+            "I16": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/infoRRA/despProcJud/ideAdvogado/tpInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/infoRRA/despProcJud/ideAdvogado/nrInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/infoRRA/despProcJud/ideAdvogado/vlrAdvogado"
+            ],
+            "I17": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/nrProcJud",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/codSusp",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/indOrigemRecursos"
+            ],
+            "I18": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/vlrDespCustas",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/vlrDespAdvogados"
+            ],
+            "I19": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/ideAdvogado/tpInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/ideAdvogado/nrInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/ideAdvogado/vlrAdvogado"
+            ],
+            "I20": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/origemRecursos/cnpjOrigemRecursos"
+            ],
+            "I21": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/depJudicial/vlrDepJudicial"
+            ],
+            "I22": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/dtPagto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/vlrRendTributavel",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/vlrRet"
+            ],
+            "I23": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/nrProcJud",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/codSusp",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/indOrigemRecursos"
+            ],
+            "I24": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcjud/vlrDespCustas",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcjud/vlrDespAdvogados"
+            ],
+            "I25": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcJud/ideAdvogado/tpInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcJud/ideAdvogado/nrInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcJud/ideAdvogado/vlrAdvogado"
+            ],
+            "I26": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/origemRecursos/cnpjOrigemRecursos"
+            ],
+            "I27": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/dtPgto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/tpRendimento",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/formaTributacao",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/vlrPgto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/vlrRet"
+            ],
+            "J01": [
+                "linha",
+                "/Reinf/loteEventos/evtReabreEvPer/@id"
+            ],
+            "J02": [
+                "linha",
+                "/Reinf/loteEventos/evtReabreEvPer/ideEvento/perApur",
+                "/Reinf/loteEventos/evtReabreEvPer/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtReabreEvPer/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtReabreEvPer/ideEvento/verProc"
+            ],
+            "J03": [
+                "linha",
+                "/Reinf/loteEventos/evtReabreEvPer/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtReabreEvPer/ideContri/nrInsc"
+            ],
+            "K01": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/@id"
+            ],
+            "K02": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/ideEvento/perApur",
+                "/Reinf/loteEventos/evtFechaEvPer/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtFechaEvPer/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtFechaEvPer/ideEvento/verProc"
+            ],
+            "K03": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtFechaEvPer/ideContri/nrInsc"
+            ],
+            "K04": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/ideRespInf/nmResp",
+                "/Reinf/loteEventos/evtFechaEvPer/ideRespInf/cpfResp",
+                "/Reinf/loteEventos/evtFechaEvPer/ideRespInf/telefone",
+                "/Reinf/loteEventos/evtFechaEvPer/ideRespInf/email"
+            ],
+            "K05": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtServTm",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtServPr",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtAssDespRec",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtAssDespRep",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtComProd",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtCPRB",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtAquis"
+            ],
+            "L01": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/@id"
+            ],
+            "L02": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/dtApuracao",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/verProc"
+            ],
+            "L03": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/nrInsc"
+            ],
+            "L04": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/nrInscEstab"
+            ],
+            "L05": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/nrBoletim",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/tpCompeticao",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/categEvento",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/modDesportiva",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/nomeCompeticao",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/cnpjMandante",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/cnpjVisitante",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/nomeVisitante",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/pracaDesportiva",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/codMunic",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/uf",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/qtdePagantes",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/qtdeNaoPagantes"
+            ],
+            "L06": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/tpIngresso",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/descIngr",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/qtdeIngrVenda",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/qtdeIngrVendidos",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/qtdeIngrDev",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/precoIndiv",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/vlrTotal"
+            ],
+            "L07": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/outrasReceitas/tpReceita",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/outrasReceitas/vlrReceita",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/outrasReceitas/descReceita"
+            ],
+            "L08": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrReceitaTotal",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrCP",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrCPSuspTotal",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrReceitaClubes",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrRetParc"
+            ],
+            "L09": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/infoProc/tpProc",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/infoProc/nrProc",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/infoProc/codSusp",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/infoProc/vlrCPSusp"
+            ],
+            "M01": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/@id"
+            ],
+            "M02": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/ideEvento/perApur"
+            ],
+            "M03": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtTotal/ideContri/nrInsc"
+            ],
+            "M04": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/cdRetorno",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/descRetorno"
+            ],
+            "M05": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/regOcorrs/tpOcorr",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/regOcorrs/localErroAviso",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/regOcorrs/codResp",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/regOcorrs/dscResp"
+            ],
+            "M06": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/nrProtEntr",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/dhProcess",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/tpEv",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/idEv",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/hash"
+            ],
+            "M07": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/nrRecArqBase"
+            ],
+            "M07A": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/tpInsc",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/nrInsc"
+            ],
+            "M08": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/cnpjPrestador",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/cno",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/vlrTotalBaseRet"
+            ],
+            "M08A": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/infoCRTom/CRTom",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/infoCRTom/vlrCRTom",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/infoCRTom/vlrCRTomSusp"
+            ],
+            "M09": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/tpInscTomador",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/nrInscTomador",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalBaseRet",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalRetPrinc",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalRetAdic",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalNRetPrinc",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalNRetAdic"
+            ],
+            "M10": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/cnpjAssocDesp",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/vlrTotalRep",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/CRRecRepAD",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/vlrCRRecRepAD",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/vlrCRRecRepADSusp"
+            ],
+            "M11": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RComl/CRComl",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RComl/vlrCRComl",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RComl/vlrCRComlSusp"
+            ],
+            "M12": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RCPRB/CRCPRB",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RCPRB/vlrCRCPRB",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RCPRB/vlrCRCPRBSusp"
+            ],
+            "M13": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecEspetDesp/CRRecEspetDesp",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecEspetDesp/vlrReceitaTotal",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecEspetDesp/vlrCRRecEspetDesp",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecEspetDesp/vlrCRRecEspetDespSusp"
+            ],
+            "N01": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/@id"
+            ],
+            "N02": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/ideEvento/perApur"
+            ],
+            "N03": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtTotalContrib/ideContri/nrInsc"
+            ],
+            "N04": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/cdRetorno",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/descRetorno"
+            ],
+            "N05": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/regOcorrs/tpOcorr",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/regOcorrs/localErroAviso",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/regOcorrs/codResp",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/regOcorrs/dscResp"
+            ],
+            "N06": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/nrProtEntr",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/dhProcess",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/tpEv",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/idEv",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/hash"
+            ],
+            "N07": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/nrRecArqBase",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/indExistInfo"
+            ],
+            "N08": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/cnpjPrestador",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/cno",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/vlrTotalBaseRet"
+            ],
+            "N08A": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/infoCRTom/CRTom",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/infoCRTom/vlrCRTom",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/infoCRTom/vlrCRTomSusp"
+            ],
+            "N09": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/tpInscTomador",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/nrInscTomador",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalBaseRet",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalRetPrinc",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalRetAdic",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalNRetPrinc",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalNRetAdic"
+            ],
+            "N10": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RRecRepAD/CRRecRepAD",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RRecRepAD/vlrCRRecRepAD",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RRecRepAD/vlrCRRecRepADSusp"
+            ],
+            "N11": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RComl/CRComl",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RComl/vlrCRComl",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RComl/vlrCRComlSusp"
+            ],
+            "N12": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RCPRB/CRCPRB",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RCPRB/vlrCRCPRB",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RCPRB/vlrCRCPRBSusp"
+            ],
+            "O01": [
+                "linha",
+                "/Reinf/loteEventos/evtExclusao/@id"
+            ],
+            "O02": [
+                "linha",
+                "/Reinf/loteEventos/evtExclusao/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtExclusao/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtExclusao/ideEvento/verProc"
+            ],
+            "O03": [
+                "linha",
+                "/Reinf/loteEventos/evtExclusao/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtExclusao/ideContri/nrInsc"
+            ],
+            "O04": [
+                "linha",
+                "/Reinf/loteEventos/evtExclusao/infoExclusao/tpEvento",
+                "/Reinf/loteEventos/evtExclusao/infoExclusao/nrRecEvt",
+                "/Reinf/loteEventos/evtExclusao/infoExclusao/perApur"
+            ]
+        }
+    },
+    
+    "1.05.01": {
+        "mapa": {
+            "REINF": [
+                "tipo"
+            ],
+            "A01": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/@id"
+            ],
+            "A02": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtInfoContri/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtInfoContri/ideEvento/verProc"
+            ],
+            "A03": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtInfoContri/ideContri/nrInsc"
+            ],
+            "A04": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/idePeriodo/iniValid",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/idePeriodo/fimValid"
+            ],
+            "A05": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/classTrib",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/indEscrituracao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/indDesoneracao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/indAcordoIsenMulta",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/indSitPJ"
+            ],
+            "A06": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/nmCtt",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/cpfCtt",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/foneFixo",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/foneCel",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/contato/email"
+            ],
+            "A07": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/cnpjSoftHouse",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/nmRazao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/nmCont",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/telefone",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/softHouse/email"
+            ],
+            "A08": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/infoEFR/ideEFR",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/inclusao/infoCadastro/infoEFR/cnpjEFR"
+            ],
+            "A09": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/idePeriodo/iniValid",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/idePeriodo/fimValid"
+            ],
+            "A10": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/classTrib",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/indEscrituracao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/indDesoneracao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/indAcordoIsenMulta",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/indSitPJ"
+            ],
+            "A11": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/nmCtt",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/cpfCtt",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/foneFixo",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/foneCel",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/contato/email"
+            ],
+            "A12": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/cnpjSoftHouse",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/nmRazao",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/nmCont",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/telefone",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/softHouse/email"
+            ],
+            "A13": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/infoEFR/ideEFR",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/infoCadastro/infoEFR/cnpjEFR"
+            ],
+            "A14": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/novaValidade/iniValid",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/alteracao/novaValidade/fimValid"
+            ],
+            "A15": [
+                "linha",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/exclusao/idePeriodo/iniValid",
+                "/Reinf/loteEventos/evtInfoContri/infoContri/exclusao/idePeriodo/fimValid"
+                
+            ],
+            "B01": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/@id"
+            ],
+            "B02": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtTabProcesso/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtTabProcesso/ideEvento/verProc"
+            ],
+            "B03": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtTabProcesso/ideContri/nrInsc"
+            ],
+            "B04": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/tpProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/nrProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/iniValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/fimValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/indAutoria"
+                
+            ],
+            "B05": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/infoSusp/codSusp",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/infoSusp/indSusp",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/infoSusp/dtDecisao",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/infoSusp/indDeposito"
+            ],
+            "B06": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/dadosProcJud/ufVara",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/dadosProcJud/codMunic",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/inclusao/ideProcesso/dadosProcJud/idVara"
+            ],
+            "B07": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/tpProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/nrProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/iniValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/fimValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/indAutoria"
+            ],
+            "B08": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/infoSusp/codSusp",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/infoSusp/indSusp",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/infoSusp/dtDecisao",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/infoSusp/indDeposito"
+            ],
+            "B09": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/dadosProcJud/ufVara",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/dadosProcJud/codMunic",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/ideProcesso/dadosProcJud/idVara"
+            ],
+            "B10": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/novaValidade/iniValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/alteracao/novaValidade/fimValid"
+            ],
+            "B11": [
+                "linha",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/exclusao/ideProcesso/tpProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/exclusao/ideProcesso/nrProc",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/exclusao/ideProcesso/iniValid",
+                "/Reinf/loteEventos/evtTabProcesso/infoProcesso/exclusao/ideProcesso/fimValid"
+            ],
+            "C01": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/@id"
+            ],
+            "C02": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtServTom/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtServTom/ideEvento/perApur",
+                "/Reinf/loteEventos/evtServTom/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtServTom/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtServTom/ideEvento/verProc"
+            ],
+            "C03": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtServTom/ideContri/nrInsc"
+            ],
+            "C04": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/tpInscEstab",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/nrInscEstab",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/indObra"
+            ],
+            "C05": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/cnpjPrestador",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalBruto",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalBaseRet",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalRetAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalNRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/vlrTotalNRetAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/indCPRB"
+            ],
+            "C06": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/serie",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/numDocto",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/dtEmissaoNF",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/vlrBruto",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/obs"
+            ],
+            "C07": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/tpServico",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrBaseRet",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrRetencao",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrRetSub",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrNRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrServicos15",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrServicos20",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrServicos25",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrAdicional",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/nfs/infoTpServ/vlrNRetAdic"
+            ],
+            "C08": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetPr/tpProcRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetPr/nrProcRetPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetPr/codSuspPrinc",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetPr/valorPrinc"
+            ],
+            "C09": [
+                "linha",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetAd/tpProcRetAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetAd/nrProcRetAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetAd/codSuspAdic",
+                "/Reinf/loteEventos/evtServTom/infoServTom/ideEstabObra/idePrestServ/infoProcRetAd/valorAdic"
+            ],
+            "D01": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/@id"
+            ],
+            "D02": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/perApur",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtServPrest/ideEvento/verProc"
+            ],
+            "D03": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtServPrest/ideContri/nrInsc"
+            ],
+            "D04": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/tpInscEstabPrest",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/nrInscEstabPrest"
+            ],
+            "D05": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/tpInscTomador",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nrInscTomador",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/indObra",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalBruto",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalBaseRet",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalRetAdic",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalNRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/vlrTotalNRetAdic"
+            ],
+            "D06": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/serie",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/numDocto",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/dtEmissaoNF",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/vlrBruto",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/obs"
+            ],
+            "D07": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/tpServico",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrBaseRet",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrRetencao",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrRetSub",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrNRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrServicos15",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrServicos20",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrServicos25",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrAdicional",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/nfs/infoTpServ/vlrNRetAdic"
+            ],
+            "D08": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetPr/tpProcRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetPr/nrProcRetPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetPr/codSuspPrinc",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetPr/valorPrinc"
+            ],
+            "D09": [
+                "linha",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetAd/tpProcRetAdic",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetAd/nrProcRetAdic",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetAd/codSuspAdic",
+                "/Reinf/loteEventos/evtServPrest/infoServPrest/ideEstabPrest/ideTomador/infoProcRetAd/valorAdic"
+            ],
+            "E01": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/@id"
+            ],
+            "E02": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/perApur",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtAssocDespRec/ideEvento/verProc"
+            ],
+            "E03": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/nrInsc"
+            ],
+            "E04": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/nrInscEstab"
+            ],
+            "E05": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/cnpjOrigRecurso",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/vlrTotalRec",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/vlrTotalRet",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/vlrTotalNRet"
+            ],
+            "E06":[
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoRecurso/tpRepasse",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoRecurso/descRecurso",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoRecurso/vlrBruto",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoRecurso/vlrRetApur"
+            ],
+            "E07":[
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoProc/tpProc",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoProc/nrProc",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoProc/codSusp",
+                "/Reinf/loteEventos/evtAssocDespRec/ideContri/ideEstab/recursosRec/infoProc/vlrNRet"
+            ],
+            "F01": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/@id"
+            ],
+            "F02": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/perApur",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtAssocDespRep/ideEvento/verProc"
+            ],
+            "F03": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/nrInsc"
+            ],
+            "F04": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/nrInscEstab"
+            ],
+            "F05": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/cnpjAssocDesp",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/vlrTotalRep",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/vlrTotalRet",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/vlrTotalNRet"
+            ],
+            "F06": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoRecurso/tpRepasse",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoRecurso/descRecurso",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoRecurso/vlrBruto",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoRecurso/vlrRetApur"
+            ],
+            "F07": [
+                "linha",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoProc/tpProc",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoProc/nrProc",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoProc/codSusp",
+                "/Reinf/loteEventos/evtAssocDespRep/ideContri/ideEstab/recursosRep/infoProc/vlrNRet"
+            ],
+            "G01": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/@id"
+            ],
+            "G02": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtComProd/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtComProd/ideEvento/perApur",
+                "/Reinf/loteEventos/evtComProd/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtComProd/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtComProd/ideEvento/verProc"
+            ],
+            "G03": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtComProd/ideContri/nrInsc"
+            ],
+            "G04": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/nrInscEstab",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrRecBrutaTotal",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrCPApur",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrRatApur",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrSenarApur",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrCPSuspTotal",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrRatSuspTotal",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/vlrSenarSuspTotal"
+            ],
+            "G05": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/indCom",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/vlrRecBruta"
+            ],
+            "G06": [
+                "linha",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/tpProc",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/nrProc",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/codSusp",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/vlrCPSusp",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/vlrRatSusp",
+                "/Reinf/loteEventos/evtComProd/infoComProd/ideEstab/tipoCom/infoProc/vlrSenarSusp"
+            ],
+            "H01": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/@id"
+            ],
+            "H02": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/perApur",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtCPRB/ideEvento/verProc"
+            ],
+            "H03": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtCPRB/ideContri/nrInsc"
+            ],
+            "H04": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/nrInscEstab",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/vlrRecBrutaTotal",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/vlrCPApurTotal",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/vlrCPRBSuspTotal"
+            ],
+            "H05": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/codAtivEcon",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrRecBrutaAtiv",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrExcRecBruta",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrAdicRecBruta",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrBcCPRB",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/vlrCPRBapur"
+            ],
+            "H06": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/tpAjuste",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/codAjuste",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/vlrAjuste",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/descAjuste",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/tipoAjuste/dtAjuste"
+            ],
+            "H07": [
+                "linha",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/infoProc/tpProc",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/infoProc/nrProc",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/infoProc/codSusp",
+                "/Reinf/loteEventos/evtCPRB/infoCPRB/ideEstab/tipoCod/infoProc/vlrCPRBSusp"
+            ],
+            "I01": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/@id"
+            ],
+            "I02": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/perApur",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtPgtosDivs/ideEvento/verProc"
+            ],
+            "I03": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtPgtosDivs/ideContri/nrInsc"
+            ],
+            "I04": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/codPgto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/tpInscBenef",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/nrInscBenef",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/nmRazaoBenef"
+            ],
+            "I05": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/paisResid",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/dscLograd",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/nrLograd",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/complem",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/bairro",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/cidade",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoEnder/codPostal"
+            ],
+            "I06": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoFiscal/indNIF",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoFiscal/nifBenef",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoResidExt/infoFiscal/relFontePagad"
+            ],
+            "I07": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoMolestia/dtLaudo"
+            ],
+            "I08": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/tpInsc",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/nrInsc"
+            ],
+            "I09": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/dtPgto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/indSuspExig",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/indDecTerceiro",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/vlrRendTributavel",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/vlrIRRF"
+            ],
+            "I10": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detDeducao/indTpDeducao",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detDeducao/vlrDeducao"
+            ],
+            "I11": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/rendIsento/tpIsencao",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detDeducao/vlrIsento",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detDeducao/descRendimento"
+            ],
+            "I12": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detCompet/indPerReferencia",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detCompet/perRefPagto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/detCompet/vlrRendTributavel"
+            ],
+            "I13": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/compJud/vlrCompAnoCalend",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/compJud/vlrCompAnoAnt"
+            ],
+            "I14": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/tpProcRRA",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/nrProcRRA",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/codSusp",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/natRRA",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/qtdMesesRRA"
+            ],
+            "I15": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/despProcJud/vlrDespCustas",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoRRA/despProcJud/vlrDespAdvogados"
+            ],
+            "I16": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/infoRRA/despProcJud/ideAdvogado/tpInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/infoRRA/despProcJud/ideAdvogado/nrInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/infoRRA/despProcJud/ideAdvogado/vlrAdvogado"
+            ],
+            "I17": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/nrProcJud",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/codSusp",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/indOrigemRecursos"
+            ],
+            "I18": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/vlrDespCustas",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/vlrDespAdvogados"
+            ],
+            "I19": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/ideAdvogado/tpInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/ideAdvogado/nrInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/despProcJud/ideAdvogado/vlrAdvogado"
+            ],
+            "I20": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/infoProcJud/origemRecursos/cnpjOrigemRecursos"
+            ],
+            "I21": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPF/depJudicial/vlrDepJudicial"
+            ],
+            "I22": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/dtPagto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/vlrRendTributavel",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/vlrRet"
+            ],
+            "I23": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/nrProcJud",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/codSusp",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/indOrigemRecursos"
+            ],
+            "I24": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcjud/vlrDespCustas",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcjud/vlrDespAdvogados"
+            ],
+            "I25": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcJud/ideAdvogado/tpInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcJud/ideAdvogado/nrInscAdvogado",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/despProcJud/ideAdvogado/vlrAdvogado"
+            ],
+            "I26": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidBR/pgtoPJ/infoProcJud/origemRecursos/cnpjOrigemRecursos"
+            ],
+            "I27": [
+                "linha",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/dtPgto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/tpRendimento",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/formaTributacao",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/vlrPgto",
+                "/Reinf/loteEventos/evtPgtosDivs/ideBenef/infoPgto/ideEstab/pgtoResidExt/vlrRet"
+            ],
+            "J01": [
+                "linha",
+                "/Reinf/loteEventos/evtReabreEvPer/@id"
+            ],
+            "J02": [
+                "linha",
+                "/Reinf/loteEventos/evtReabreEvPer/ideEvento/perApur",
+                "/Reinf/loteEventos/evtReabreEvPer/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtReabreEvPer/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtReabreEvPer/ideEvento/verProc"
+            ],
+            "J03": [
+                "linha",
+                "/Reinf/loteEventos/evtReabreEvPer/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtReabreEvPer/ideContri/nrInsc"
+            ],
+            "K01": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/@id"
+            ],
+            "K02": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/ideEvento/perApur",
+                "/Reinf/loteEventos/evtFechaEvPer/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtFechaEvPer/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtFechaEvPer/ideEvento/verProc"
+            ],
+            "K03": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtFechaEvPer/ideContri/nrInsc"
+            ],
+            "K04": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/ideRespInf/nmResp",
+                "/Reinf/loteEventos/evtFechaEvPer/ideRespInf/cpfResp",
+                "/Reinf/loteEventos/evtFechaEvPer/ideRespInf/telefone",
+                "/Reinf/loteEventos/evtFechaEvPer/ideRespInf/email"
+            ],
+            "K05": [
+                "linha",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtServTm",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtServPr",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtAssDespRec",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtAssDespRep",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtComProd",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtCPRB",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtAquis",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/evtPgtos",
+                "/Reinf/loteEventos/evtFechaEvPer/infoFech/compSemMovto"
+            ],
+            "L01": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/@id"
+            ],
+            "L02": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/dtApuracao",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtEspDesportivo/ideEvento/verProc"
+            ],
+            "L03": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/nrInsc"
+            ],
+            "L04": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/tpInscEstab",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/nrInscEstab"
+            ],
+            "L05": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/nrBoletim",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/tpCompeticao",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/categEvento",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/modDesportiva",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/nomeCompeticao",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/cnpjMandante",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/cnpjVisitante",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/nomeVisitante",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/pracaDesportiva",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/codMunic",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/uf",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/qtdePagantes",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/qtdeNaoPagantes"
+            ],
+            "L06": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/tpIngresso",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/descIngr",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/qtdeIngrVenda",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/qtdeIngrVendidos",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/qtdeIngrDev",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/precoIndiv",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/receitaIngressos/vlrTotal"
+            ],
+            "L07": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/outrasReceitas/tpReceita",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/outrasReceitas/vlrReceita",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/boletim/outrasReceitas/descReceita"
+            ],
+            "L08": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrReceitaTotal",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrCP",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrCPSuspTotal",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrReceitaClubes",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/vlrRetParc"
+            ],
+            "L09": [
+                "linha",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/infoProc/tpProc",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/infoProc/nrProc",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/infoProc/codSusp",
+                "/Reinf/loteEventos/evtEspDesportivo/ideContri/ideEstab/receitaTotal/infoProc/vlrCPSusp"
+            ],
+            "M01": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/@id"
+            ],
+            "M02": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/ideEvento/perApur"
+            ],
+            "M03": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtTotal/ideContri/nrInsc"
+            ],
+            "M04": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/cdRetorno",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/descRetorno"
+            ],
+            "M05": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/regOcorrs/tpOcorr",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/regOcorrs/localErroAviso",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/regOcorrs/codResp",
+                "/Reinf/loteEventos/evtTotal/ideRecRetorno/ideStatus/regOcorrs/dscResp"
+            ],
+            "M06": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/nrProtEntr",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/dhProcess",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/tpEv",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/idEv",
+                "/Reinf/loteEventos/evtTotal/infoRecEv/hash"
+            ],
+            "M07": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/nrRecArqBase"
+            ],
+            "M07A": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/tpInsc",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/nrInsc"
+            ],
+            "M08": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/cnpjPrestador",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/cno",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/vlrTotalBaseRet"
+            ],
+            "M08A": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/infoCRTom/CRTom",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/infoCRTom/vlrCRTom",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RTom/infoCRTom/vlrCRTomSusp"
+            ],
+            "M09": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/tpInscTomador",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/nrInscTomador",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalBaseRet",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalRetPrinc",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalRetAdic",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalNRetPrinc",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RPrest/vlrTotalNRetAdic"
+            ],
+            "M10": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/cnpjAssocDesp",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/vlrTotalRep",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/CRRecRepAD",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/vlrCRRecRepAD",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecRepAD/vlrCRRecRepADSusp"
+            ],
+            "M11": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RComl/CRComl",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RComl/vlrCRComl",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RComl/vlrCRComlSusp"
+            ],
+            "M12": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RCPRB/CRCPRB",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RCPRB/vlrCRCPRB",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RCPRB/vlrCRCPRBSusp"
+            ],
+            "M13": [
+                "linha",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecEspetDesp/CRRecEspetDesp",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecEspetDesp/vlrReceitaTotal",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecEspetDesp/vlrCRRecEspetDesp",
+                "/Reinf/loteEventos/evtTotal/infoTotal/ideEstab/RRecEspetDesp/vlrCRRecEspetDespSusp"
+            ],
+            "N01": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/@id"
+            ],
+            "N02": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/ideEvento/perApur"
+            ],
+            "N03": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtTotalContrib/ideContri/nrInsc"
+            ],
+            "N04": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/cdRetorno",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/descRetorno"
+            ],
+            "N05": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/regOcorrs/tpOcorr",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/regOcorrs/localErroAviso",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/regOcorrs/codResp",
+                "/Reinf/loteEventos/evtTotalContrib/ideRecRetorno/ideStatus/regOcorrs/dscResp"
+            ],
+            "N06": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/nrProtEntr",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/dhProcess",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/tpEv",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/idEv",
+                "/Reinf/loteEventos/evtTotalContrib/infoRecEv/hash"
+            ],
+            "N07": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/nrRecArqBase",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/indExistInfo"
+            ],
+            "N08": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/cnpjPrestador",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/cno",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/vlrTotalBaseRet"
+            ],
+            "N08A": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/infoCRTom/CRTom",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/infoCRTom/vlrCRTom",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RTom/infoCRTom/vlrCRTomSusp"
+            ],
+            "N09": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/tpInscTomador",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/nrInscTomador",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalBaseRet",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalRetPrinc",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalRetAdic",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalNRetPrinc",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RPrest/vlrTotalNRetAdic"
+            ],
+            "N10": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RRecRepAD/CRRecRepAD",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RRecRepAD/vlrCRRecRepAD",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RRecRepAD/vlrCRRecRepADSusp"
+            ],
+            "N11": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RComl/CRComl",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RComl/vlrCRComl",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RComl/vlrCRComlSusp"
+            ],
+            "N12": [
+                "linha",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RCPRB/CRCPRB",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RCPRB/vlrCRCPRB",
+                "/Reinf/loteEventos/evtTotalContrib/infoTotalContrib/RCPRB/vlrCRCPRBSusp"
+            ],
+            "O01": [
+                "linha",
+                "/Reinf/loteEventos/evtExclusao/@id"
+            ],
+            "O02": [
+                "linha",
+                "/Reinf/loteEventos/evtExclusao/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtExclusao/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtExclusao/ideEvento/verProc"
+            ],
+            "O03": [
+                "linha",
+                "/Reinf/loteEventos/evtExclusao/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtExclusao/ideContri/nrInsc"
+            ],
+            "O04": [
+                "linha",
+                "/Reinf/loteEventos/evtExclusao/infoExclusao/tpEvento",
+                "/Reinf/loteEventos/evtExclusao/infoExclusao/nrRecEvt",
+                "/Reinf/loteEventos/evtExclusao/infoExclusao/perApur"
+            ],
+            "P01": [
+                "linha",
+                "/Reinf/loteEventos/evtAqProd/@id"
+            ],
+            "P02": [
+                "linha",
+                "/Reinf/loteEventos/evtAqProd/ideEvento/indRetif",
+                "/Reinf/loteEventos/evtAqProd/ideEvento/nrRecibo",
+                "/Reinf/loteEventos/evtAqProd/ideEvento/perApur",
+                "/Reinf/loteEventos/evtAqProd/ideEvento/tpAmb",
+                "/Reinf/loteEventos/evtAqProd/ideEvento/procEmi",
+                "/Reinf/loteEventos/evtAqProd/ideEvento/verProc"
+            ],
+            "P03": [
+                "linha",
+                "/Reinf/loteEventos/evtAqProd/ideContri/tpInsc",
+                "/Reinf/loteEventos/evtAqProd/ideContri/nrInsc"
+            ],
+            "P04": [
+                "linha",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/tpInscAdq",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/nrInscAdq"
+            ],
+            "P05":[
+                "linha",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/tpInscProd",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/nrInscProd",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/indOpcCP"
+            ],
+            "P05A":[
+                "linha",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/indAquis",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/vlrBruto",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/vlrCPDescPR",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/vlrRatDescPR",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/vlrSenarDesc"
+                
+            ],
+            "P05AA":[
+                "linha",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/infoProcJud/nrProcJud",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/infoProcJud/codSusp",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/infoProcJud/vlrCPNRet",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/infoProcJud/vlrRatNRet",
+                "/Reinf/loteEventos/evtAqProd/infoAquisProd/ideEstabAdquir/ideProdutor/detAquis/infoProcJud/vlrSenarNRet"
+            ],
+            "Q01":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/@id"
+            ],
+            "Q02":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEvento/indRetif"
+                ,"/Reinf/loteEventos/evtRetPF/ideEvento/nrRecibo"
+                ,"/Reinf/loteEventos/evtRetPF/ideEvento/perApur"
+                ,"/Reinf/loteEventos/evtRetPF/ideEvento/tpAmb"
+                ,"/Reinf/loteEventos/evtRetPF/ideEvento/procEmi"
+                ,"/Reinf/loteEventos/evtRetPF/ideEvento/verProc"
+            ],
+            
+            "Q03":[
+                 "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideContri/tpInsc"
+                ,"/Reinf/loteEventos/evtRetPF/ideContri/nrInsc"
+            ],
+            "Q04":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideContri/infoComplContri/natJur"
+            ], 
+            
+            "Q05":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/tpInscEstab"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/nrInscEstab"
+            ],
+            
+            "Q06":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/cpfBenef"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/nmBenef"
+            ],
+         
+            "Q07":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideDep/cpfDep"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideDep/relDep"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideDep/descrDep"
+            ],
+            
+            "Q08":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/natRend"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/observ"
+            ],
+            
+            "Q09":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/dtFG"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/compFP"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/indDecTerc"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/vlrRendBruto"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/vlrRendTrib"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/vlrIR"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/indRRA"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/indFciScp"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/nrInscFciScp"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/percSCP"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/indJud"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/paisResidExt" 
+            ]
+            ,
+            "Q10":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/detDed/indTpDeducao"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/detDed/vlrDeducao"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/detDed/infoEntid"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/detDed/nrInscPrevComp"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/detDed/vlrPatrocFunp"
+            ],
+            
+            "Q11":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/detDed/benefPen/cpfDep"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/detDed/benefPen/vlrDepen"
+            ],
+            
+            "Q12":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/rendIsento/tpIsencao"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/rendIsento/vlrIsento"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/rendIsento/descRendimento"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/rendIsento/dtLaudo"
+            ],
+            
+            "Q13":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/tpProcRet"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/nrProcRet"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/codSusp"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/vlrNRetido"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/vlrDepJud"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/vlrCmpAnoCal"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/vlrCmpAnoAnt"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/vlrRendSusp"
+            ],
+            
+            "Q14":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/tpProcRet/dedSusp/indTpDeducao"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/tpProcRet/dedSusp/vlrDedSusp"
+            ],
+            
+            "Q15":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/tpProcRet/dedSusp/benefPen/cpfDep"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcRet/tpProcRet/dedSusp/benefPen/vlrDepenSusp"
+            ],
+            
+            "Q16":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/tpProcRRA"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/nrProcRRA"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/indOrigRec"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/descRRA"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/qtdMesesRRA"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/cnpjOrigRecurso"
+            ],
+            
+            "Q17":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/descProcJud/vlrDespCustas"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/descProcJud/vlrDespAdvogados"
+            ],
+            
+            "Q18":[
+                "linha"
+                ,"/Reinf/evtRetPF/loteEventos/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/descProcJud/ideAdv/tpInscAdv"
+                ,"/Reinf/evtRetPF/loteEventos/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/descProcJud/ideAdv/nrInscAdv"
+                ,"/Reinf/evtRetPF/loteEventos/ideEstab/ideBenef/idePgto/infoPgto/infoRRA/descProcJud/ideAdv/vlrAdv"
+            ],
+            
+            "Q19":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/nrProc"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/indOrigRec"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/cnpjOrigRecurso"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/desc"
+            ],
+            
+            "Q20":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/descProcJud/vlrDespCustas"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/descProcJud/vlrDespAdvogados"
+            ],
+            
+            "Q21":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/descProcJud/ideAdv/tpInscAdv"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/descProcJud/ideAdv/nrInscAdv"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoProcJud/descProcJud/ideAdv/vlrAdv"
+            ],
+            
+            "Q22":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/indNIF"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/nifBenef"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/frmTribut"
+            ],
+            
+            "Q23":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/endExt/dscLograd"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/endExt/nrLograd"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/endExt/complem"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/endExt/bairro"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/endExt/cidade"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/endExt/estado"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/endExt/codPostal"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/idePgto/infoPgto/infoPgtoExt/endExt/telef"
+            ],
+            
+            "Q24":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/nrInsc"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/regANS"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/vlrSaude"
+            ],
+            
+            "Q25":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoReemb/tpInsc"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoReemb/nrInsc"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoReemb/vlrReemb"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoReemb/vlrReembAnt"
+            ],
+            
+            "Q26":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoDependPl/cpfDep"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoDependPl/vlrSaude"
+            ],
+            
+            "Q27":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoDependPl/infoReembDep/tpInsc"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoDependPl/infoReembDep/nrInsc"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoDependPl/infoReembDep/vlrReemb"
+                ,"/Reinf/loteEventos/evtRetPF/ideEstab/ideBenef/ideOpSaude/infoDependPl/infoReembDep/vlrReembAnt"
+            ],
+            
+       
+            "R01":[
+                "linha",
+                "/Reinf/loteEventos/evtRetPJ/@id"
+            ],
+            
+            "R02":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPJ/idEvento/indRetif"
+                ,"/Reinf/loteEventos/evtRetPJ/idEvento/nrRecibo"
+                ,"/Reinf/loteEventos/evtRetPJ/idEvento/perApur"
+                ,"/Reinf/loteEventos/evtRetPJ/idEvento/tpAmb"
+                ,"/Reinf/loteEventos/evtRetPJ/idEvento/procEmi"
+                ,"/Reinf/loteEventos/evtRetPJ/idEvento/verProc"    
+            ],
+            
+            "R03":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPJ/ideContri/tpInsc"
+                ,"/Reinf/loteEventos/evtRetPJ/ideContri/nrInsc"
+            ],
+            
+            "R04":[
+                "linha"
+                ,"/Reinf/loteEventos/ideContri/infoComplContri/natJur"
+               
+            ],
+            
+            "R05":[
+                "linha"
+                ,"/Reinf/loteEventos/evtRetPJ/ideEstab/tpInscEstab"
+                ,"/Reinf/loteEventos/evtRetPJ/ideEstab/nrInscEstab"
+            ],
+            
+            "R06":[
+                "linha"
+                ,"/Reinf/loteEventos/ideEstab/ideBenef/cnpjBenef"
+                ,"/Reinf/loteEventos/ideEstab/ideBenef/nmBenef"
+                ,"/Reinf/loteEventos/ideEstab/ideBenef/isenImun"
+            ],
+            
+            "R07":[
+                "linha"
+                ,"/Reinf/loteEventos/ideBenef/idePgto/natRend"
+                ,"/Reinf/loteEventos/ideBenef/idePgto/observ"
+            ],
+            
+            "R08":[
+                "linha"
+                ,"/Reinf/loteEventos/idePgto/infoPgto/dtFG"
+                ,"/Reinf/loteEventos/idePgto/infoPgto/vlrBruto"
+                ,"/Reinf/loteEventos/idePgto/infoPgto/indFciScp"
+                ,"/Reinf/loteEventos/idePgto/infoPgto/nrInscFciScp"
+                ,"/Reinf/loteEventos/idePgto/infoPgto/percSCP"
+                ,"/Reinf/loteEventos/idePgto/infoPgto/indJud"
+                ,"/Reinf/loteEventos/idePgto/infoPgto/paisResidExt"
+            ],
+            
+            "R09":[
+                "linha"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrBaseIR"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrIR"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrBaseAgreg"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrAgreg"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrBaseCSLL"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrCSLL"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrBaseCofins"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrBasePP"
+                ,"/Reinf/loteEventos/infoPgto/retencoes/vlrPP"
+            ],
+            
+            "R10":[
+                "linha"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/tpProcRet"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/nrProcRet"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/codSusp"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrBaseSuspIR"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrNIR"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrDepIR"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrBaseSuspCSLL"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrNCSLL"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrDepCSLL"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrBaseSuspCofins"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrNCofins"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrBaseSuspPP"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrNPP"
+                ,"/Reinf/loteEventos/infoPgto/infoProcRet/vlrDepPP"
+                
+            ],
+            
+            "R11":[
+                "linha"
+                ,"/Reinf/loteEventos/infoPgto/infoProcJud/nrProc"
+                ,"/Reinf/loteEventos/infoPgto/infoProcJud/indOrigRec"
+                ,"/Reinf/loteEventos/infoPgto/infoProcJud/cnpjOrigRecurso"
+                ,"/Reinf/loteEventos/infoPgto/infoProcJud/desc"
+            ],
+            
+            "R12":[
+                "linha"
+                ,"/Reinf/loteEventos/infoProcJud/despProcJud/vlrDespCustas"
+                ,"/Reinf/loteEventos/infoProcJud/despProcJud/vlrDespAdvogados"
+            ],
+            
+            "R13":[
+                "linha"
+                ,"/Reinf/loteEventos/despProcJud/ideAdv/tpInscAdv"
+                ,"/Reinf/loteEventos/despProcJud/ideAdv/nrInscAdv"
+                ,"/Reinf/loteEventos/despProcJud/ideAdv/vlrAdv"
+            ],
+            
+            "R14":[
+                "linha"
+                ,"/Reinf/loteEventos/infoPgto/infoPgtoExt/indNIF"
+                ,"/Reinf/loteEventos/infoPgto/infoPgtoExt/nifBenef"
+                ,"/Reinf/loteEventos/infoPgto/infoPgtoExt/relFontPg"
+                ,"/Reinf/loteEventos/infoPgto/infoPgtoExt/frmTribut"
+            ],
+            
+            "R15":[
+                "linha"
+                ,"/Reinf/loteEventos/infoPgtoExt/endExt/dscLograd"
+                ,"/Reinf/loteEventos/infoPgtoExt/endExt/nrLograd"
+                ,"/Reinf/loteEventos/infoPgtoExt/endExt/complem"
+                ,"/Reinf/loteEventos/infoPgtoExt/endExt/bairro"
+                ,"/Reinf/loteEventos/infoPgtoExt/endExt/cidade"
+                ,"/Reinf/loteEventos/infoPgtoExt/endExt/estado"
+                ,"/Reinf/loteEventos/infoPgtoExt/endExt/codPostal"
+                ,"/Reinf/loteEventos/infoPgtoExt/endExt/telef"
+            ],
+            
+            "U01":[
+                "linha",
+                "/Reinf/loteEventos/evtFech/@id"
+            ],
+            
+            "U02":[
+                "linha"
+                ,"/Reinf/loteEventos/evtFech/idEvento/perApur"
+                ,"/Reinf/loteEventos/evtFech/idEvento/tpAmb"
+                ,"/Reinf/loteEventos/evtFech/idEvento/procEmi"
+                ,"/Reinf/loteEventos/evtFech/idEvento/verProc"
+                
+            ],
+            
+            "U03":[
+                "linha"
+                ,"/Reinf/loteEventos/evtFech/ideContri/tpInsc"
+                ,"/Reinf/loteEventos/evtFech/ideContri/nrInsc"
+                
+            ]
+        }
+    }
+    
+}

@@ -1,0 +1,11 @@
+PASTA: 	    certs
+FINALIDADE: Armazenar Certificados Digitais
+AUTOR:	    Guilherme Silva
+DATA:	    07/08/2013
+
+DESCRIÇÃO:  Esta pasta é responsável por armazenar os certificados digitais dos contribuintes.
+	    O padrão do certificado será: 99999999999999.pfx
+	    onde os 9 são dígitos do CNPJ do contribuinte seguido da extenção pfx do arquivo.
+	    Poderão também aparecer o CNPJ com os sufixos:
+		_certKEY.pem, _priKEY.pem, _pubKEY.pem
+	    	este os arquivos do certificado uma vez gerados, o certificado, chave pública e privada.

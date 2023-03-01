@@ -1,0 +1,2 @@
+ | |0|SUCESSO|
+ID1028982460000002023022309041800001|1|02898246|-1|Erro de schema|1| |-1|- Aviso 1549 failed to load external entity "/home/www/html/nf/NF_V3/NF_V3/servicos/reinf/schemas/2_01_01/evt4010PagtoBeneficiarioPF-v2_01_01.xsd.xsd" na linha 0 ! Erro 1757Failed to locate the main schema resource at '/home/www/html/nf/NF_V3/NF_V3/servicos/reinf/schemas/2_01_01/evt4010PagtoBeneficiarioPF-v2_01_01.xsd.xsd'. na linha 0|2023-02-24T11:35:05.000000-02:00|0000|ID1028982460000002023022309041800001|9041800001|

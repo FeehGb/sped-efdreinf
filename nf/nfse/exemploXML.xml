@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfse>
+<nf>
+<empresa>
+	<codigo>001</codigo>
+	<descricao>Empresa Teste Aplicação</descricao>
+</empresa>
+<filial>
+	<codigo>001</codigo>
+	<descricao>Empresa Teste Aplicação</descricao>
+</filial>
+<controle>003</controle>
+<numero></numero>
+<situacao></situacao>
+<valor_total>100,00</valor_total>
+<valor_desconto>0,00</valor_desconto>
+<valor_ir>0,00</valor_ir>
+<valor_inss></valor_inss>
+<valor_contribuicao_social>0,00</valor_contribuicao_social>
+<valor_rps></valor_rps>
+<valor_pis></valor_pis>
+<valor_cofins></valor_cofins>
+<observacao>OBSERVACAO</observacao>
+</nf>
+<prestador>
+<cpfcnpj>74174174000107</cpfcnpj>
+<cidade>4101804</cidade>
+</prestador>
+<tomador>
+<tipo>J</tipo>
+<identificador></identificador>
+<estado></estado>
+<pais></pais>
+<cpfcnpj>07669134909</cpfcnpj>
+<ie>10</ie>
+<nome_razao_social>TESTE_PESSOA</nome_razao_social>
+<sobrenome_nome_fantasia>F</sobrenome_nome_fantasia>
+<logradouro>RUATESTE</logradouro>
+<email>email@email.com.br</email>
+<numero_residencia>666</numero_residencia>
+<complemento>fdfdfdfdfd</complemento>
+<ponto_referencia>dffdfdfd</ponto_referencia>
+<bairro>dffdfdfd</bairro>
+<cidade>8147</cidade>
+<cep>88350000</cep>
+<ddd_fone_comercial>41</ddd_fone_comercial>
+<fone_comercial>777777777777777</fone_comercial>
+<ddd_fone_residencial>41</ddd_fone_residencial>
+<fone_residencial>66666666666666666</fone_residencial>
+<ddd_fax>41</ddd_fax>
+<fone_fax>45</fone_fax>
+</tomador>
+<itens>
+	<lista>
+	<tributa_municipio_prestador>1</tributa_municipio_prestador>
+	<codigo_local_prestacao_servico>8055</codigo_local_prestacao_servico>
+	<unidade_codigo>PC</unidade_codigo>
+	<unidade_quantidade>1</unidade_quantidade>
+	<unidade_valor_unitario>1</unidade_valor_unitario>
+	<codigo_item_lista_servico>1009</codigo_item_lista_servico>
+	<descritivo>7878778 dihjdhfjhdfjhddfddf ITEM 1</descritivo>
+	<aliquota_item_lista_servico>5,00</aliquota_item_lista_servico>
+	<situacao_tributaria>0</situacao_tributaria>
+	<valor_tributavel>100,00</valor_tributavel>
+	<valor_deducao>0,00</valor_deducao>
+	<valor_issrf>0,00</valor_issrf>
+	</lista>
+</itens>
+<genericos>
+<linha>
+<titulo> 33 </titulo>
+<descricao> 33 </descricao>
+</linha>
+</genericos>
+<produtos>
+<descricao> PROD </descricao>
+<valor> 20 </valor>
+</produtos>
+</nfse>

@@ -1,0 +1,7 @@
+PASTA: 	    config
+FINALIDADE: Armazenar os documentos de configuracoes de sistema
+AUTOR:	    Guilherme Silva
+DATA: 	    23/09/2013
+
+DESCRIÇÃO:  Esta pasta é responsável por armazenar os arquivos de configurações do projeto NFE.
+	    Exemplo: arquivo de configuração de banco de dados, pacote xsd, etc.

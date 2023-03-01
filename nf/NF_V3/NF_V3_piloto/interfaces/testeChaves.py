@@ -1,0 +1,82 @@
+
+import os
+
+chaves = '''
+32181105193785000341550030000012341002223455
+35181101560653000198550010000094281000112310
+42181100159958000120550010000042351000047170
+43181129506474002305550020000805141637249997
+43181104270312000176550010000041241000000293
+43181104270312000176550010000041241000000293
+43181129506474002305550020000807461477953351
+42181079687588000153550050000900111984303776
+42181079687588000153550050000900071984303773
+33181007209611000193550010000012011000100831
+42181013921421000105550010000038561000000815
+43190100066130000127550010000154871099375541
+43190100066130000127550010000154851431277555
+43190100066130000127550010000154971708352763
+43190100066130000127550010000154881502904966
+43190100066130000127550010000154901968030960
+43190100066130000127550010000155031433843795
+43190100066130000127550010000155041523045690
+43190100066130000127550010000154981218387606
+'''.split('\n')
+
+layoutCobol = {
+    'WS-SEFAZ-RET-CNPJ'         :  0 , 
+    'WS-SEFAZ-RET-UF-IBGE'      :  1 , 
+    'WS-SEFAZ-RET-TP-EMISSAO'   :  2 , 
+    'WS-SEFAZ-RET-AMBIENTE'     :  3 , 
+    'WS-SEFAZ-RET-ID-NFE'       :  4 , 
+    'WS-SEFAZ-RET-STATUS'       :  5 , 
+    'WS-SEFAZ-RET-DESC-STATUS'  :  6 , 
+    'WS-SEFAZ-RET-PROTOCOLO'    :  7 , 
+    'WS-SEFAZ-RET-DT-HORA'      :  8 , 
+    'WS-SEFAZ-RET-PROTO-CAN'    :  9 , 
+    'WS-SEFAZ-RET-DT-HORA-CAN'  : 10 , 
+    'WS-SEFAZ-RET-PROTO-EVE'    : 11 , 
+    'WS-SEFAZ-RET-TIPO-EVE'     : 12 , 
+    'WS-SEFAZ-RET-DT-HORA-EVE'  : 13 , 
+    'WS-SEFAZ-RET-XML'          : 14 , 
+}
+
+
+
+def verificarTXT(path, chave):
+    
+    global layoutCobol
+    
+    with open(path) as arquivo:
+        dados =  arquivo.read()
+        dados = dados.split('|')
+        print(
+            chave 
+            + " => " 
+            + dados[layoutCobol['WS-SEFAZ-RET-STATUS']] 
+            + " | " 
+            + dados[layoutCobol['WS-SEFAZ-RET-DESC-STATUS']]
+        )
+    
+    
+
+
+
+
+for chave in chaves:
+    chave = str(chave).strip()
+    if chave != '':
+            saida = "/home/luiz/saidaPython-" + chave + ".txt"
+            os.system(
+                "php nfe-consulta-nota.php " + chave + 
+                " 82206004000195  " + saida + " 1 " 
+            )
+            verificarTXT(saida, chave )
+            
+            
+        
+        
+        
+    
+
+

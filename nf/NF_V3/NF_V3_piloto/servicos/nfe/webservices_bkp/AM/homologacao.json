@@ -1,0 +1,76 @@
+{
+    "4.00": {
+        "recepcao": {
+            "url": "https://homnfe.sefaz.am.gov.br/services2/services/NfeAutorizacao4",
+            "namespace": "http://www.portalfiscal.inf.br/nfe/wsdl/NFeAutorizacao4",
+            "servico": "NFeAutorizacao4",
+            "metodo": "nfeAutorizacaoLote",
+            "versao": "4.00",
+            "schema": "enviNFe_v4.00.xsd",
+            "tag_cabecalho": "",
+            "tag_corpo": "<nfeDadosMsg xmlns='http://www.portalfiscal.inf.br/nfe/wsdl/NFeAutorizacao4'><enviNFe xmlns = 'http://www.portalfiscal.inf.br/nfe' versao='4.00'><idLote>ALTERAR_DADOS_ID_LOTE</idLote><indSinc>ALTERAR_INDSINC</indSinc>ALTERAR_DADOS_XML</enviNFe></nfeDadosMsg>"
+        },
+        "consulta_lote": {
+            "url": "https://homnfe.sefaz.am.gov.br/services2/services/NfeRetAutorizacao4",
+            "namespace": "http://www.portalfiscal.inf.br/nfe/",
+            "servico": "NFeRetAutorizacao4",
+            "metodo": "nfeRetAutorizacaoLote",
+            "versao": "4.00",
+            "schema": "consReciNFe_v4.00.xsd",
+            "tag_cabecalho": "",
+            "tag_corpo": "<nfeDadosMsg xmlns=\"http://www.portalfiscal.inf.br/nfe/wsdl/NFeRetAutorizacao4\"><consReciNFe xmlns=\"http://www.portalfiscal.inf.br/nfe\" versao=\"4.00\"><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><nRec>ALTERAR_RECIBO</nRec></consReciNFe></nfeDadosMsg>"
+        },
+        "status": {
+            "url": "https://homnfe.sefaz.am.gov.br/services2/services/NfeStatusServico4",
+            "namespace": "http://www.portalfiscal.inf.br/nfe/",
+            "servico": "NFeStatusServico4",
+            "metodo": "nfeStatusServicoNF",
+            "versao": "4.00",
+            "schema": "",
+            "tag_cabecalho": "",
+            "tag_corpo": "<nfeDadosMsg><consStatServ xmlns='http://www.portalfiscal.inf.br/nfe' versao='4.00'><tpAmb>ALTERAR_TIPO_AMBIENTE</tpAmb><cUF>13</cUF><xServ>STATUS</xServ></consStatServ></nfeDadosMsg>"
+        },
+        "append_protocolo": {
+            "versao": "4.00",
+            "tag_inicio": "<?xml version='1.0' encoding='utf-8'?><nfeProc versao='4.00' xmlns='http://www.portalfiscal.inf.br/nfe'>",
+            "tag_final": "</nfeProc>"
+        },
+        "cancelamento": {
+            "url": "https://homnfe.sefaz.am.gov.br/services2/services/RecepcaoEvento4",
+            "namespace": "http://www.portalfiscal.inf.br/nfe/wsdl/NFeRecepcaoEvento4",
+            "servico": "RecepcaoEvento4",
+            "metodo": "nfeRecepcaoEvento",
+            "versao": "4.00",
+            "schema": "envEventoCancNFe_v4.00.xsd",
+            "tag_cabecalho": "",
+            "tag_corpo": "<nfeDadosMsg xmlns='http://www.portalfiscal.inf.br/nfe/wsdl/NFeRecepcaoEvento4'><envEvento xmlns = 'http://www.portalfiscal.inf.br/nfe' versao='1.00'><idLote>ALTERAR_ID_LOTE</idLote><evento versao = '1.00'><infEvento Id='ALTERAR_ID_EVENTO'><cOrgao>13</cOrgao><tpAmb>2</tpAmb><CNPJ>ALTERAR_CNPJ</CNPJ><chNFe>ALTERAR_CHAVE_NFE</chNFe><dhEvento>ALTERAR_DATA_HORA_EVENTO</dhEvento><tpEvento>110111</tpEvento><nSeqEvento>1</nSeqEvento><verEvento>1.00</verEvento><detEvento versao='1.00'><descEvento>Cancelamento</descEvento><nProt>ALTERAR_PROTOCOLO</nProt><xJust>ALTERAR_JUSTIFICATIVA</xJust></detEvento></infEvento></evento></envEvento></nfeDadosMsg>"
+        },
+        "append_evento": {
+            "versao": "4.00",
+            "tag_inicio": "<?xml version='1.0' encoding='utf-8'?><procEventoNFe versao='1.00' xmlns='http://www.portalfiscal.inf.br/nfe'>",
+            "tag_fim": "</procEventoNFe>",
+            "tag_retEvento_inicio": "<retEvento xmlns='http://www.portalfiscal.inf.br/nfe' versao='1.00'>",
+            "tag_retEvento_fim": "</retEvento>"
+        },
+        "carta_correcao": {
+            "url": "https://homnfe.sefaz.am.gov.br/services2/services/RecepcaoEvento4",
+            "namespace": "http://www.portalfiscal.inf.br/nfe/wsdl/NFeRecepcaoEvento4",
+            "servico": "RecepcaoEvento4",
+            "metodo": "RecepcaoEvento4",
+            "versao": "4.00",
+            "schema": "envCCe_v4.00.xsd",
+            "tag_cabecalho": "",
+            "tag_corpo": "<nfeDadosMsg xmlns='http://www.portalfiscal.inf.br/nfe/wsdl/NFeRecepcaoEvento4'><envEvento xmlns = 'http://www.portalfiscal.inf.br/nfe' versao='1.00'><idLote>ALTERAR_ID_LOTE</idLote><evento versao = '1.00'><infEvento Id='ALTERAR_ID_EVENTO'><cOrgao>13</cOrgao><tpAmb>2</tpAmb><CNPJ>ALTERAR_CNPJ</CNPJ><chNFe>ALTERAR_CHAVE_NFE</chNFe><dhEvento>ALTERAR_DATA_HORA_EVENTO</dhEvento><tpEvento>110110</tpEvento><nSeqEvento>ALTERAR_SEQUENCIA</nSeqEvento><verEvento>1.00</verEvento><detEvento versao='1.00'><descEvento>Carta de Correcao</descEvento><xCorrecao>ALTERAR_XCORRECAO</xCorrecao><xCondUso>A Carta de Correcao e disciplinada pelo paragrafo 1o-A do art. 7o do Convenio S/N, de 15 de dezembro de 1970 e pode ser utilizada para regularizacao de erro ocorrido na emissao de documento fiscal, desde que o erro nao esteja relacionado com: I - as variaveis que determinam o valor do imposto tais como: base de calculo, aliquota, diferenca de preco, quantidade, valor da operacao ou da prestacao; II - a correcao de dados cadastrais que implique mudanca do remetente ou do destinatario; III - a data de emissao ou de saida.</xCondUso></detEvento></infEvento></evento></envEvento></nfeDadosMsg>"
+        },
+        "inutilizacao": {
+            "url": "https://homnfe.sefaz.am.gov.br/services2/services/NFeInutilizacao4",
+            "namespace": "http://www.portalfiscal.inf.br/nfe/wsdl/NFeInutilizacao4",
+            "servico": "NFeInutilizacao4",
+            "metodo": "NFeInutilizacao4",
+            "versao": "4.00",
+            "schema": "inutNFe_v4.00.xsd",
+            "tag_cabecalho": "",
+            "tag_corpo": "<nfeDadosMsg xmlns='http://www.portalfiscal.inf.br/nfe/wsdl/NFeInutilizacao4'><inutNFe xmlns = 'http://www.portalfiscal.inf.br/nfe' versao='4.00'><infInut Id='ALTERAR_ID'><tpAmb>2</tpAmb><xServ>INUTILIZAR</xServ><cUF>ALTERAR_CUF</cUF><ano>ALTERAR_ANO</ano><CNPJ>ALTERAR_CNPJ</CNPJ><mod>55</mod><serie>ALTERAR_SERIE</serie><nNFIni>ALTERAR_NF_INI</nNFIni><nNFFin>ALTERAR_NF_FIN</nNFFin><xJust>ALTERAR_JUSTIFICATIVA</xJust></infInut></inutNFe></nfeDadosMsg>"
+        }
+    }
+}

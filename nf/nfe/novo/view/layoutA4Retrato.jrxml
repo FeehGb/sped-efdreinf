@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="retrato" language="groovy" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="3" bottomMargin="3">
+	<property name="ireport.zoom" value="14.80049988851686"/>
+	<property name="ireport.x" value="4655"/>
+	<property name="ireport.y" value="6756"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="cab-logo" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/logo]]></fieldDescription>
+	</field>
+	<field name="cab-titulo" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/nome-relatorio]]></fieldDescription>
+	</field>
+	<field name="cab-empresa" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/empresa]]></fieldDescription>
+	</field>
+	<field name="cab-filial" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/filial]]></fieldDescription>
+	</field>
+	<field name="rod-usuario" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/usuario]]></fieldDescription>
+	</field>
+	<field name="rod-data-emissao" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/data-emissao]]></fieldDescription>
+	</field>
+	<field name="rod-horario" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/horario]]></fieldDescription>
+	</field>
+	<field name="rod-periodo-inicial" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/periodo-inicial]]></fieldDescription>
+	</field>
+	<field name="rod-periodo-final" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/periodo-final]]></fieldDescription>
+	</field>
+	<field name="det-cliente" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/cliente]]></fieldDescription>
+	</field>
+	<field name="rod-tipo-selecao" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/header/tipo-selecao]]></fieldDescription>
+	</field>
+	<field name="det-data" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/detail/record/data]]></fieldDescription>
+	</field>
+	<field name="tot-total-dia" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/detail/record/total-dia]]></fieldDescription>
+	</field>
+	<field name="rod-nome-relatorio" class="java.lang.String">
+		<fieldDescription><![CDATA[/relatorio/footer/id-relatorio]]></fieldDescription>
+	</field>
+	<field name="tot-label-total-dia" class="java.lang.String"/>
+	<field name="det-data-emissao-doc" class="java.lang.String"/>
+	<field name="det-numero-doc" class="java.lang.String"/>
+	<field name="det-serie-doc" class="java.lang.String"/>
+	<field name="det-desc-cliente" class="java.lang.String"/>
+	<field name="det-valor-doc" class="java.lang.String"/>
+	<field name="rod-cab-cliente" class="java.lang.String"/>
+	<field name="field1" class="java.lang.String"/>
+	<detail>
+		<band height="66" splitType="Stretch">
+			<line>
+				<reportElement key="1" x="6" y="1" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="1" x="588" y="1" width="1" height="59"/>
+			</line>
+			<line>
+				<reportElement key="1" x="6" y="1" width="1" height="59"/>
+			</line>
+			<line>
+				<reportElement key="1" x="6" y="60" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="1" x="6" y="36" width="453" height="1"/>
+			</line>
+			<line>
+				<reportElement key="1" x="112" y="36" width="1" height="24"/>
+			</line>
+			<staticText>
+				<reportElement key="1" mode="Transparent" x="113" y="37" width="307" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR]]></text>
+			</staticText>
+			<line>
+				<reportElement key="1" x="459" y="1" width="1" height="59"/>
+			</line>
+			<staticText>
+				<reportElement key="1" x="460" y="7" width="128" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[NF-e]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" x="460" y="26" width="44" height="11"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[   Nº.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" x="460" y="42" width="44" height="11"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[   SÉRIE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="1" x="6" y="37" width="106" height="10"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DATA DE RECEBIMENTO]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="13" y="6" width="434" height="8" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="7" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det1-recebemos}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="1" x="0" y="57" width="595" height="10"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[.................................................................................................................................................................................................................................................................................................................]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="504" y="24" width="76" height="11" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det1-nNF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="1" x="505" y="40" width="76" height="11" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det1-serie}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="150" splitType="Stretch">
+			<line>
+				<reportElement key="2" x="6" y="109" width="582" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="82" y="18" width="200" height="26" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="12" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-emit-xNome}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="2" x="369" y="0" width="1" height="129"/>
+			</line>
+			<line>
+				<reportElement key="2" x="588" y="0" width="1" height="149"/>
+			</line>
+			<line>
+				<reportElement key="2" x="282" y="0" width="1" height="109"/>
+			</line>
+			<line>
+				<reportElement key="2" x="6" y="0" width="1" height="149"/>
+			</line>
+			<line>
+				<reportElement key="2" x="6" y="0" width="582" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="2" x="284" y="1" width="85" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[DANFE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" x="282" y="17" width="88" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="7" isBold="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[DOCUMENTO AUXILIAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" x="285" y="52" width="56" height="10"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isBold="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[0 - ENTRADA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement key="2" x="348" y="51" width="16" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement key="2" x="283" y="87" width="30" height="10"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ SÉRIE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" x="283" y="74" width="25" height="10"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ Nº.]]></text>
+			</staticText>
+			<line>
+				<reportElement key="2" x="369" y="54" width="219" height="1"/>
+			</line>
+			<line>
+				<reportElement key="2" x="369" y="80" width="219" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="2" mode="Transparent" x="370" y="55" width="218" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CHAVE DE ACESSO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" mode="Transparent" x="370" y="85" width="218" height="10" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[Consulta de autenticidade no portal nacional da NF-e]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" mode="Transparent" x="370" y="94" width="218" height="10" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[www.nfe.fazenda.gov.br/portal ou no site da Sefaz Autorizadora]]></text>
+			</staticText>
+			<line>
+				<reportElement key="2" x="6" y="129" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="2" x="6" y="149" width="582" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="2" mode="Transparent" x="7" y="110" width="218" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ NATUREZA DA OPERAÇÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" mode="Transparent" x="7" y="130" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ INSCRIÇÃO ESTADUAL]]></text>
+			</staticText>
+			<line>
+				<reportElement key="2" x="188" y="129" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="2" mode="Transparent" x="189" y="130" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ INSC. ESTADUAL DO SUBST. TRIBUT.]]></text>
+			</staticText>
+			<line>
+				<reportElement key="2" x="432" y="129" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="2" mode="Transparent" x="370" y="110" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ PROTOCOLO DE AUTORIZAÇÃO DE USO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" mode="Transparent" x="433" y="130" width="99" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CNPJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" x="285" y="62" width="56" height="10"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isBold="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[1 - SAÍDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" x="282" y="25" width="88" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="7" isBold="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[DA NOTA FISCAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="2" x="282" y="33" width="88" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="7" isBold="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ELETRÔNICA]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="82" y="44" width="200" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-emit-xLgr-nro}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="82" y="54" width="200" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-emit-xBairro}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="82" y="64" width="200" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-emit-xMun-UF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="82" y="74" width="200" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-emit-CEP}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="82" y="84" width="200" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-emit-fone}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement key="2" x="10" y="21" width="70" height="70"/>
+				<imageExpression class="java.lang.String"><![CDATA[$F{det2-logo}]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="310" y="72" width="60" height="14" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-nNF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="317" y="85" width="53" height="14" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="10" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-serie}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="349" y="55" width="15" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="10" isBold="true" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-tpEmis}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="367" y="67" width="230" height="10" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="6" isBold="true" isItalic="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-id}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="380" y="5" width="200" height="45"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128C" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[4113 0776 1520 0800 0135 5500 1000 0094 5610 0000 0000]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="13" y="118" width="351" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-natOp}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="369" y="118" width="219" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-protNFe}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="10" y="137" width="178" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-IE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="434" y="137" width="154" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-emit-CNPJ}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="2" x="191" y="137" width="241" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det2-IEST}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="2" x="283" y="99" width="27" height="10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="8" isBold="true" pdfFontName="Times"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[PÁG]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement key="2" x="341" y="99" width="29" height="10"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8" isBold="true" pdfFontName="Times"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="2" x="303" y="99" width="34" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="2" x="340" y="99" width="4" height="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="8" isBold="true" pdfFontName="Times"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[/]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="230">
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="0" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DESTINATÁRIO / REMETENTE]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="6" y="29" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="9" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="49" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="9" width="1" height="60"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="69" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="588" y="9" width="1" height="60"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="10" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ NOME / RAZAO SOCIAL]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="369" y="9" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement key="3" x="370" y="49" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="369" y="10" width="136" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CNPJ / CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="505" y="10" width="80" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DATA DA EMISSÃO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="504" y="9" width="1" height="60"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="505" y="30" width="80" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DATA DE ENT / SAI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="505" y="50" width="80" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ HORA DE SAÍDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="371" y="50" width="80" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ INSCRIÇÃO ESTADUAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="435" y="30" width="69" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CEP]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="434" y="29" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="315" y="30" width="105" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ BAIRRO / DISTRITO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="314" y="29" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="30" width="77" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ ENDEREÇO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="338" y="50" width="26" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ UF]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="337" y="49" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement key="3" x="207" y="49" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="208" y="50" width="72" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ FONE / FAX]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="8" y="50" width="72" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ MUNICÍPIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="70" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ FATURA / DUPLICATA]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="6" y="99" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="79" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="79" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="588" y="79" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement key="3" x="151" y="79" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement key="3" x="297" y="79" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement key="3" x="445" y="79" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="100" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CÁLCULO DO IMPOSTO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="6" y="109" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="129" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="109" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement key="3" x="588" y="109" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement key="3" x="103" y="109" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement key="3" x="195" y="109" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement key="3" x="302" y="109" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement key="3" x="394" y="109" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement key="3" x="486" y="109" width="1" height="40"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="8" y="110" width="95" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ BC DO ICMS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="105" y="110" width="90" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ VALOR DO ICMS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="195" y="110" width="107" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ BASE DE CÁLCULO ICMS ST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="304" y="110" width="90" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ VALOR DO ICMS ST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="397" y="110" width="90" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ VALOR DO IPI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="487" y="110" width="100" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ VALOR TOTAL PRODUTOS]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="6" y="149" width="582" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="105" y="130" width="90" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ VALOR DO SEGURO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="397" y="130" width="90" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[VALOR APROX. TRIB.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="487" y="130" width="100" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ VALOR TOTAL DA NOTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="8" y="130" width="95" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ VALOR DO FRETE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="195" y="130" width="107" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DESCONTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="304" y="130" width="90" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ OUTRAS DESPESAS ACES.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="150" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ TRANSPORTADOR / VOLUMES]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="231" y="159" width="1" height="60"/>
+			</line>
+			<line>
+				<reportElement key="3" x="588" y="159" width="1" height="60"/>
+			</line>
+			<line>
+				<reportElement key="3" x="447" y="159" width="1" height="40"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="159" width="1" height="60"/>
+			</line>
+			<line>
+				<reportElement key="3" x="475" y="159" width="1" height="60"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="159" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="179" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="199" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="6" y="219" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="3" x="391" y="159" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement key="3" x="321" y="159" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="322" y="160" width="69" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CÓDIGO ANTT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="392" y="160" width="55" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ PLACA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="449" y="160" width="26" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ UF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="477" y="160" width="108" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[CNPJ / CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="477" y="180" width="108" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ INSCRIÇAO ESTADUAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="477" y="200" width="108" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ PESO LÍQUIDO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="449" y="180" width="26" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ UF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="232" y="160" width="85" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ FRETE POR CONTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="232" y="180" width="85" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ MUNICÍPIO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="321" y="199" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="232" y="200" width="85" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ NÚMERO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="322" y="200" width="69" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[PESO BRUTO]]></text>
+			</staticText>
+			<line>
+				<reportElement key="3" x="151" y="199" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement key="3" x="71" y="199" width="1" height="20"/>
+			</line>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="153" y="200" width="72" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ MARCA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="73" y="200" width="72" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ ESPÉCIE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="180" width="62" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ ENDEREÇO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="200" width="62" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ QUANTIDADE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="160" width="62" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ RAZÃO SOCIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="3" mode="Transparent" x="7" y="220" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DADOS DOS PRODUTOS / SERVIÇOS]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="13" y="17" width="356" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-xNome}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="371" y="17" width="134" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-CNPJ}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="505" y="17" width="84" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dEmi}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="505" y="38" width="84" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dSaiEnt}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="505" y="58" width="84" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-hSaiEnt}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="435" y="38" width="69" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-CEP}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="315" y="38" width="119" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-xBairro}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="13" y="38" width="297" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-xLgr}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="13" y="58" width="194" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-cMun}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="208" y="58" width="129" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-fone}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="338" y="58" width="31" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-UF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="371" y="58" width="133" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-dest-IE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="10" y="117" width="93" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vBC}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="105" y="117" width="87" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vICMS}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="196" y="117" width="106" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vBCST}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="302" y="117" width="90" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vST}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="395" y="117" width="91" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vIPI}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="8" y="137" width="95" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vFrete}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="104" y="137" width="91" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vSeg}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="196" y="137" width="106" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vDesc}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="303" y="137" width="89" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vOutro}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="487" y="117" width="100" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vProd}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="394" y="137" width="92" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vTotTrib}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="487" y="137" width="101" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-vNF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="13" y="167" width="218" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-xNome}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="232" y="167" width="89" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-modFrete}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="322" y="167" width="69" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-RNTC}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="394" y="167" width="51" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-placa}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="448" y="167" width="27" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-UF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="476" y="167" width="111" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-CNPJ}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="13" y="187" width="218" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-xEnder}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="232" y="187" width="216" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-xMun}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="448" y="187" width="27" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-UF}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="477" y="187" width="111" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-IE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="7" y="207" width="62" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-qVol}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="71" y="207" width="80" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-esp}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="152" y="207" width="79" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-marca}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="232" y="207" width="89" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-nVol}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="322" y="207" width="153" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-pesoB}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="3" x="477" y="207" width="108" height="12" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="8" isBold="false" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det3-transp-pesoL}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="15">
+			<line>
+				<reportElement key="4" x="46" y="0" width="1" height="14"/>
+			</line>
+			<line>
+				<reportElement key="4" x="6" y="14" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="4" x="6" y="0" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="4" x="6" y="0" width="1" height="14"/>
+			</line>
+			<line>
+				<reportElement key="4" x="588" y="0" width="1" height="14"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="1" y="4" width="50" height="10" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ CÓD. PRODUTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="47" y="4" width="144" height="10" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[DESCRIÇAO DOS PRODUTOS / SERVIÇOS]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="191" y="0" width="1" height="14"/>
+			</line>
+			<line>
+				<reportElement key="4" x="220" y="0" width="1" height="14"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="191" y="4" width="30" height="10" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[NCM / SH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="221" y="4" width="25" height="10" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[CST]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="246" y="0" width="1" height="14"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="246" y="4" width="24" height="10" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[CFOP]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="270" y="0" width="1" height="14"/>
+			</line>
+			<line>
+				<reportElement key="4" x="305" y="0" width="1" height="14"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="271" y="4" width="33" height="10" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[QTDE/UN]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="349" y="0" width="1" height="14"/>
+			</line>
+			<line>
+				<reportElement key="4" x="398" y="0" width="1" height="14"/>
+			</line>
+			<line>
+				<reportElement key="4" x="440" y="0" width="1" height="14"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="399" y="1" width="42" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[BASE CÁLCULO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="399" y="7" width="42" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ICMS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="306" y="1" width="42" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[VALOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="306" y="7" width="42" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[UNITÁRIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="349" y="7" width="49" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="349" y="1" width="49" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[VALOR]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="480" y="0" width="1" height="14"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="441" y="7" width="40" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ICMS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="441" y="1" width="40" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[VALOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="480" y="1" width="40" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[VALOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="480" y="7" width="40" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[IPI]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="519" y="0" width="1" height="14"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="553" y="1" width="36" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[VALOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="553" y="7" width="36" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[TRIBUTOS]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="553" y="0" width="1" height="14"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="519" y="1" width="35" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ALÍQUOTAS]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="519" y="7" width="34" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="518" y="8" width="20" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ICMS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="4" mode="Transparent" x="538" y="8" width="15" height="6" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="5" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[IPI]]></text>
+			</staticText>
+			<line>
+				<reportElement key="4" x="537" y="7" width="1" height="7"/>
+			</line>
+			<textField>
+				<reportElement key="4" x="52" y="1" width="5" height="5" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{field4}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<line>
+				<reportElement key="5" x="440" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="270" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="519" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="349" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="246" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="220" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="6" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="537" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="191" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="588" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="46" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="480" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="305" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="5" x="553" y="-1" width="1" height="15"/>
+			</line>
+			<textField>
+				<reportElement key="5" x="69" y="6" width="0" height="8" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{field5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="5" x="4" y="6" width="586" height="7" forecolor="#666666"/>
+				<textElement textAlignment="Center">
+					<font size="5"/>
+				</textElement>
+				<text><![CDATA[_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __]]></text>
+			</staticText>
+			<line>
+				<reportElement key="5" x="398" y="-1" width="1" height="15"/>
+			</line>
+			<textField>
+				<reportElement key="5" x="7" y="-1" width="39" height="7"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-cProd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="44" y="-1" width="150" height="7"/>
+				<textElement>
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-xProd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="188" y="-1" width="35" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-NCM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="221" y="-1" width="25" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-CST}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="247" y="-1" width="23" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-CFOP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="271" y="-1" width="26" height="7"/>
+				<textElement textAlignment="Right">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-qCom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="295" y="-1" width="13" height="7"/>
+				<textElement>
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-uCom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="306" y="-1" width="43" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-vUnCom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="350" y="-1" width="48" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-vProd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="400" y="-1" width="40" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-vBC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="441" y="-1" width="39" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-vICMS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="481" y="-1" width="38" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-vIPI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="520" y="-1" width="17" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-pICMS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="538" y="-1" width="15" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-pIPI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="5" x="554" y="-1" width="33" height="7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Courier New" size="5" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det5-vTotTrib}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<line>
+				<reportElement key="6" x="46" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="480" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="6" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="305" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="191" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="553" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="220" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="537" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="440" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="588" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="519" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="270" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="349" y="-1" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement key="6" x="246" y="-1" width="1" height="15"/>
+			</line>
+			<textField>
+				<reportElement key="6" x="52" y="1" width="5" height="5" forecolor="#FFFFFF"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{field6}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="6" x="398" y="-1" width="1" height="15"/>
+			</line>
+		</band>
+		<band height="123">
+			<line>
+				<reportElement key="7" x="6" y="116" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="7" x="6" y="7" width="1" height="109"/>
+			</line>
+			<line>
+				<reportElement key="7" x="6" y="7" width="582" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="7" mode="Transparent" x="7" y="0" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="7" isBold="true" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ DADOS ADICIONAIS]]></text>
+			</staticText>
+			<line>
+				<reportElement key="7" x="6" y="0" width="582" height="1"/>
+			</line>
+			<line>
+				<reportElement key="7" x="588" y="7" width="1" height="109"/>
+			</line>
+			<line>
+				<reportElement key="7" x="398" y="7" width="1" height="109"/>
+			</line>
+			<staticText>
+				<reportElement key="7" mode="Transparent" x="7" y="9" width="182" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="6" isBold="false" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ INFORMAÇOES COMPLEMENTARES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="7" mode="Transparent" x="400" y="9" width="153" height="10" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="6" isBold="false" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[ RESERVADO AO FISCO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="7" mode="Transparent" x="385" y="117" width="203" height="5" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="4" isBold="false" isStrikeThrough="false" pdfFontName="Times"/>
+				</textElement>
+				<text><![CDATA[DOCUMENTO ELETRÔNICO OPERADO POR SOFTDIB (www.softdib.com.br) 55 41 3276-6457]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement key="7" x="7" y="20" width="392" height="8" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Courier New" size="7" pdfFontName="Courier"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{det7-infAdic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

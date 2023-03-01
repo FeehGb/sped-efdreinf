@@ -1,0 +1,8 @@
+Apesar das ferramentas aqui poderem ser chamadas dentro de programas do sistema, elas NAO devem fazer parte das rotinas de logica. as ferramentas neste diretorio existem para auxiliar a parte estrutural do sistema.
+Scripts para: Criacao de diretorios,permissoes,etc..
+
+Todos os executaveis aqui DEVEM ser executados via linha de comando, mesmo quando chamados em outros programas.
+
+Para chamar de dentro do php, use a seguinte sintaxe:
+exec('php ../ferramentas/script.php '.$argumento1.' '.$argumento2);
+Alterando o que for necessário

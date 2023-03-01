@@ -1,0 +1,142 @@
+{
+    "municipio": {
+        "desc": "Nome do municipio",
+        "accept": "any"
+    },
+    "uf": {
+        "desc": "Estado do municipio"
+    },
+    "producao": {
+        "desc": "URL do ambiente de produção"
+    },
+    "homologacao": {
+        "desc": "URL do ambiente de homologação"
+    },
+    "version": {
+        "desc": "Versao do webservice da prefeitura"
+    },
+    "msgns": {
+        "desc": "URL da mensageria"
+    },
+    "soapns": {
+        "desc": "Soap name server"
+    },
+    "response": {
+        "desc": "Tratamento das responta do web service",
+        "children": {
+            "response_wrapped": {
+                "desc": "Tag XML em que vem envolvido a resposta, usado para o script caputurar a tag"
+            },
+            "template": {
+                "desc": "Monta o template de resposta baseado no de-para",
+                "children": [
+                    {
+                        "from": {
+                            "desc": "De onde sera capturado o valor"
+                        },
+                        "custom_path_from": {
+                            "desc": "Metodo para criar um path personalizado para path FROM"
+                        },
+                        "to": {
+                            "desc": "Para onde vai o valor"
+                        },
+                        "custom_path_to":{
+                            "desc": "Metodo para criar um path personalizado para path TO"
+                        },
+                        "custom": {
+                            "desc": "Metodo para manipular o valor baseado no valor padrao ou capturado"
+                        },
+                        "list": {
+                            "desc": "Cria uma lista baseado em no template da lista"
+                        },
+                        "child": {
+                            "desc": "cria um filho baseado no template"
+                        },
+                        "globalThis":{
+                            "desc":"transforma a a variavel To como global e atribuie ela o seu valor caputrado pelo FROM"
+                        },
+                        "default": {
+                            "desc":"Define um valor padrao para o tag ou atributo"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "recepcionar": {
+        "desc": "Metodo usado para enviar um RPS para prefeitura",
+        "children": {
+            "response": {
+                "desc": "Onde ficar as configuraçoes de tratamento de responsata",
+                "children": {
+                    "result_tag": {
+                        "desc": "tag ou caminho onde esta a resposata"
+                    }
+                }
+            },
+            "send": {
+                "desc": "One ficará as configuraçoes de envio do RPS",
+                "children": {
+                    "SOAPAction": {
+                        "desc": "Nome do SOAPaction, para gerar no xml soap"
+                    },
+                    "sign": {
+                        "desc": "array de tags a serem assinadas"
+                    },
+                    "xml": {
+                        "required": false,
+                        "obs": "Se nao definido ira criar baseado em template pré definido",
+                        "desc": "Definicoes da geração do XML",
+                        "children": {
+                            "root": {
+                                "desc": "Definição da Tag principal do XML",
+                                "children": {
+                                    "tag": {
+                                        "desc": "Nome da TAG root"
+                                    },
+                                    "attrs": {
+                                        "desc": "atributos no formato JSON com os atributos da tag principal"
+                                    }
+                                }
+                            },
+                            "template": {
+                                "desc": "Montagem do template XML baseado no de-para",
+                                "children": [
+                                    {
+                                        "from": {
+                                            "desc": "De onde sera capturado o valor"
+                                        },
+                                        "custom_path_from": {
+                                            "desc": "Metodo para criar um path personalizado para path FROM"
+                                        },
+                                        "to": {
+                                            "desc": "Para onde vai o valor"
+                                        },
+                                        "custom_path_to":{
+                                            "desc": "Metodo para criar um path personalizado para path TO"
+                                        },
+                                        "custom": {
+                                            "desc": "Metodo para manipular o valor baseado no valor padrao ou capturado"
+                                        },
+                                        "list": {
+                                            "desc": "Cria uma lista baseado em no template da lista"
+                                        },
+                                        "child": {
+                                            "desc": "cria um filho baseado no template"
+                                        },
+                                        "globalThis":{
+                                            "desc":"transforma a a variavel To como global e atribuie ela o seu valor caputrado pelo FROM"
+                                        },
+                                        "default": {
+                                            "desc":"Define um valor padrao para o tag ou atributo"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

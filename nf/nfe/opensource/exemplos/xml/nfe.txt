@@ -1,0 +1,33 @@
+NOTA FISCAL|001|
+A|2.00|NFe|
+B|41|00000000|Venda Merc Adq/Rec|1|55|1|13170|2013-06-27|2013-06-27|16:40:31|1|4106902|1|1|0|2|1|0|1.0.0| | |
+C|PNEUPLUS TECNOLOGIA AUTOMOTIVA LTDA|01001|1019984520| | | |3|
+C02|00111430000180|
+C05|AV PRES ARTHUR SILVA BERNARDES|001323| |PORTAO|4106902|CURITIBA|PR|80320300|1058|BRASIL|4130827282|
+E|NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL| | | |
+E03|77913205920|
+E05|RUA BARUCH ESPINOZZA|000044| |ARISTOCRATA|4125506|SAO JOSE DOS PINHAIS|PR|83030120|1058|BRASIL|04130815911|
+H|1| |
+I|JEF-60D| |BATERIA JUPITER FREE|85071090| |5405|UN|1.0000|228.8100000000|228.81| |UN|1.0000|228.8100000000|0.00|0.00|0.00|0.00|1| |000000|
+M|88.71|
+N|
+N08|0|60|0.00|0.00|
+O| |00111430000180| |000000000000|999|
+O08|53|
+Q|
+Q04|04|
+S|
+S04|04|
+W|
+W02|0.00|0.00|0.00|0.00|228.81|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|228.81|88.71|
+X|9|
+Y|
+Y02|013172|228.81|0.00|228.81|
+Y07|013172-01|2013-07-24|114.40|
+Y07|013172-02|2013-08-23|114.41|
+Z|                                                                                                                                                                                                                                                |Vlr Aproximado de Tributos calculado cfme percentuais disponibilizados pelo IBPT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+Z04|Vendedor:|V00015-EMERSON Fone: 41-3082.7282|
+Z04|Pedido:|007350/00|
+Z04|Origem:|51-REVENDA DE MERCADORIAS|
+Z04|Condicao Pgto:|008-CIELO 2 VEZES|
+@|wilson.possamai@uol.com.br;nfe-entrada1@pneupluscar.com.br|wilson.possamai@uol.com.br;adm4@pneupluscar.com.br|0| | |

@@ -1,0 +1,4 @@
+Neste diretorio devem estar as documentações referentes a implantação da softdib, como padrões de mensagens de retorno, organização de estruturas, etc. 
+
+A documentação dos serviços deve ser colocada dentro do diretório do serviço.
+Ex: NF_V3/servicos/mdfe/documentacao/

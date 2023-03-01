@@ -1,0 +1,65 @@
+<style>
+    #links {
+        max-height        : 500px;
+        position          : relative;
+        display           : block;
+        width             : 50%;
+        float             : left;
+        overflow          : auto;
+
+    }
+
+    #links a {
+        text-overflow     : ellipsis;
+        white-space       : nowrap;
+        border-top        : #3684e8 solid 1px;
+        background-image  : linear-gradient(to left, #212492f2, #06f);
+        border-radius     : 0 8px 25px 0;
+        font-family       : arial;
+        margin            : 0px;
+        /* background     : #ccc; */
+        padding           : 15px 5px 13px 20px;
+        display           : block;
+        text-decoration   : none;
+        color             : #a9e3ff;
+        letter-spacing    : 0.01em;
+        line-height       : 1.45em;
+        border-bottom     : 1px #2b267d solid;
+        overflow          : hidden;
+    }
+
+    #links a:hover {
+        color             : #fff;
+        box-shadow        : inset 0px 0px 50px -10px #020338c7;
+        background-image  : linear-gradient(to left, #0d0f5ff2, #06f);
+        border-top        : solid 1px #2c4eca;
+    }
+
+    #iframe {
+        min-height        : 400px;
+        float             : left;
+        width             : 50%;
+        display           : block;
+        position          : relative;
+
+    }
+
+    iframe#showLinks {
+        height            : 100%;
+        width             : 100%;
+        border            : 0px;
+    }
+</style>
+
+<div id="links">
+    {{links}}
+</div>
+<div id="iframe">
+    <iframe name="showLinks" id="showLinks"></iframe>
+</div>
+
+<script>
+    document.querySelectorAll('a').forEach((e) => {
+        e.setAttribute('target', 'showLinks');
+    });
+</script>

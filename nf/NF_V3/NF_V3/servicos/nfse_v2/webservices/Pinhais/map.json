@@ -1,0 +1,12 @@
+{
+    
+    "ant_producao"  : "https://ws-pinhais.atende.net:7443/atende.php?pg=rest&service=WNERestServiceNFSe",
+    "producao"      : "https://ws-pinhais.atende.net:7443/?pg=rest&service=WNERestServiceNFSe",
+    "homologacao"   : "https://treinamento.atende.net/atende.php?pg=rest&service=WNERestServiceNFSe&cidade=migra_pinhais",
+    "version": "1.01",
+    "send": {
+        "sign" : false
+    }
+    
+    
+}

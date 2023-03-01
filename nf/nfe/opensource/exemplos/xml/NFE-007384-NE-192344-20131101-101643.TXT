@@ -1,0 +1,30 @@
+NOTA FISCAL|001|
+A|2.00|NFe|
+B|41|00000000|Venda Merc Adq/Rec|1|55|001|000007384|2013-11-01|2013-11-01|10:16:43|1|4125506|1|1|0|2|1|0|1.0.0| | |
+C|ADS COMERCIO DE MATERIAIS ELETRICOS LTDA|1001|1050481499| | | |1|
+C02|81660862000142|
+C05|AVENIDA RUI BARBOSA|008595| |CENTRO|4125506|SAO JOSE DOS PINHAIS|PR|83005340|1058|BRASIL|4132835996|
+E|NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL|1070176404| | |
+E02|76091842000168|
+E05|AV.MARGINAL CONTORNO LESTE|015000|BARRACAO 01|RIO PEQUENO|4125506|SAO JOSE DOS PINHAIS|PR|83085970|1058|BRASIL|04135861414|
+H|001| |
+I|471| |CABO FLEX. 2,50MM 750V PRETO|85444900| |5405|M|100.0000|0.7300000000|73.00| |M|100.0000|0.7300000000|0.00|0.00|0.00|0.00|1| |000000| |
+M|0.00|
+N|
+N10g|0|500||0.00|0.00|
+O| |81660862000142| |000000000000|999|
+O08|53|
+Q|
+Q04|04|
+S|
+S04|04|
+W|
+W02|0.00|0.00|0.00|0.00|73.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|73.00|0.00|
+X|0|
+Y|
+Y02|007384|73.00|0.00|73.00|
+Y07|007384-01|2013-11-29|73.00|
+Z|                                                                                                                                                                                                                                                |PORTELA RETIROU                                                                 st=60-subst.tributaria conforme decreto 6910/2012                               BASE CALCULO ST   =           73,03     IMPOSTO RETIDO ST =            8,76     Documento emitido por empresa enquadradano regime fiscal das microempresas e dasEmpresas de pequeno porte nao gera ICMS-Decreto PR 246/2003.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+Z04|Vendedor:|V00005-GIOVANI|
+Z04|Pedido:|179348/00|
+@|compras@maemba.com.br|compras@maemba.com.br|1| | |

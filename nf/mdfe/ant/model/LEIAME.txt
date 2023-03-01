@@ -1,0 +1,9 @@
+PASTA: 	    model
+FINALIDADE: Armazenar as classes de modelagem da aplicação
+AUTOR:	    Guilherme Silva
+DATA: 	    07/08/2013
+
+DESCRIÇÃO:  Esta pasta é responsável por armazenar as classes de modelagem da aplicação.
+	    As classes de modelagem são responsáveis por fazerem conexão com o sistema de
+	    banco de dados SGBD e efetuar todas as operações no mesmo:
+		creat, insert, delete, update, etc.

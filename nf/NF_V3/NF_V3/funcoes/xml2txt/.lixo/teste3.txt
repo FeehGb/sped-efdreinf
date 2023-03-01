@@ -1,0 +1,48 @@
+CTE|001|
+A|3.00|CTe|
+Aa|3.00|CTe41220802427026002432570040000238571002385799|
+B|41|00238579|6353|PRESTACAO DE SERVICO DE TRANSPORTE|57|4|23857|2022-08-17T15:47:00-03:00|1|1|9|1|0|0|MultiCTe 3.0||4118204|PARANAGUA|PR|06|0|4125506|SAO JOSE DOS PINHAIS|PR|2111300|SAO LUIS|MA|1||1|
+B01|0|
+C|PA/PA|||SAO JOSE DOS PINHAIS|SAO LUIS|Sem Ova, Sem Desova/Modal:PORTA A PORTA Sem Ova, Sem Desova/Modal:PORTA A PORTA Container - Lacre: MRSU2103760 - MLBR2497240 / Modal: PORTA A PORTA / Valor Comercial: 27.328,21 / Qtde: 1 container de 40HC pes|
+C01|Itapoa|Sao Luis||
+C01A|Pecem|
+C02B|2|2022-08-17|
+C02D|0|
+C04|As|tarifas/condicoes de sobre-estadia de imp/exp de conteineres, aplicaveis ao porto de descarga ou de carregamento,|
+C04|incluindo|o tempo livre, podem ser obtidas em: https://www.alianca.com.br/e-commerce-en. As condicoes estao registradas no Cartorio de RTD|
+C04|de|Santos-SP, sob o n 731.438 e constam neste CT-E, permanecendo validas ate novas condicoes serem averbadas no mesmo. O|
+C04|remetente|assume o dever legal de despachar sua carga a um destinatario que tenha interesse/condicoes em adquirir a carga transportada, promovendo sua retirada no|
+C04|destino,|com o cumprimento das respectivas obrigacoes. Se a carga for abandonada em seu destino, o remetente sera solidariamente responsavel com o destinatario, por|
+C04|quaisquer|despesas que a transportadora possa sofrer como resultado desta situacao.|
+C04|Booking|Booking: 2AIBAK01WI|
+C04|Ctrl|Num Ctrl: MTL01WIF|
+C04|Viagem|Navio/Viagem: FERNAO DE MAGALHAES/233N|
+I01|AD VALOREM|68.32|
+I01|BAF|1090.44|
+I01|FRETE VALOR|10655.74|
+I01|IMPOSTOS|889.26|
+K01A|01|Quilograma|23400.0000|
+K01A|03|Unidade|20.0000|
+D|02427026002432|9041643568||ALIANCA NAVEGACAO E LOGISTICA LTDA.|ALIANCA PARANAGUA|
+D01|RUA NESTOR VICTOR|800|BLOCO PARTE|JOAO GUALBERTO|4118204|PARANAGUA|83203540|PR|4134202300|
+E|72071541000200||1050643731|MULTILIT FIBROCIMENTO LTDA|01257|4121692600||
+E01|AV. RUI BARBOSA,|2929||GUATUPE|4125506|SAO JOSE DOS PINHAIS|83055320|PR|1058|BRASIL|
+F|72071541000200||1050643731|MULTILIT FIBROCIMENTO LTDA|4121692600||
+F01|AV. RUI BARBOSA,|2929||GUATUPE|4125506|SAO JOSE DOS PINHAIS|83055320|PR|1058|BRASIL|
+H|72071541000545||126872104|MULTILIT FIBROCIMENTO LTDA C27579|9841010084|||
+H01|AV ENG EMILIANO MACIEIRA|002300|LETRA A KM 2.3PARTE A TIRIRICA|VILA ITAMAR|2111300|SAO LUIS|65095600|MA|1058|BRASIL|
+I|12703.76|12703.76|
+J||O valor aproximado de tributos incidentes sobre o valor deste servico e de R$ 0,00 (0,00% Municipal), R$ 0,00 (0,00% Estadual), R$ 0,00 (0,00% Federal). Fonte: IBPT.|
+J01A|00|12703.76|7.00|889.26|
+K01|27328.21|MATERIAL DE CONSTRUCAO||27328.21|
+K02B|41220872071541000200550010003539471145118847|||
+K02B2|3|PPYZ||
+K02B2B|1|MRSU2103760||
+K02B2Ba|MLBR2497240|
+K05|3.00|
+K05F|0007-0305|0|
+K05F1|ESSOR SEGUROS S.A|14525684000150|99999999999999|RCF-DC_Alianca/HSUD|
+N|13969629000196||
+O|13969629000196|TECCHAPECO SISTEMAS LTDA|diego@multisoftware.com.br|04930259500|||
+P|http://www.fazenda.pr.gov.br/cte/qrcode?chCTe=41220802427026002432570040000238571002385799&tpAmb=1|
+PROT|1|PR-v3_3_05|41220802427026002432570040000238571002385799|2022-08-17T15:48:10-03:00|141220113352532|swxRpITbWJNdy2oUsE0isaIQkwY=|100|Autorizado o uso do CT-e|

@@ -1,0 +1,1081 @@
+{
+    "4.00": {
+        "mapa": {
+            "NOTAFISCAL": [
+                "tipo",
+                "quantidade_notas"
+            ],
+            "A": [
+                "linha",
+                "versao",
+                "tipo_nota"
+            ],
+            "B": [
+                "linha",
+                "/infNFe/ide/cUF",
+                "/infNFe/ide/cNF",
+                "/infNFe/ide/natOp",
+                "/infNFe/ide/mod",
+                "/infNFe/ide/serie",
+                "/infNFe/ide/nNF",
+                "/infNFe/ide/dhEmi",
+                "/infNFe/ide/dhSaiEnt",
+                "/infNFe/ide/tpNF",
+                "/infNFe/ide/idDest",
+                "/infNFe/ide/cMunFG",
+                "/infNFe/ide/tpImp",
+                "/infNFe/ide/tpEmis",
+                "/infNFe/ide/cDV",
+                "/infNFe/ide/tpAmb",
+                "/infNFe/ide/finNFe",
+                "/infNFe/ide/indFinal",
+                "/infNFe/ide/indPres",
+                "/infNFe/ide/procEmi",
+                "/infNFe/ide/verProc",
+                "/infNFe/ide/dhCont",
+                "/infNFe/ide/xJust"
+            ],
+            "B13": [
+                "linha",
+                "/infNFe/ide/NFref/refNFe"
+            ],
+            "B14": [
+                "linha",
+                "/infNFe/ide/NFref/refNF/cUF",
+                "/infNFe/ide/NFref/refNF/AAMM",
+                "/infNFe/ide/NFref/refNF/CNPJ",
+                "/infNFe/ide/NFref/refNF/mod",
+                "/infNFe/ide/NFref/refNF/serie",
+                "/infNFe/ide/NFref/refNF/nNF"
+            ],
+            "B20a": [
+                "linha",
+                "/infNFe/ide/NFref/refNFP/cUF",
+                "/infNFe/ide/NFref/refNFP/AAMM",
+                "/infNFe/ide/NFref/refNFP/IE",
+                "/infNFe/ide/NFref/refNFP/mod",
+                "/infNFe/ide/NFref/refNFP/serie",
+                "/infNFe/ide/NFref/refNFP/nNF"
+            ],
+            "B20d": [
+                "linha",
+                "/infNFe/ide/NFref/refNFP/CNPJ"
+            ],
+            "B20e": [
+                "linha",
+                "/infNFe/ide/NFref/refNFP/CPF"
+            ],
+            "B20i": [
+                "linha",
+                "/infNFe/ide/NFref/refCTe"
+            ],
+            "B20j": [
+                "linha",
+                "/infNFe/ide/NFref/refECF/mod",
+                "/infNFe/ide/NFref/refECF/nECF",
+                "/infNFe/ide/NFref/refECF/nCOO"
+            ],
+            "C02": [
+                "linha",
+                "/infNFe/emit/CNPJ"
+            ],
+            "C02a": [
+                "linha",
+                "/infNFe/emit/CPF"
+            ],
+            "C": [
+                "linha",
+                "/infNFe/emit/xNome",
+                "/infNFe/emit/xFant"
+            ],
+            "C05": [
+                "linha",
+                "/infNFe/emit/enderEmit/xLgr",
+                "/infNFe/emit/enderEmit/nro",
+                "/infNFe/emit/enderEmit/xCpl",
+                "/infNFe/emit/enderEmit/xBairro",
+                "/infNFe/emit/enderEmit/cMun",
+                "/infNFe/emit/enderEmit/xMun",
+                "/infNFe/emit/enderEmit/UF",
+                "/infNFe/emit/enderEmit/CEP",
+                "/infNFe/emit/enderEmit/cPais",
+                "/infNFe/emit/enderEmit/xPais",
+                "/infNFe/emit/enderEmit/fone"
+            ],
+            "C17": [
+                "linha",
+                "/infNFe/emit/IE",
+                "/infNFe/emit/IEST",
+                "/infNFe/emit/IM",
+                "/infNFe/emit/CNAE",
+                "/infNFe/emit/CRT"
+            ],
+            "D": [
+                "linha"
+            ],
+            "E02": [
+                "linha",
+                "/infNFe/dest/CNPJ"
+            ],
+            "E03": [
+                "linha",
+                "/infNFe/dest/CPF"
+            ],
+            "E03a": [
+                "linha",
+                "/infNFe/dest/idEstrangeiro"
+            ],
+            "E": [
+                "linha",
+                "/infNFe/dest/xNome"
+            ],
+            "E05": [
+                "linha",
+                "/infNFe/dest/enderDest/xLgr",
+                "/infNFe/dest/enderDest/nro",
+                "/infNFe/dest/enderDest/xCpl",
+                "/infNFe/dest/enderDest/xBairro",
+                "/infNFe/dest/enderDest/cMun",
+                "/infNFe/dest/enderDest/xMun",
+                "/infNFe/dest/enderDest/UF",
+                "/infNFe/dest/enderDest/CEP",
+                "/infNFe/dest/enderDest/cPais",
+                "/infNFe/dest/enderDest/xPais",
+                "/infNFe/dest/enderDest/fone"
+            ],
+            "E16a": [
+                "linha",
+                "/infNFe/dest/indIEDest",
+                "/infNFe/dest/IE",
+                "/infNFe/dest/ISUF",
+                "/infNFe/dest/IM",
+                "/infNFe/dest/email"
+            ],
+            "F": [
+                "linha",
+                "/infNFe/retirada/xLgr",
+                "/infNFe/retirada/nro",
+                "/infNFe/retirada/xCpl",
+                "/infNFe/retirada/xBairro",
+                "/infNFe/retirada/cMun",
+                "/infNFe/retirada/xMun",
+                "/infNFe/retirada/UF",
+                "/infNFe/retirada/CEP",
+                "/infNFe/retirada/cPais",
+                "/infNFe/retirada/xPais",
+                "/infNFe/retirada/fone",
+                "/infNFe/retirada/email",
+                "/infNFe/retirada/IE"
+            ],
+            "F02": [
+                "linha",
+                "/infNFe/retirada/CNPJ"
+            ],
+            "F02a": [
+                "linha",
+                "/infNFe/retirada/CPF"
+            ],
+            "F02b": [
+                "linha",
+                "/infNFe/retirada/xNome"
+            ],
+            "G": [
+                "linha",
+                "/infNFe/entrega/xLgr",
+                "/infNFe/entrega/nro",
+                "/infNFe/entrega/xCpl",
+                "/infNFe/entrega/xBairro",
+                "/infNFe/entrega/cMun",
+                "/infNFe/entrega/xMun",
+                "/infNFe/entrega/UF",
+                "/infNFe/entrega/CEP",
+                "/infNFe/entrega/cPais",
+                "/infNFe/entrega/xPais",
+                "/infNFe/entrega/fone",
+                "/infNFe/entrega/email",
+                "/infNFe/entrega/IE"
+            ],
+            "G02": [
+                "linha",
+                "/infNFe/entrega/CNPJ"
+            ],
+            "G02a": [
+                "linha",
+                "/infNFe/entrega/CPF"
+            ],
+            "G02b": [
+                "linha",
+                "/infNFe/entrega/xNome"
+            ],
+            "GA": [
+                "linha"
+            ],
+            "GA02": [
+                "linha",
+                "/infNFe/autXML/CNPJ"
+            ],
+            "GA03": [
+                "linha",
+                "/infNFe/autXML/CPF"
+            ],
+            "H": [
+                "linha",
+                "/infNFe/det/@nItem"
+            ],
+            "I": [
+                "linha",
+                "/infNFe/det/prod/cProd",
+                "/infNFe/det/prod/cEAN",
+                "/infNFe/det/prod/xProd",
+                "/infNFe/det/prod/NCM"
+            ],
+            "I05a": [
+                "linha",
+                "/infNFe/det/prod/NVE"
+            ],
+            "I05b": [
+                "linha",
+                "/infNFe/det/prod/CEST",
+                "/infNFe/det/prod/cBenef",
+                "/infNFe/det/prod/EXTIPI",
+                "/infNFe/det/prod/CFOP",
+                "/infNFe/det/prod/uCom",
+                "/infNFe/det/prod/qCom",
+                "/infNFe/det/prod/vUnCom",
+                "/infNFe/det/prod/vProd",
+                "/infNFe/det/prod/cEANTrib",
+                "/infNFe/det/prod/uTrib",
+                "/infNFe/det/prod/qTrib",
+                "/infNFe/det/prod/vUnTrib",
+                "/infNFe/det/prod/vFrete",
+                "/infNFe/det/prod/vSeg",
+                "/infNFe/det/prod/vDesc",
+                "/infNFe/det/prod/vOutro",
+                "/infNFe/det/prod/indTot"
+            ],
+            "I18": [
+                "linha",
+                "/infNFe/det/prod/DI/nDI",
+                "/infNFe/det/prod/DI/dDI",
+                "/infNFe/det/prod/DI/xLocDesemb",
+                "/infNFe/det/prod/DI/UFDesemb",
+                "/infNFe/det/prod/DI/dDesemb",
+                "/infNFe/det/prod/DI/tpViaTransp",
+                "/infNFe/det/prod/DI/vAFRMM",
+                "/infNFe/det/prod/DI/tpIntermedio",
+                "/infNFe/det/prod/DI/CNPJ",
+                "/infNFe/det/prod/DI/UFTerceiro",
+                "/infNFe/det/prod/DI/cExportador"
+            ],
+            "I25": [
+                "linha",
+                "/infNFe/det/prod/DI/adi/nAdicao",
+                "/infNFe/det/prod/DI/adi/nSeqAdic",
+                "/infNFe/det/prod/DI/adi/cFabricante",
+                "/infNFe/det/prod/DI/adi/vDescDI",
+                "/infNFe/det/prod/DI/adi/nDraw"
+            ],
+            "I50": [
+                "linha",
+                "/infNFe/det/prod/detExport/nDraw"
+            ],
+            "I52": [
+                "linha",
+                "/infNFe/det/prod/detExport/exportInd/nRE",
+                "/infNFe/det/prod/detExport/exportInd/chNFe",
+                "/infNFe/det/prod/detExport/exportInd/qExport"
+            ],
+            "I60": [
+                "linha",
+                "/infNFe/det/prod/xPed",
+                "/infNFe/det/prod/nItemPed",
+                "/infNFe/det/prod/nRECOPI"
+            ],
+            "I70": [
+                "linha",
+                "/infNFe/det/prod/nFCI"
+            ],
+            "J": [
+                "linha"
+            ],
+            "K": [
+                "linha",
+                "/infNFe/med/cProdANVISA",
+                "/infNFe/med/xMotivoIsencao",
+                "/infNFe/med/vPMC"
+            ],
+            "L": [
+                "linha"
+            ],
+            "L01": [
+                "linha",
+                "/infNFe/det/prod/comb/cProdANP",
+                "/infNFe/det/prod/comb/descANP",
+                "/infNFe/det/prod/comb/pGLP",
+                "/infNFe/det/prod/comb/pGNn",
+                "/infNFe/det/prod/comb/pGNi",
+                "/infNFe/det/prod/comb/vPart",
+                "/infNFe/det/prod/comb/CODIF",
+                "/infNFe/det/prod/comb/qTemp",
+                "/infNFe/det/prod/comb/UFCons"              
+            ],
+            "L105": [
+                "linha",
+                "/infNFe/det/comb/CIDE/qBCProd",
+                "/infNFe/det/comb/CIDE/vAliqProd",
+                "/infNFe/det/comb/CIDE/vCIDE"
+            ],
+            "M": [
+                "linha",
+                "/infNFe/det/imposto/vTotTrib"
+            ],
+            "N": [
+                "linha"
+            ],
+            "N02": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS00/orig",
+                "/infNFe/det/imposto/ICMS/ICMS00/CST",
+                "/infNFe/det/imposto/ICMS/ICMS00/modBC",
+                "/infNFe/det/imposto/ICMS/ICMS00/vBC",
+                "/infNFe/det/imposto/ICMS/ICMS00/pICMS",
+                "/infNFe/det/imposto/ICMS/ICMS00/vICMS"
+            ],
+            "N0217X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS00/pFCP",
+                "/infNFe/det/imposto/ICMS/ICMS00/vFCP"
+            ],
+            "N03": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS10/orig",    
+                "/infNFe/det/imposto/ICMS/ICMS10/CST",     
+                "/infNFe/det/imposto/ICMS/ICMS10/modBC",   
+                "/infNFe/det/imposto/ICMS/ICMS10/vBC",
+                "/infNFe/det/imposto/ICMS/ICMS10/pICMS",
+                "/infNFe/det/imposto/ICMS/ICMS10/vICMS"
+            ],
+            "N0317X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS10/vBCFCP",
+                "/infNFe/det/imposto/ICMS/ICMS10/pFCP",
+                "/infNFe/det/imposto/ICMS/ICMS10/vFCP"
+            ],
+            "N0318X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS10/modBCST", 
+                "/infNFe/det/imposto/ICMS/ICMS10/pMVAST",  
+                "/infNFe/det/imposto/ICMS/ICMS10/pRedBCST",
+                "/infNFe/det/imposto/ICMS/ICMS10/vBCST",   
+                "/infNFe/det/imposto/ICMS/ICMS10/pICMSST", 
+                "/infNFe/det/imposto/ICMS/ICMS10/vICMSST"
+            ],
+            "N0323X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS10/vBCFCPST",
+                "/infNFe/det/imposto/ICMS/ICMS10/pFCPST",
+                "/infNFe/det/imposto/ICMS/ICMS10/vFCPST"
+            ],
+            "N04": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS20/orig",
+                "/infNFe/det/imposto/ICMS/ICMS20/CST",
+                "/infNFe/det/imposto/ICMS/ICMS20/modBC",
+                "/infNFe/det/imposto/ICMS/ICMS20/pRedBC",
+                "/infNFe/det/imposto/ICMS/ICMS20/vBC",
+                "/infNFe/det/imposto/ICMS/ICMS20/pICMS",
+                "/infNFe/det/imposto/ICMS/ICMS20/vICMS"
+            ],
+            "N0417X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS20/vBCFCP",
+                "/infNFe/det/imposto/ICMS/ICMS20/pFCP",
+                "/infNFe/det/imposto/ICMS/ICMS20/vFCP"
+            ],
+            "N0428X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS20/vICMSDeson",
+                "/infNFe/det/imposto/ICMS/ICMS20/motDesICMS"
+            ],
+            "N05": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS30/orig",
+                "/infNFe/det/imposto/ICMS/ICMS30/CST",
+                "/infNFe/det/imposto/ICMS/ICMS30/modBCST",
+                "/infNFe/det/imposto/ICMS/ICMS30/pMVAST",
+                "/infNFe/det/imposto/ICMS/ICMS30/pRedBCST",
+                "/infNFe/det/imposto/ICMS/ICMS30/vBCST",
+                "/infNFe/det/imposto/ICMS/ICMS30/pICMSST",
+                "/infNFe/det/imposto/ICMS/ICMS30/vICMSST"
+            ],
+            "N0523X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS30/vBCFCPST",
+                "/infNFe/det/imposto/ICMS/ICMS30/pFCPST",
+                "/infNFe/det/imposto/ICMS/ICMS30/vFCPST"
+            ],
+            "N0528X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS30/vICMSDeson",
+                "/infNFe/det/imposto/ICMS/ICMS30/motDesICMS"
+            ],
+            "N06": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS40/orig",
+                "/infNFe/det/imposto/ICMS/ICMS40/CST",
+                "/infNFe/det/imposto/ICMS/ICMS40/vICMSDeson",
+                "/infNFe/det/imposto/ICMS/ICMS40/motDesICMS"
+            ],
+            "N07": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS51/orig",
+                "/infNFe/det/imposto/ICMS/ICMS51/CST",
+                "/infNFe/det/imposto/ICMS/ICMS51/modBC",
+                "/infNFe/det/imposto/ICMS/ICMS51/pRedBC",
+                "/infNFe/det/imposto/ICMS/ICMS51/vBC",
+                "/infNFe/det/imposto/ICMS/ICMS51/pICMS",
+                "/infNFe/det/imposto/ICMS/ICMS51/vICMSOp",
+                "/infNFe/det/imposto/ICMS/ICMS51/pDif",
+                "/infNFe/det/imposto/ICMS/ICMS51/vICMSDif",
+                "/infNFe/det/imposto/ICMS/ICMS51/vICMS"
+            ],
+            "N0717X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS51/vBCFCP",
+                "/infNFe/det/imposto/ICMS/ICMS51/pFCP",
+                "/infNFe/det/imposto/ICMS/ICMS51/vFCP"
+            ],
+            "N08": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS60/orig",
+                "/infNFe/det/imposto/ICMS/ICMS60/CST",
+                "/infNFe/det/imposto/ICMS/ICMS60/vBCSTRet",
+                "/infNFe/det/imposto/ICMS/ICMS60/pST",
+                "/infNFe/det/imposto/ICMS/ICMS60/vICMSSubstituto",
+                "/infNFe/det/imposto/ICMS/ICMS60/vICMSSTRet"
+            ],
+            "N0827X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS60/vBCFCPSTRet",
+                "/infNFe/det/imposto/ICMS/ICMS60/pFCPSTRet",
+                "/infNFe/det/imposto/ICMS/ICMS60/vFCPSTRet"
+            ],
+            "N0833X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS60/pRedBCEfet",
+                "/infNFe/det/imposto/ICMS/ICMS60/vBCEfet",
+                "/infNFe/det/imposto/ICMS/ICMS60/pICMSEfet",
+                "/infNFe/det/imposto/ICMS/ICMS60/vICMSEfet"
+            ],
+            "N09": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS70/orig",
+                "/infNFe/det/imposto/ICMS/ICMS70/CST",
+                "/infNFe/det/imposto/ICMS/ICMS70/modBC",
+                "/infNFe/det/imposto/ICMS/ICMS70/pRedBC",
+                "/infNFe/det/imposto/ICMS/ICMS70/vBC",
+                "/infNFe/det/imposto/ICMS/ICMS70/pICMS",
+                "/infNFe/det/imposto/ICMS/ICMS70/vICMS"
+            ],
+            "N0917X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS70/vBCFCP",
+                "/infNFe/det/imposto/ICMS/ICMS70/pFCP",
+                "/infNFe/det/imposto/ICMS/ICMS70/vFCP"
+            ],
+            "N0918X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS70/modBCST",
+                "/infNFe/det/imposto/ICMS/ICMS70/pMVAST",
+                "/infNFe/det/imposto/ICMS/ICMS70/pRedBCST",
+                "/infNFe/det/imposto/ICMS/ICMS70/vBCST",
+                "/infNFe/det/imposto/ICMS/ICMS70/pICMSST",
+                "/infNFe/det/imposto/ICMS/ICMS70/vICMSST"
+            ],
+            "N0923X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS70/vBCFCPST",
+                "/infNFe/det/imposto/ICMS/ICMS70/pFCPST",
+                "/infNFe/det/imposto/ICMS/ICMS70/vFCPST"
+            ],
+            "N0928X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS70/vICMSDeson",
+                "/infNFe/det/imposto/ICMS/ICMS70/motDesICMS"
+            ],
+            "N10": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS90/orig",
+                "/infNFe/det/imposto/ICMS/ICMS90/CST",
+                "/infNFe/det/imposto/ICMS/ICMS90/modBC",
+                "/infNFe/det/imposto/ICMS/ICMS90/vBC",
+                "/infNFe/det/imposto/ICMS/ICMS90/pRedBC",
+                "/infNFe/det/imposto/ICMS/ICMS90/pICMS",
+                "/infNFe/det/imposto/ICMS/ICMS90/vICMS"
+            ],
+            "N1017X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS90/vBCFCP",
+                "/infNFe/det/imposto/ICMS/ICMS90/pFCP",
+                "/infNFe/det/imposto/ICMS/ICMS90/vFCP"
+            ],
+            "N1018X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS90/modBCST",
+                "/infNFe/det/imposto/ICMS/ICMS90/pMVAST",
+                "/infNFe/det/imposto/ICMS/ICMS90/pRedBCST",
+                "/infNFe/det/imposto/ICMS/ICMS90/vBCST",
+                "/infNFe/det/imposto/ICMS/ICMS90/pICMSST",
+                "/infNFe/det/imposto/ICMS/ICMS90/vICMSST"
+            ],
+            "N1023X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS90/vBCFCPST",
+                "/infNFe/det/imposto/ICMS/ICMS90/pFCPST",
+                "/infNFe/det/imposto/ICMS/ICMS90/vFCPST"
+            ],
+            "N1028X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMS90/vICMSDeson",
+                "/infNFe/det/imposto/ICMS/ICMS90/motDesICMS"
+            ],
+            "N10a": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSPart/orig",
+                "/infNFe/det/imposto/ICMS/ICMSPart/CST",
+                "/infNFe/det/imposto/ICMS/ICMSPart/modBC",
+                "/infNFe/det/imposto/ICMS/ICMSPart/pRedBC",
+                "/infNFe/det/imposto/ICMS/ICMSPart/vBC",
+                "/infNFe/det/imposto/ICMS/ICMSPart/pICMS",
+                "/infNFe/det/imposto/ICMS/ICMSPart/vICMS",
+                "/infNFe/det/imposto/ICMS/ICMSPart/modBCST",
+                "/infNFe/det/imposto/ICMS/ICMSPart/pMVAST",
+                "/infNFe/det/imposto/ICMS/ICMSPart/pRedBCST",
+                "/infNFe/det/imposto/ICMS/ICMSPart/vBCST",
+                "/infNFe/det/imposto/ICMS/ICMSPart/pICMSST",
+                "/infNFe/det/imposto/ICMS/ICMSPart/vICMSST",
+                "/infNFe/det/imposto/ICMS/ICMSPart/pBCOp",
+                "/infNFe/det/imposto/ICMS/ICMSPart/UFST"
+            ],
+            "N10b": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSST/orig",
+                "/infNFe/det/imposto/ICMS/ICMSST/CST",
+                "/infNFe/det/imposto/ICMS/ICMSST/vBCSTRet",
+                "/infNFe/det/imposto/ICMS/ICMSST/pST",
+                "/infNFe/det/imposto/ICMS/ICMSST/vICMSSubstituto",
+                "/infNFe/det/imposto/ICMS/ICMSST/vICMSSTRet",
+                "/infNFe/det/imposto/ICMS/ICMSST/vBCFCPSTRet",
+                "/infNFe/det/imposto/ICMS/ICMSST/pFCPSTRet",
+                "/infNFe/det/imposto/ICMS/ICMSST/vFCPSTRet",
+                "/infNFe/det/imposto/ICMS/ICMSST/vBCSTDest",
+                "/infNFe/det/imposto/ICMS/ICMSST/vICMSSTDest",
+                "/infNFe/det/imposto/ICMS/ICMSST/pRedBCEfet",
+                "/infNFe/det/imposto/ICMS/ICMSST/vBCEfet",
+                "/infNFe/det/imposto/ICMS/ICMSST/pICMSEfet",
+                "/infNFe/det/imposto/ICMS/ICMSST/vICMSEfet"
+            ],
+            "N10c": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN101/orig",
+                "/infNFe/det/imposto/ICMS/ICMSSN101/CSOSN",
+                "/infNFe/det/imposto/ICMS/ICMSSN101/pCredSN",
+                "/infNFe/det/imposto/ICMS/ICMSSN101/vCredICMSSN"
+            ],
+            "N10d": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN102/orig",
+                "/infNFe/det/imposto/ICMS/ICMSSN102/CSOSN"
+            ],
+            "N10e": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/orig",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/CSOSN",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/modBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/pMVAST",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/pRedBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/vBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/pICMSST",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/vICMSST"
+            ],
+            "N10e23X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/vBCFCPST",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/pFCPST",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/vFCPST"
+            ],
+            "N10e29X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/pCredSN",
+                "/infNFe/det/imposto/ICMS/ICMSSN201/vCredICMSSN"
+            ],
+            "N10f": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/orig",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/CSOSN",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/modBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/pMVAST",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/pRedBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/vBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/pICMSST",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/vICMSST"
+            ],
+            "N10f23X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/vBCFCPST",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/pFCPST",
+                "/infNFe/det/imposto/ICMS/ICMSSN202/vFCPST"
+            ],
+            "N10g": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/orig",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/CSOSN",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/vBCSTRet",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/pST",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/vICMSSubstituto",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/vICMSSTRet"
+            ],
+            "N10g27X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/vBCFCPSTRet",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/pFCPSTRet",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/vFCPSTRet"
+            ],
+            "N10g33X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/pRedBCEfet",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/vBCEfet",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/pICMSEfet",
+                "/infNFe/det/imposto/ICMS/ICMSSN500/vICMSEfet"
+            ],
+            "N10h": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/orig",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/CSOSN",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/modBC",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/vBC",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/pRedBC",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/pICMS",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/vICMS",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/modBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/pMVAST",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/pRedBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/vBCST",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/pICMSST",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/vICMSST"
+            ],
+            "N10h23X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/vBCFCPST",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/pFCPST",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/vFCPST"
+            ],
+            "N10h29X": [
+                "linha",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/pCredSN",
+                "/infNFe/det/imposto/ICMS/ICMSSN900/vCredICMSSN"
+            ],
+            "NA01": [
+                "linha",
+                "/infNFe/det/imposto/ICMSUFDest/vBCUFDest",
+                "/infNFe/det/imposto/ICMSUFDest/vBCFCPUFDest",
+                "/infNFe/det/imposto/ICMSUFDest/pFCPUFDest",
+                "/infNFe/det/imposto/ICMSUFDest/pICMSUFDest",
+                "/infNFe/det/imposto/ICMSUFDest/pICMSInter",
+                "/infNFe/det/imposto/ICMSUFDest/pICMSInterPart",
+                "/infNFe/det/imposto/ICMSUFDest/vFCPUFDest",
+                "/infNFe/det/imposto/ICMSUFDest/vICMSUFDest",
+                "/infNFe/det/imposto/ICMSUFDest/vICMSUFRemet"
+            ],
+            "O": [
+                "linha",
+                "/infNFe/det/imposto/IPI/clEnq",
+                "/infNFe/det/imposto/IPI/CNPJProd",
+                "/infNFe/det/imposto/IPI/cSelo",
+                "/infNFe/det/imposto/IPI/qSelo",
+                "/infNFe/det/imposto/IPI/cEnq"
+            ],
+            "O07": [
+                "linha",
+                "/infNFe/det/imposto/IPI/IPITrib/CST"
+            ],
+            "O10": [
+                "linha",
+                "/infNFe/det/imposto/IPI/IPITrib/vBC",
+                "/infNFe/det/imposto/IPI/IPITrib/pIPI"
+            ],
+            "O11": [
+                "linha",
+                "/infNFe/det/imposto/IPI/IPITrib/qUnid"
+            ],
+            "O12": [
+                "linha",
+                "/infNFe/det/imposto/IPI/IPITrib/vUnid"           
+            ],
+            "O14": [
+                "linha",
+                "/infNFe/det/imposto/IPI/IPITrib/vIPI"
+            ],
+            "O08": [
+                "linha",
+                "/infNFe/det/imposto/IPI/IPINT/CST"
+            ],
+            "P": [
+                "linha",
+                "/infNFe/det/imposto/II/vBC",
+                "/infNFe/det/imposto/II/vDespAdu",
+                "/infNFe/det/imposto/II/vII",
+                "/infNFe/det/imposto/II/vIOF"
+            ],
+            "Q": [
+                "linha"
+            ],
+            "Q02": [
+                "linha",
+                "/infNFe/det/imposto/PIS/PISAliq/CST",
+                "/infNFe/det/imposto/PIS/PISAliq/vBC",
+                "/infNFe/det/imposto/PIS/PISAliq/pPIS",
+                "/infNFe/det/imposto/PIS/PISAliq/vPIS"
+            ],
+            "Q03": [
+                "linha",
+                "/infNFe/det/imposto/PIS/PISQtde/CST",
+                "/infNFe/det/imposto/PIS/PISQtde/qBCProd",
+                "/infNFe/det/imposto/PIS/PISQtde/vAliqProd",
+                "/infNFe/det/imposto/PIS/PISQtde/vPIS"
+            ],
+            "Q04": [
+                "linha",
+                "/infNFe/det/imposto/PIS/PISNT/CST"
+            ],
+            "Q05": [
+                "linha",
+                "/infNFe/det/imposto/PIS/PISOutr/CST"
+            ],
+            "Q07": [
+                "linha",
+                "/infNFe/det/imposto/PIS/PISOutr/vBC",
+                "/infNFe/det/imposto/PIS/PISOutr/pPIS"              
+            ],
+            "Q10": [
+                "linha",
+                "/infNFe/det/imposto/PIS/PISOutr/qBCProd",
+                "/infNFe/det/imposto/PIS/PISOutr/vAliqProd"
+            ],
+            "Q09": [
+                "linha",
+                "/infNFe/det/imposto/PIS/PISOutr/vPIS"
+            ],
+            "R": [
+                "linha",
+                "/infNFe/det/imposto/PISST/vPIS"
+            ],
+            "R02": [
+                "linha",
+                "/infNFe/det/imposto/PISST/vPIS/vBC",
+                "/infNFe/det/imposto/PISST/vPIS/pPIS"
+            ],
+            "R04": [
+                "linha",
+                "/infNFe/det/imposto/PISST/vPIS/qBCProd",
+                "/infNFe/det/imposto/PISST/vPIS/vAliqProd"
+            ],
+            "S": [
+                "linha"
+            ],
+            "S02": [
+                "linha",
+                "/infNFe/det/imposto/COFINS/COFINSAliq/CST",
+                "/infNFe/det/imposto/COFINS/COFINSAliq/vBC",
+                "/infNFe/det/imposto/COFINS/COFINSAliq/pCOFINS",
+                "/infNFe/det/imposto/COFINS/COFINSAliq/vCOFINS"
+            ],
+            "S03": [
+                "linha",
+                "/infNFe/det/imposto/COFINS/COFINSQtde/CST",
+                "/infNFe/det/imposto/COFINS/COFINSQtde/qBCProd",
+                "/infNFe/det/imposto/COFINS/COFINSQtde/vAliqProd",
+                "/infNFe/det/imposto/COFINS/COFINSQtde/vCOFINS"
+            ],
+            "S04": [
+                "linha",
+                "/infNFe/det/imposto/COFINS/COFINSNT/CST"
+            ],
+            "S05": [
+                "linha",
+                "/infNFe/det/imposto/COFINS/COFINSOutr/CST"
+            ],
+            "S07": [
+                "linha",
+                "/infNFe/det/imposto/COFINS/COFINSOutr/vBC",
+                "/infNFe/det/imposto/COFINS/COFINSOutr/pCOFINS"
+            ],
+            "S09": [
+                "linha",
+                "/infNFe/det/imposto/COFINS/COFINSOutr/qBCProd",
+                "/infNFe/det/imposto/COFINS/COFINSOutr/vAliqProd"
+            ],
+            "S11": [
+                "linha",
+                "/infNFe/det/imposto/COFINS/COFINSOutr/vCOFINS"
+            ],
+            "T": [
+                "linha",
+                "/infNFe/det/imposto/COFINSST/vCOFINS"
+            ],
+            "T02": [
+                "linha",
+                "/infNFe/det/imposto/COFINSST/vBC",
+                "/infNFe/det/imposto/COFINSST/pCOFINS"
+            ],
+            "T04": [
+                "linha",
+                "/infNFe/det/imposto/COFINSST/qBCProd",
+                "/infNFe/det/imposto/COFINSST/vAliqProd"
+            ],
+            "U": [
+                "linha",
+                "/infNFe/det/imposto/ISSQN/vBC",
+                "/infNFe/det/imposto/ISSQN/vAliq",
+                "/infNFe/det/imposto/ISSQN/vISSQN",
+                "/infNFe/det/imposto/ISSQN/cMunFG",
+                "/infNFe/det/imposto/ISSQN/cListServ",
+                "/infNFe/det/imposto/ISSQN/vDeducao",
+                "/infNFe/det/imposto/ISSQN/vOutro",
+                "/infNFe/det/imposto/ISSQN/vDescIncond",
+                "/infNFe/det/imposto/ISSQN/vDescCond",
+                "/infNFe/det/imposto/ISSQN/vISSRet",
+                "/infNFe/det/imposto/ISSQN/indISS",
+                "/infNFe/det/imposto/ISSQN/cServico",
+                "/infNFe/det/imposto/ISSQN/cMun",
+                "/infNFe/det/imposto/ISSQN/cPais",
+                "/infNFe/det/imposto/ISSQN/nProcesso",
+                "/infNFe/det/imposto/ISSQN/indIncentivo"
+            ],
+            "UA": [
+                "linha",
+                "/infNFe/det/impostoDevol/pDevol",
+                "/infNFe/det/impostoDevol/IPI",
+                "/infNFe/det/impostoDevol/IPI/vIPIDevol"
+            ],
+            "HA": [
+                "linha",
+                "/infNFe/det/infAdProd"
+            ],
+            "W": [
+                "linha"
+            ],
+            "W02": [
+                "linha",
+                "/infNFe/total/ICMSTot/vBC",
+                "/infNFe/total/ICMSTot/vICMS",
+                "/infNFe/total/ICMSTot/vICMSDeson",
+                "/infNFe/total/ICMSTot/vFCPUFDest",
+                "/infNFe/total/ICMSTot/vICMSUFDest",
+                "/infNFe/total/ICMSTot/vICMSUFRemet",
+                "/infNFe/total/ICMSTot/vFCP",
+                "/infNFe/total/ICMSTot/vBCST",
+                "/infNFe/total/ICMSTot/vST",
+                "/infNFe/total/ICMSTot/vFCPST",
+                "/infNFe/total/ICMSTot/vFCPSTRet",
+                "/infNFe/total/ICMSTot/vProd",
+                "/infNFe/total/ICMSTot/vFrete",
+                "/infNFe/total/ICMSTot/vSeg",
+                "/infNFe/total/ICMSTot/vDesc",
+                "/infNFe/total/ICMSTot/vII",
+                "/infNFe/total/ICMSTot/vIPI",
+                "/infNFe/total/ICMSTot/vIPIDevol",
+                "/infNFe/total/ICMSTot/vPIS",
+                "/infNFe/total/ICMSTot/vCOFINS",
+                "/infNFe/total/ICMSTot/vOutro",
+                "/infNFe/total/ICMSTot/vNF",
+                "/infNFe/total/ICMSTot/vTotTrib"
+            ],
+            "W17": [
+                "linha",
+                "/infNFe/total/ISSQNtot/vServ",
+                "/infNFe/total/ISSQNtot/vBC",
+                "/infNFe/total/ISSQNtot/vISS",
+                "/infNFe/total/ISSQNtot/vPIS",
+                "/infNFe/total/ISSQNtot/vCOFINS",
+                "/infNFe/total/ISSQNtot/dCompet",
+                "/infNFe/total/ISSQNtot/vDeducao",
+                "/infNFe/total/ISSQNtot/vOutro",
+                "/infNFe/total/ISSQNtot/vDescIncond",
+                "/infNFe/total/ISSQNtot/vDescCond",
+                "/infNFe/total/ISSQNtot/vISSRet",
+                "/infNFe/total/ISSQNtot/cRegTrib"
+            ],
+            "W23": [
+                "linha",
+                "/infNFe/total/retTrib/vRetPIS",
+                "/infNFe/total/retTrib/vRetCOFINS",
+                "/infNFe/total/retTrib/vRetCSLL",
+                "/infNFe/total/retTrib/vBCIRRF",
+                "/infNFe/total/retTrib/vIRRF",
+                "/infNFe/total/retTrib/vBCRetPrev",
+                "/infNFe/total/retTrib/vRetPrev"
+            ],
+            "X": [
+                "linha",
+                "/infNFe/transp/modFrete"
+            ],
+            "X04": [
+                "linha",
+                "/infNFe/transp/transporta/CNPJ"
+            ],
+            "X05": [
+                "linha",
+                "/infNFe/transp/transporta/CPF"
+            ],
+            "X03": [
+                "linha",
+                "/infNFe/transp/transporta/xNome",
+                "/infNFe/transp/transporta/IE",
+                "/infNFe/transp/transporta/xEnder",
+                "/infNFe/transp/transporta/xMun",
+                "/infNFe/transp/transporta/UF"
+            ],
+            "X11": [
+                "linha",
+                "/infNFe/transp/retTransp/vServ",
+                "/infNFe/transp/retTransp/vBCRet",
+                "/infNFe/transp/retTransp/pICMSRet",
+                "/infNFe/transp/retTransp/vICMSRet",
+                "/infNFe/transp/retTransp/CFOP",
+                "/infNFe/transp/retTransp/cMunFG"
+            ],
+            "X18": [
+                "linha",
+                "/infNFe/transp/veicTransp/placa",
+                "/infNFe/transp/veicTransp/UF",
+                "/infNFe/transp/veicTransp/RNTC"
+            ],
+            "X22": [
+                "linha",
+                "/infNFe/transp/reboque/placa",
+                "/infNFe/transp/reboque/UF",
+                "/infNFe/transp/reboque/RNTC",
+                "/infNFe/transp/reboque/vagao",
+                "/infNFe/transp/reboque/balsa"
+            ],
+            "X26": [
+                "linha",
+                "/infNFe/transp/vol/qVol",
+                "/infNFe/transp/vol/esp",
+                "/infNFe/transp/vol/marca",
+                "/infNFe/transp/vol/nVol",
+                "/infNFe/transp/vol/pesoL",
+                "/infNFe/transp/vol/pesoB"
+            ],
+            "X33": [
+                "linha",
+                "/infNFe/transp/vol/lacres/nLacre"
+            ],
+            "Y": [
+                "linha"
+            ],
+            "Y02": [
+                "linha",
+                "/infNFe/cobr/fat/nFat",
+                "/infNFe/cobr/fat/vOrig",
+                "/infNFe/cobr/fat/vDesc",
+                "/infNFe/cobr/fat/vLiq"
+            ],
+            "Y07": [
+                "linha",
+                "/infNFe/cobr/dup/nDup",
+                "/infNFe/cobr/dup/dVenc",
+                "/infNFe/cobr/dup/vDup"
+            ],
+            "YA": [
+                "linha",
+                "/infNFe/pag/detPag/indPag", 
+                "/infNFe/pag/detPag/tPag",
+                "/infNFe/pag/detPag/vPag"
+            ],
+            "YA04": [
+                "linha",
+                "/infNFe/pag/detPag/card/tpIntegra",
+                "/infNFe/pag/detPag/card/CNPJ",
+                "/infNFe/pag/detPag/card/tBand",
+                "/infNFe/pag/detPag/card/cAut"
+            ],
+            "YA09": [
+                "linha",
+                "/infNFe/pag/vTroco"
+            ],
+            "Z": [
+                "linha",
+                "/infNFe/infAdic/infAdFisco",
+                "/infNFe/infAdic/infCpl"
+            ],
+            "Z04": [
+                "linha",
+                "/infNFe/infAdic/obsCont/@xCampo",
+                "/infNFe/infAdic/obsCont/xTexto"
+            ],
+            "Z07": [
+                "linha",
+                "/infNFe/infAdic/obsFisco/@xCampo",
+                "/infNFe/infAdic/obsFisco/xTexto"
+            ],
+            "Z10": [
+                "linha",
+                "/infNFe/infAdic/procRef/nProc",
+                "/infNFe/infAdic/procRef/indProc"
+            ],
+            "ZA": [
+                "linha",
+                "/infNFe/exporta/UFSaidaPais",
+                "/infNFe/exporta/xLocExporta",
+                "/infNFe/exporta/xLocDespacho"
+            ],
+            "ZB": [
+                "linha",
+                "/infNFe/infAdic/compra/xNEmp",
+                "/infNFe/infAdic/compra/xPed",
+                "/infNFe/infAdic/compra/xCont"
+            ],
+            "ZC01": [
+                "linha"
+            ],
+            "ZC04": [
+                "linha"
+            ],
+            "ZC10": [
+                "linha"
+            ],
+            "ZD":[
+                "linha",
+                "/infNFe/infRespTec/CNPJ",
+                "/infNFe/infRespTec/xContato",
+                "/infNFe/infRespTec/email",
+                "/infNFe/infRespTec/fone",
+                "/infNFe/infRespTec/idCSRT",
+                "/infNFe/infRespTec/hashCSRT"
+            ],
+            "ZX01": [
+                "linha",
+                "/infNFe/infNFeSupl/"
+            ],
+            "ZX02": [
+                "linha",
+                "/infNFe/infNFeSupl/idToken",
+                "/infNFe/infNFeSupl/token"
+            ],
+            "ZX03": [
+                "linha",
+                "/infNFe/infNFeSupl/urlChave"
+            ],
+            "@": [
+                "linha",
+                "emailXML",
+                "emailDANFE",
+                "ViasDanfe",
+                "LocalDandeNorm",
+                "LocalDanfeCOnt"
+            ]
+        }
+    }
+}
